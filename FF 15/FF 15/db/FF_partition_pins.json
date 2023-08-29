@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "OutD",
+					"strict" : false
+				},
+				{
+					"name" : "OutT",
+					"strict" : false
+				},
+				{
+					"name" : "ButtonD",
+					"strict" : false
+				},
+				{
+					"name" : "ButtonT",
+					"strict" : false
+				},
+				{
+					"name" : "ResetDebouncer",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

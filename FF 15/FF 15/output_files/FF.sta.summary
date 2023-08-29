@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -4.981
+TNS   : -51.398
+
+Type  : Slow 1200mV 85C Model Setup 'ResetDebouncer'
+Slack : 0.156
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ResetDebouncer'
+Slack : 0.406
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.587
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'CLOCK_50'
+Slack : -1.576
+TNS   : -6.168
+
+Type  : Slow 1200mV 85C Model Removal 'CLOCK_50'
+Slack : -0.405
+TNS   : -0.405
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -26.130
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ResetDebouncer'
+Slack : -3.000
+TNS   : -5.570
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -4.575
+TNS   : -46.872
+
+Type  : Slow 1200mV 0C Model Setup 'ResetDebouncer'
+Slack : 0.247
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ResetDebouncer'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.542
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'CLOCK_50'
+Slack : -1.362
+TNS   : -4.690
+
+Type  : Slow 1200mV 0C Model Removal 'CLOCK_50'
+Slack : -0.242
+TNS   : -0.242
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -26.130
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ResetDebouncer'
+Slack : -3.000
+TNS   : -5.570
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -2.208
+TNS   : -19.840
+
+Type  : Fast 1200mV 0C Model Setup 'ResetDebouncer'
+Slack : 0.589
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.025
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ResetDebouncer'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'CLOCK_50'
+Slack : -0.965
+TNS   : -4.869
+
+Type  : Fast 1200mV 0C Model Removal 'CLOCK_50'
+Slack : -0.573
+TNS   : -1.661
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -22.020
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ResetDebouncer'
+Slack : -3.000
+TNS   : -5.434
+
+------------------------------------------------------------
