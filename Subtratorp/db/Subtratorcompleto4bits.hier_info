@@ -1,0 +1,67 @@
+|Subtratorcompleto4bits
+OUTPOUT[0] <= S[0].DB_MAX_OUTPUT_PORT_TYPE
+OUTPOUT[1] <= S[1].DB_MAX_OUTPUT_PORT_TYPE
+OUTPOUT[2] <= S[2].DB_MAX_OUTPUT_PORT_TYPE
+OUTPOUT[3] <= S[3].DB_MAX_OUTPUT_PORT_TYPE
+A1 => Subtratorcompleto:inst.A
+B1 => Subtratorcompleto:inst.B
+A2 => Subtratorcompleto:inst1.A
+B2 => Subtratorcompleto:inst1.B
+A3 => Subtratorcompleto:inst2.A
+B3 => Subtratorcompleto:inst2.B
+A4 => Subtratorcompleto:inst3.A
+B4 => Subtratorcompleto:inst3.B
+
+
+|Subtratorcompleto4bits|Subtratorcompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst10.IN0
+A => inst.IN0
+B => inst10.IN1
+B => inst4.IN0
+B => inst2.IN1
+Tin => inst1.IN1
+Tin => inst3.IN1
+Tin => inst4.IN1
+Tout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Subtratorcompleto4bits|Subtratorcompleto:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst10.IN0
+A => inst.IN0
+B => inst10.IN1
+B => inst4.IN0
+B => inst2.IN1
+Tin => inst1.IN1
+Tin => inst3.IN1
+Tin => inst4.IN1
+Tout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Subtratorcompleto4bits|Subtratorcompleto:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst10.IN0
+A => inst.IN0
+B => inst10.IN1
+B => inst4.IN0
+B => inst2.IN1
+Tin => inst1.IN1
+Tin => inst3.IN1
+Tin => inst4.IN1
+Tout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Subtratorcompleto4bits|Subtratorcompleto:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst10.IN0
+A => inst.IN0
+B => inst10.IN1
+B => inst4.IN0
+B => inst2.IN1
+Tin => inst1.IN1
+Tin => inst3.IN1
+Tin => inst4.IN1
+Tout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
