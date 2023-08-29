@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ULA
-Tue Aug 29 16:31:53 2023
+Tue Aug 29 16:41:20 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -47,7 +47,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Aug 29 16:31:53 2023       ;
+; Analysis & Synthesis Status        ; Successful - Tue Aug 29 16:41:20 2023       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
 ; Top-level Entity Name              ; ULA                                         ;
@@ -171,7 +171,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                          ; Library ;
 +----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------+---------+
-; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/12547510/Documents/ULA/ULA.bdf                               ;         ;
+; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/12547510/Documents/SSC0108/ULA/ULA.bdf                       ;         ;
 ; busmux.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/busmux.tdf     ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.inc    ;         ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.tdf    ;         ;
@@ -179,13 +179,13 @@ https://fpgasoftware.intel.com/eula.
 ; muxlut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/muxlut.inc     ;         ;
 ; bypassff.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/bypassff.inc   ;         ;
 ; altshift.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altshift.inc   ;         ;
-; db/mux_arc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/12547510/Documents/ULA/db/mux_arc.tdf                        ;         ;
-; somadorcompleto4bits.bdf         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/ULA/somadorcompleto4bits.bdf              ;         ;
-; somador.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/ULA/somador.bdf                           ;         ;
-; iwanttodie.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/ULA/iwanttodie.bdf                        ;         ;
-; subtratorcompleto4bits.bdf       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/ULA/subtratorcompleto4bits.bdf            ;         ;
-; subtratorcompleto.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/ULA/subtratorcompleto.bdf                 ;         ;
-; divide2.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/ULA/divide2.bdf                           ;         ;
+; db/mux_arc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/12547510/Documents/SSC0108/ULA/db/mux_arc.tdf                ;         ;
+; somadorcompleto4bits.bdf         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/SSC0108/ULA/somadorcompleto4bits.bdf      ;         ;
+; somador.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/SSC0108/ULA/somador.bdf                   ;         ;
+; iwanttodie.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/SSC0108/ULA/iwanttodie.bdf                ;         ;
+; subtratorcompleto4bits.bdf       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/SSC0108/ULA/subtratorcompleto4bits.bdf    ;         ;
+; subtratorcompleto.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/SSC0108/ULA/subtratorcompleto.bdf         ;         ;
+; divide2.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/SSC0108/ULA/divide2.bdf                   ;         ;
 +----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------+---------+
 
 
@@ -326,7 +326,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue Aug 29 16:31:44 2023
+    Info: Processing started: Tue Aug 29 16:41:11 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -340,7 +340,7 @@ Info (12133): Instantiated megafunction "BUSMUX:inst" with the following paramet
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst|lpm_mux:$00000" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
 Info (12131): Elaborated megafunction instantiation "BUSMUX:inst|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_arc.tdf
-    Info (12023): Found entity 1: mux_arc File: C:/Users/12547510/Documents/ULA/db/mux_arc.tdf Line: 23
+    Info (12023): Found entity 1: mux_arc File: C:/Users/12547510/Documents/SSC0108/ULA/db/mux_arc.tdf Line: 23
 Info (12128): Elaborating entity "mux_arc" for hierarchy "BUSMUX:inst|lpm_mux:$00000|mux_arc:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Warning (12125): Using design file somadorcompleto4bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: somadorcompleto4bits
@@ -374,9 +374,9 @@ Info (21057): Implemented 29 device resources after synthesis - the final resour
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 15 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4765 megabytes
-    Info: Processing ended: Tue Aug 29 16:31:53 2023
+    Info: Peak virtual memory: 4760 megabytes
+    Info: Processing ended: Tue Aug 29 16:41:20 2023
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Total CPU time (on all processors): 00:00:17
 
 
