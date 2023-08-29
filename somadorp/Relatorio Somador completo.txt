@@ -1,0 +1,2 @@
+4 blocos somadores completo e dois displays um para a soma e o outro para o Carry out o SW0(A1), SW1(A2), SW2(A3), SW4(A4), SW5(B1), SW6(B2), SW6(B3) e SW7(B4).
+O primeiro Cin esta negado, cada Solucao S esta ligado a uma entrada do display e os Cout a cada entrada do segundo display.
