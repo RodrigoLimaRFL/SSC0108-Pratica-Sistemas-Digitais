@@ -1,0 +1,368 @@
+|ULA
+Saida[0] <= BUSMUX:inst.result[0]
+Saida[1] <= BUSMUX:inst.result[1]
+Saida[2] <= BUSMUX:inst.result[2]
+Saida[3] <= BUSMUX:inst.result[3]
+Controle[0] => BUSMUX:inst9.sel
+Controle[0] => BUSMUX:inst10.sel
+Controle[1] => BUSMUX:inst.sel
+A[0] => somadorcompleto4bits:inSAst.A1
+A[0] => iwanttodie:inst7.IN0
+A[0] => Subtratorcompleto4bits:inst6.B1
+A[0] => Divide2:inst3.Input0
+A[1] => somadorcompleto4bits:inSAst.A2
+A[1] => iwanttodie:inst7.IN1
+A[1] => Subtratorcompleto4bits:inst6.B2
+A[1] => Divide2:inst3.Input1
+A[2] => somadorcompleto4bits:inSAst.A3
+A[2] => iwanttodie:inst7.IN2
+A[2] => Subtratorcompleto4bits:inst6.B3
+A[2] => Divide2:inst3.Input2
+A[3] => somadorcompleto4bits:inSAst.A4
+A[3] => iwanttodie:inst7.IN3
+A[3] => Subtratorcompleto4bits:inst6.B4
+A[3] => Divide2:inst3.Input3
+B[0] => somadorcompleto4bits:inSAst.B1
+B[0] => Subtratorcompleto4bits:inst6.A1
+B[1] => somadorcompleto4bits:inSAst.B2
+B[1] => Subtratorcompleto4bits:inst6.A2
+B[2] => somadorcompleto4bits:inSAst.B3
+B[2] => Subtratorcompleto4bits:inst6.A3
+B[3] => somadorcompleto4bits:inSAst.B4
+B[3] => Subtratorcompleto4bits:inst6.A4
+
+
+|ULA|BUSMUX:inst
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+
+
+|ULA|BUSMUX:inst|lpm_mux:$00000
+data[0][0] => mux_arc:auto_generated.data[0]
+data[0][1] => mux_arc:auto_generated.data[1]
+data[0][2] => mux_arc:auto_generated.data[2]
+data[0][3] => mux_arc:auto_generated.data[3]
+data[1][0] => mux_arc:auto_generated.data[4]
+data[1][1] => mux_arc:auto_generated.data[5]
+data[1][2] => mux_arc:auto_generated.data[6]
+data[1][3] => mux_arc:auto_generated.data[7]
+sel[0] => mux_arc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_arc:auto_generated.result[0]
+result[1] <= mux_arc:auto_generated.result[1]
+result[2] <= mux_arc:auto_generated.result[2]
+result[3] <= mux_arc:auto_generated.result[3]
+
+
+|ULA|BUSMUX:inst|lpm_mux:$00000|mux_arc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|ULA|BUSMUX:inst9
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+
+
+|ULA|BUSMUX:inst9|lpm_mux:$00000
+data[0][0] => mux_arc:auto_generated.data[0]
+data[0][1] => mux_arc:auto_generated.data[1]
+data[0][2] => mux_arc:auto_generated.data[2]
+data[0][3] => mux_arc:auto_generated.data[3]
+data[1][0] => mux_arc:auto_generated.data[4]
+data[1][1] => mux_arc:auto_generated.data[5]
+data[1][2] => mux_arc:auto_generated.data[6]
+data[1][3] => mux_arc:auto_generated.data[7]
+sel[0] => mux_arc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_arc:auto_generated.result[0]
+result[1] <= mux_arc:auto_generated.result[1]
+result[2] <= mux_arc:auto_generated.result[2]
+result[3] <= mux_arc:auto_generated.result[3]
+
+
+|ULA|BUSMUX:inst9|lpm_mux:$00000|mux_arc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|ULA|somadorcompleto4bits:inSAst
+Output[0] <= S[0].DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= S[1].DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= S[2].DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= S[3].DB_MAX_OUTPUT_PORT_TYPE
+A4 => Somador:inst3.A
+B4 => Somador:inst3.B
+A3 => Somador:inst2.A
+B3 => Somador:inst2.B
+A2 => Somador:inst1.A
+B2 => Somador:inst1.B
+A1 => Somador:asdasd.A
+B1 => Somador:asdasd.B
+
+
+|ULA|somadorcompleto4bits:inSAst|Somador:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cin => inst4.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadorcompleto4bits:inSAst|Somador:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cin => inst4.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadorcompleto4bits:inSAst|Somador:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cin => inst4.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadorcompleto4bits:inSAst|Somador:asdasd
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cin => inst4.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|iwanttodie:inst7
+OUT0 <= <GND>
+OUT1 <= IN0.DB_MAX_OUTPUT_PORT_TYPE
+IN0 => OUT1.DATAIN
+OUT2 <= IN1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => OUT2.DATAIN
+OUT3 <= IN2.DB_MAX_OUTPUT_PORT_TYPE
+IN2 => OUT3.DATAIN
+IN3 => ~NO_FANOUT~
+
+
+|ULA|BUSMUX:inst10
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+
+
+|ULA|BUSMUX:inst10|lpm_mux:$00000
+data[0][0] => mux_arc:auto_generated.data[0]
+data[0][1] => mux_arc:auto_generated.data[1]
+data[0][2] => mux_arc:auto_generated.data[2]
+data[0][3] => mux_arc:auto_generated.data[3]
+data[1][0] => mux_arc:auto_generated.data[4]
+data[1][1] => mux_arc:auto_generated.data[5]
+data[1][2] => mux_arc:auto_generated.data[6]
+data[1][3] => mux_arc:auto_generated.data[7]
+sel[0] => mux_arc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_arc:auto_generated.result[0]
+result[1] <= mux_arc:auto_generated.result[1]
+result[2] <= mux_arc:auto_generated.result[2]
+result[3] <= mux_arc:auto_generated.result[3]
+
+
+|ULA|BUSMUX:inst10|lpm_mux:$00000|mux_arc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|ULA|Subtratorcompleto4bits:inst6
+OUTPOUT[0] <= S[0].DB_MAX_OUTPUT_PORT_TYPE
+OUTPOUT[1] <= S[1].DB_MAX_OUTPUT_PORT_TYPE
+OUTPOUT[2] <= S[2].DB_MAX_OUTPUT_PORT_TYPE
+OUTPOUT[3] <= S[3].DB_MAX_OUTPUT_PORT_TYPE
+A1 => Subtratorcompleto:inst.A
+B1 => Subtratorcompleto:inst.B
+A2 => Subtratorcompleto:inst1.A
+B2 => Subtratorcompleto:inst1.B
+A3 => Subtratorcompleto:inst2.A
+B3 => Subtratorcompleto:inst2.B
+A4 => Subtratorcompleto:inst3.A
+B4 => Subtratorcompleto:inst3.B
+
+
+|ULA|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst10.IN0
+A => inst.IN0
+B => inst10.IN1
+B => inst4.IN0
+B => inst2.IN1
+Tin => inst1.IN1
+Tin => inst3.IN1
+Tin => inst4.IN1
+Tout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst10.IN0
+A => inst.IN0
+B => inst10.IN1
+B => inst4.IN0
+B => inst2.IN1
+Tin => inst1.IN1
+Tin => inst3.IN1
+Tin => inst4.IN1
+Tout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst10.IN0
+A => inst.IN0
+B => inst10.IN1
+B => inst4.IN0
+B => inst2.IN1
+Tin => inst1.IN1
+Tin => inst3.IN1
+Tin => inst4.IN1
+Tout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst10.IN0
+A => inst.IN0
+B => inst10.IN1
+B => inst4.IN0
+B => inst2.IN1
+Tin => inst1.IN1
+Tin => inst3.IN1
+Tin => inst4.IN1
+Tout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Divide2:inst3
+Output2 <= Input3.DB_MAX_OUTPUT_PORT_TYPE
+Input3 => Output2.DATAIN
+Output3 <= <GND>
+Output1 <= Input2.DB_MAX_OUTPUT_PORT_TYPE
+Input2 => Output1.DATAIN
+Output0 <= Input1.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => Output0.DATAIN
+Input0 => ~NO_FANOUT~
+
+

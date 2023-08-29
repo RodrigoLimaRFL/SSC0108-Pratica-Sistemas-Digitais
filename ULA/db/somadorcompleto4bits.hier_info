@@ -1,0 +1,71 @@
+|somadorcompleto4bits
+Output[0] <= S[0].DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= S[1].DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= S[2].DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= S[3].DB_MAX_OUTPUT_PORT_TYPE
+A4 => Somador:inst3.A
+B4 => Somador:inst3.B
+A3 => Somador:inst2.A
+B3 => Somador:inst2.B
+A2 => Somador:inst1.A
+B2 => Somador:inst1.B
+A1 => Somador:asdasd.A
+B1 => Somador:asdasd.B
+
+
+|somadorcompleto4bits|Somador:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cin => inst4.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorcompleto4bits|Somador:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cin => inst4.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorcompleto4bits|Somador:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cin => inst4.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorcompleto4bits|Somador:asdasd
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cin => inst4.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
