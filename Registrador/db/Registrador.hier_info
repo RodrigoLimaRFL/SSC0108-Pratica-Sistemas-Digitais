@@ -1,0 +1,51 @@
+|Registrador
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst11.CLK
+CLK => inst13.CLK
+CLK => inst15.CLK
+load => 21mux:inst10.S
+load => 21mux:inst12.S
+load => 21mux:inst14.S
+load => 21mux:inst16.S
+D[3] => 21mux:inst16.A
+D[2] => 21mux:inst14.A
+D[1] => 21mux:inst12.A
+D[0] => 21mux:inst10.A
+
+
+|Registrador|21mux:inst10
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|Registrador|21mux:inst12
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|Registrador|21mux:inst14
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|Registrador|21mux:inst16
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
