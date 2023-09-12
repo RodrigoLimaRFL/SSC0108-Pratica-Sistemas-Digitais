@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Sep 12 16:38:28 2023
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Revision Name : ROM2
+Top-level Entity Name : ROM2
+Family : Cyclone IV E
+Total logic elements : 28
+    Total combinational functions : 28
+    Dedicated logic registers : 18
+Total registers : 18
+Total pins : 27
+Total virtual pins : 0
+Total memory bits : 4,096
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
