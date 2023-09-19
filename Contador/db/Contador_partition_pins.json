@@ -40,6 +40,46 @@
 					"strict" : false
 				},
 				{
+					"name" : "jump",
+					"strict" : false
+				},
+				{
+					"name" : "Operando[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clear",
+					"strict" : false
+				},
+				{
+					"name" : "Operando[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Operando[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Operando[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Operando[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Operando[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Operando[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Operando[7]",
+					"strict" : false
+				},
+				{
 					"name" : "reset",
 					"strict" : false
 				},

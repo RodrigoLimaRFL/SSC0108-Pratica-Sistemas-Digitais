@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Contador
-Tue Sep 19 14:29:51 2023
+Tue Sep 19 15:09:03 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -45,16 +45,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Sep 19 14:29:51 2023       ;
+; Analysis & Synthesis Status        ; Successful - Tue Sep 19 15:09:03 2023       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; Contador                                    ;
 ; Top-level Entity Name              ; Contador                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 38                                          ;
-;     Total combinational functions  ; 38                                          ;
+; Total logic elements               ; 81                                          ;
+;     Total combinational functions  ; 81                                          ;
 ;     Dedicated logic registers      ; 26                                          ;
 ; Total registers                    ; 26                                          ;
-; Total pins                         ; 12                                          ;
+; Total pins                         ; 22                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -181,30 +181,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 38          ;
+; Estimated Total logic elements              ; 81          ;
 ;                                             ;             ;
-; Total combinational functions               ; 38          ;
+; Total combinational functions               ; 81          ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 12          ;
-;     -- 3 input functions                    ; 4           ;
-;     -- <=2 input functions                  ; 22          ;
+;     -- 4 input functions                    ; 23          ;
+;     -- 3 input functions                    ; 22          ;
+;     -- <=2 input functions                  ; 36          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 23          ;
+;     -- normal mode                          ; 66          ;
 ;     -- arithmetic mode                      ; 15          ;
 ;                                             ;             ;
 ; Total registers                             ; 26          ;
 ;     -- Dedicated logic registers            ; 26          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 12          ;
+; I/O pins                                    ; 22          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; reset~input ;
 ; Maximum fan-out                             ; 21          ;
-; Total fan-out                               ; 225         ;
-; Average fan-out                             ; 2.56        ;
+; Total fan-out                               ; 369         ;
+; Average fan-out                             ; 2.44        ;
 +---------------------------------------------+-------------+
 
 
@@ -213,7 +213,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+-------------+--------------+
-; |Contador                  ; 38 (10)             ; 26 (8)                    ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |Contador                      ; Contador    ; work         ;
+; |Contador                  ; 81 (53)             ; 26 (8)                    ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |Contador                      ; Contador    ; work         ;
 ;    |debouncer:adgsdfgseg|  ; 28 (28)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Contador|debouncer:adgsdfgseg ; debouncer   ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -227,7 +227,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total registers                              ; 26    ;
 ; Number of registers using Synchronous Clear  ; 16    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 18    ;
+; Number of registers using Asynchronous Clear ; 26    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 16    ;
 ; Number of registers using Preset             ; 0     ;
@@ -258,22 +258,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 12                          ;
+; boundary_port         ; 22                          ;
 ; cycloneiii_ff         ; 26                          ;
-;     CLR               ; 2                           ;
+;     CLR               ; 10                          ;
 ;     ENA CLR SCLR      ; 16                          ;
-;     plain             ; 8                           ;
-; cycloneiii_lcell_comb ; 38                          ;
+; cycloneiii_lcell_comb ; 81                          ;
 ;     arith             ; 15                          ;
 ;         2 data inputs ; 15                          ;
-;     normal            ; 23                          ;
+;     normal            ; 66                          ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 6                           ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 12                          ;
+;         2 data inputs ; 20                          ;
+;         3 data inputs ; 22                          ;
+;         4 data inputs ; 23                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.41                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.18                        ;
 +-----------------------+-----------------------------+
 
 
@@ -292,7 +291,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue Sep 19 14:29:43 2023
+    Info: Processing started: Tue Sep 19 15:08:54 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Contador -c Contador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -304,19 +303,27 @@ Warning (12125): Using design file debouncer.v, which is not specified as a desi
 Info (12128): Elaborating entity "debouncer" for hierarchy "debouncer:adgsdfgseg"
 Warning (10230): Verilog HDL assignment warning at debouncer.v(71): truncated value with size 32 to match size of target (16) File: C:/Users/12547510/Documents/SSC0108/Contador/debouncer.v Line: 71
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "inst" is converted into an equivalent circuit using register "inst~_emulated" and latch "inst~1"
+    Warning (13310): Register "inst1" is converted into an equivalent circuit using register "inst1~_emulated" and latch "inst1~1"
+    Warning (13310): Register "inst6" is converted into an equivalent circuit using register "inst6~_emulated" and latch "inst6~1"
+    Warning (13310): Register "inst7" is converted into an equivalent circuit using register "inst7~_emulated" and latch "inst7~1"
+    Warning (13310): Register "inst8" is converted into an equivalent circuit using register "inst8~_emulated" and latch "inst8~1"
+    Warning (13310): Register "agh" is converted into an equivalent circuit using register "agh~_emulated" and latch "agh~1"
+    Warning (13310): Register "inst10" is converted into an equivalent circuit using register "inst10~_emulated" and latch "inst10~1"
+    Warning (13310): Register "asd" is converted into an equivalent circuit using register "asd~_emulated" and latch "asd~1"
     Warning (13310): Register "debouncer:adgsdfgseg|out_key" is converted into an equivalent circuit using register "debouncer:adgsdfgseg|out_key~_emulated" and latch "debouncer:adgsdfgseg|out_key~1" File: C:/Users/12547510/Documents/SSC0108/Contador/debouncer.v Line: 42
     Warning (13310): Register "debouncer:adgsdfgseg|intermediate" is converted into an equivalent circuit using register "debouncer:adgsdfgseg|intermediate~_emulated" and latch "debouncer:adgsdfgseg|out_key~1" File: C:/Users/12547510/Documents/SSC0108/Contador/debouncer.v Line: 50
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
+Info (21057): Implemented 103 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 38 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4767 megabytes
-    Info: Processing ended: Tue Sep 19 14:29:51 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+    Info (21061): Implemented 81 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4774 megabytes
+    Info: Processing ended: Tue Sep 19 15:09:03 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:19
 
 
