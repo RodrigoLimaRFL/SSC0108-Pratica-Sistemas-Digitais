@@ -1,89 +1,112 @@
 |CPU
+ROM7segA0 <= projeto05:inst56.AAAA
 CLK50 => ROM2:inst2.CLOCK_50
 CLK50 => Contador:inst.clock
 resetMaster => ROM2:inst2.reset
 resetMaster => rffg.IN1
 resetMaster => Contador:inst.reset
+resetMaster => inst41.IN0
 resetMaster => inst49.IN0
 resetMaster => inst51.IN0
 resetMaster => inst53.IN0
 resetMaster => inst55.IN0
-resetMaster => inst41.IN0
 resetMaster => inst43.IN0
 resetMaster => inst45.IN0
 resetMaster => inst47.IN0
 CLK => ROM2:inst2.KEY
 CLK => Contador:inst.input
+ROM7segB0 <= projeto05:inst56.BBBB
+ROM7segC0 <= projeto05:inst56.CCCC
+ROM7segD0 <= projeto05:inst56.DDDD
+ROM7segE0 <= projeto05:inst56.EEEE
+ROM7segF0 <= projeto05:inst56.FFFF
+ROM7segG0 <= projeto05:inst56.GGGG
+ROM7segA1 <= projeto05:inst57.AAAA
+ROM7segA2 <= projeto05:inst58.AAAA
+ROM7segA3 <= projeto05:inst59.AAAA
+ROM7segD1 <= projeto05:inst57.DDDD
+ROM7segD2 <= projeto05:inst58.DDDD
+ROM7segD3 <= projeto05:inst59.DDDD
+ROM7segE1 <= projeto05:inst57.EEEE
+ROM7segE2 <= projeto05:inst58.EEEE
+ROM7segE3 <= projeto05:inst59.EEEE
+ROM7segF1 <= projeto05:inst57.FFFF
+ROM7segF2 <= projeto05:inst58.FFFF
+ROM7segF3 <= projeto05:inst59.FFFF
+ROM7segG1 <= projeto05:inst57.GGGG
+ROM7segG2 <= projeto05:inst58.GGGG
+ROM7segG3 <= projeto05:inst59.GGGG
+ROM7segB1 <= projeto05:inst57.BBBB
+ROM7segC1 <= projeto05:inst57.CCCC
+ROM7segB2 <= projeto05:inst58.BBBB
+ROM7segC2 <= projeto05:inst58.CCCC
+ROM7segB3 <= projeto05:inst59.BBBB
+ROM7segC3 <= projeto05:inst59.CCCC
+Reg01A <= Registrador01A.DB_MAX_OUTPUT_PORT_TYPE
+Reg01B <= Registrador01B.DB_MAX_OUTPUT_PORT_TYPE
+Reg01C <= Registrador01C.DB_MAX_OUTPUT_PORT_TYPE
+Reg01D <= Registrador01D.DB_MAX_OUTPUT_PORT_TYPE
+Reg01E <= Registrador01E.DB_MAX_OUTPUT_PORT_TYPE
+Reg01F <= Registrador01F.DB_MAX_OUTPUT_PORT_TYPE
+Reg01G <= Registrador01G.DB_MAX_OUTPUT_PORT_TYPE
+Reg10A <= Registrador10A.DB_MAX_OUTPUT_PORT_TYPE
+Reg10B <= Registrador10B.DB_MAX_OUTPUT_PORT_TYPE
+Reg10C <= Registrador10C.DB_MAX_OUTPUT_PORT_TYPE
+Reg10D <= Registrador10D.DB_MAX_OUTPUT_PORT_TYPE
+Reg10E <= Registrador10E.DB_MAX_OUTPUT_PORT_TYPE
+Reg10F <= Registrador10F.DB_MAX_OUTPUT_PORT_TYPE
+Reg10G <= Registrador10G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|Registrador:asdfdadg
-Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
-CLK => inst.CLK
-CLK => inst11.CLK
-CLK => inst13.CLK
-CLK => inst15.CLK
-load => 21mux:inst10.S
-load => 21mux:inst12.S
-load => 21mux:inst14.S
-load => 21mux:inst16.S
-D[3] => 21mux:inst16.A
-D[2] => 21mux:inst14.A
-D[1] => 21mux:inst12.A
-D[0] => 21mux:inst10.A
-
-
-|CPU|Registrador:asdfdadg|21mux:inst10
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|CPU|Registrador:asdfdadg|21mux:inst12
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|CPU|Registrador:asdfdadg|21mux:inst14
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|CPU|Registrador:asdfdadg|21mux:inst16
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|CPU|UC:inst6
-RegLoad <= caso01.DB_MAX_OUTPUT_PORT_TYPE
-ROM11 => adfasdf.IN0
-ROM11 => caso10.IN0
-ROM11 => caso11.IN0
-ROM11 => caso00.IN1
-ROM10 => caso01.IN1
-ROM10 => inst2.IN0
-ROM10 => caso11.IN1
-ROM10 => caso00.IN0
-ContadorReinicia <= caso10.DB_MAX_OUTPUT_PORT_TYPE
-Jump <= caso11.DB_MAX_OUTPUT_PORT_TYPE
-OperacaoULA <= caso00.DB_MAX_OUTPUT_PORT_TYPE
-RegReset[0] <= asdasd[0].DB_MAX_OUTPUT_PORT_TYPE
-RegReset[1] <= asdasd[1].DB_MAX_OUTPUT_PORT_TYPE
-RegReset[2] <= asdasd[2].DB_MAX_OUTPUT_PORT_TYPE
-RegReset[3] <= asdasd[3].DB_MAX_OUTPUT_PORT_TYPE
+|CPU|projeto05:inst56
+AAAA <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+A => inst27.IN0
+A => inst91.IN0
+A => inst.IN0
+A => inst76.IN0
+A => inst77.IN0
+A => inst17.IN0
+A => inst71.IN0
+A => inst72.IN0
+A => inst6.IN0
+A => inst84.IN2
+A => inst48.IN0
+B => inst23.IN0
+B => inst26.IN1
+B => inst11.IN0
+B => inst37.IN0
+B => inst64.IN0
+B => inst78.IN0
+B => inst79.IN1
+B => inst71.IN1
+B => inst86.IN0
+B => inst48.IN1
+C => inst2.IN0
+C => inst11.IN1
+C => inst10.IN1
+C => inst64.IN1
+C => inst65.IN1
+C => inst78.IN1
+C => inst76.IN1
+C => ins16.IN1
+C => inst72.IN1
+C => inst73.IN0
+C => inst85.IN0
+C => inst87.IN1
+D => inst26.IN2
+D => inst3.IN0
+D => inst37.IN2
+D => inst65.IN2
+D => inst17.IN2
+D => ins16.IN2
+D => inst51.IN1
+D => inst49.IN1
+DDDD <= inst45.DB_MAX_OUTPUT_PORT_TYPE
+FFFF <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+BBBB <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+EEEE <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+GGGG <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+CCCC <= inst44.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|ROM2:inst2
@@ -507,6 +530,280 @@ input_key => intermediate.DATAIN
 out_key <= out_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|CPU|UC:inst6
+RegLoad <= caso01.DB_MAX_OUTPUT_PORT_TYPE
+ROM11 => adfasdf.IN0
+ROM11 => caso10.IN0
+ROM11 => caso11.IN0
+ROM11 => caso00.IN1
+ROM10 => caso01.IN1
+ROM10 => inst2.IN0
+ROM10 => caso11.IN1
+ROM10 => caso00.IN0
+ContadorReinicia <= caso10.DB_MAX_OUTPUT_PORT_TYPE
+Jump <= caso11.DB_MAX_OUTPUT_PORT_TYPE
+OperacaoULA <= caso00.DB_MAX_OUTPUT_PORT_TYPE
+RegReset[0] <= asdasd[0].DB_MAX_OUTPUT_PORT_TYPE
+RegReset[1] <= asdasd[1].DB_MAX_OUTPUT_PORT_TYPE
+RegReset[2] <= asdasd[2].DB_MAX_OUTPUT_PORT_TYPE
+RegReset[3] <= asdasd[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU|projeto05:inst57
+AAAA <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+A => inst27.IN0
+A => inst91.IN0
+A => inst.IN0
+A => inst76.IN0
+A => inst77.IN0
+A => inst17.IN0
+A => inst71.IN0
+A => inst72.IN0
+A => inst6.IN0
+A => inst84.IN2
+A => inst48.IN0
+B => inst23.IN0
+B => inst26.IN1
+B => inst11.IN0
+B => inst37.IN0
+B => inst64.IN0
+B => inst78.IN0
+B => inst79.IN1
+B => inst71.IN1
+B => inst86.IN0
+B => inst48.IN1
+C => inst2.IN0
+C => inst11.IN1
+C => inst10.IN1
+C => inst64.IN1
+C => inst65.IN1
+C => inst78.IN1
+C => inst76.IN1
+C => ins16.IN1
+C => inst72.IN1
+C => inst73.IN0
+C => inst85.IN0
+C => inst87.IN1
+D => inst26.IN2
+D => inst3.IN0
+D => inst37.IN2
+D => inst65.IN2
+D => inst17.IN2
+D => ins16.IN2
+D => inst51.IN1
+D => inst49.IN1
+DDDD <= inst45.DB_MAX_OUTPUT_PORT_TYPE
+FFFF <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+BBBB <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+EEEE <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+GGGG <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+CCCC <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU|projeto05:inst58
+AAAA <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+A => inst27.IN0
+A => inst91.IN0
+A => inst.IN0
+A => inst76.IN0
+A => inst77.IN0
+A => inst17.IN0
+A => inst71.IN0
+A => inst72.IN0
+A => inst6.IN0
+A => inst84.IN2
+A => inst48.IN0
+B => inst23.IN0
+B => inst26.IN1
+B => inst11.IN0
+B => inst37.IN0
+B => inst64.IN0
+B => inst78.IN0
+B => inst79.IN1
+B => inst71.IN1
+B => inst86.IN0
+B => inst48.IN1
+C => inst2.IN0
+C => inst11.IN1
+C => inst10.IN1
+C => inst64.IN1
+C => inst65.IN1
+C => inst78.IN1
+C => inst76.IN1
+C => ins16.IN1
+C => inst72.IN1
+C => inst73.IN0
+C => inst85.IN0
+C => inst87.IN1
+D => inst26.IN2
+D => inst3.IN0
+D => inst37.IN2
+D => inst65.IN2
+D => inst17.IN2
+D => ins16.IN2
+D => inst51.IN1
+D => inst49.IN1
+DDDD <= inst45.DB_MAX_OUTPUT_PORT_TYPE
+FFFF <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+BBBB <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+EEEE <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+GGGG <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+CCCC <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU|projeto05:inst59
+AAAA <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+A => inst27.IN0
+A => inst91.IN0
+A => inst.IN0
+A => inst76.IN0
+A => inst77.IN0
+A => inst17.IN0
+A => inst71.IN0
+A => inst72.IN0
+A => inst6.IN0
+A => inst84.IN2
+A => inst48.IN0
+B => inst23.IN0
+B => inst26.IN1
+B => inst11.IN0
+B => inst37.IN0
+B => inst64.IN0
+B => inst78.IN0
+B => inst79.IN1
+B => inst71.IN1
+B => inst86.IN0
+B => inst48.IN1
+C => inst2.IN0
+C => inst11.IN1
+C => inst10.IN1
+C => inst64.IN1
+C => inst65.IN1
+C => inst78.IN1
+C => inst76.IN1
+C => ins16.IN1
+C => inst72.IN1
+C => inst73.IN0
+C => inst85.IN0
+C => inst87.IN1
+D => inst26.IN2
+D => inst3.IN0
+D => inst37.IN2
+D => inst65.IN2
+D => inst17.IN2
+D => ins16.IN2
+D => inst51.IN1
+D => inst49.IN1
+DDDD <= inst45.DB_MAX_OUTPUT_PORT_TYPE
+FFFF <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+BBBB <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+EEEE <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+GGGG <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+CCCC <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU|projeto05:inst61
+AAAA <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+A => inst27.IN0
+A => inst91.IN0
+A => inst.IN0
+A => inst76.IN0
+A => inst77.IN0
+A => inst17.IN0
+A => inst71.IN0
+A => inst72.IN0
+A => inst6.IN0
+A => inst84.IN2
+A => inst48.IN0
+B => inst23.IN0
+B => inst26.IN1
+B => inst11.IN0
+B => inst37.IN0
+B => inst64.IN0
+B => inst78.IN0
+B => inst79.IN1
+B => inst71.IN1
+B => inst86.IN0
+B => inst48.IN1
+C => inst2.IN0
+C => inst11.IN1
+C => inst10.IN1
+C => inst64.IN1
+C => inst65.IN1
+C => inst78.IN1
+C => inst76.IN1
+C => ins16.IN1
+C => inst72.IN1
+C => inst73.IN0
+C => inst85.IN0
+C => inst87.IN1
+D => inst26.IN2
+D => inst3.IN0
+D => inst37.IN2
+D => inst65.IN2
+D => inst17.IN2
+D => ins16.IN2
+D => inst51.IN1
+D => inst49.IN1
+DDDD <= inst45.DB_MAX_OUTPUT_PORT_TYPE
+FFFF <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+BBBB <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+EEEE <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+GGGG <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+CCCC <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU|Registrador:inst4
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst11.CLK
+CLK => inst13.CLK
+CLK => inst15.CLK
+load => 21mux:inst10.S
+load => 21mux:inst12.S
+load => 21mux:inst14.S
+load => 21mux:inst16.S
+D[3] => 21mux:inst16.A
+D[2] => 21mux:inst14.A
+D[1] => 21mux:inst12.A
+D[0] => 21mux:inst10.A
+
+
+|CPU|Registrador:inst4|21mux:inst10
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|CPU|Registrador:inst4|21mux:inst12
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|CPU|Registrador:inst4|21mux:inst14
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|CPU|Registrador:inst4|21mux:inst16
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
 |CPU|ULA:inst7
 Saida[0] <= BUSMUX:inst.result[0]
 Saida[1] <= BUSMUX:inst.result[1]
@@ -875,7 +1172,7 @@ Input1 => Output0.DATAIN
 Input0 => ~NO_FANOUT~
 
 
-|CPU|Registrador:inst4
+|CPU|Registrador:asdfdadg
 Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
@@ -894,7 +1191,7 @@ D[1] => 21mux:inst12.A
 D[0] => 21mux:inst10.A
 
 
-|CPU|Registrador:inst4|21mux:inst10
+|CPU|Registrador:asdfdadg|21mux:inst10
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -902,7 +1199,7 @@ S => 7.IN1
 B => 8.IN0
 
 
-|CPU|Registrador:inst4|21mux:inst12
+|CPU|Registrador:asdfdadg|21mux:inst12
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -910,7 +1207,7 @@ S => 7.IN1
 B => 8.IN0
 
 
-|CPU|Registrador:inst4|21mux:inst14
+|CPU|Registrador:asdfdadg|21mux:inst14
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -918,11 +1215,62 @@ S => 7.IN1
 B => 8.IN0
 
 
-|CPU|Registrador:inst4|21mux:inst16
+|CPU|Registrador:asdfdadg|21mux:inst16
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
 S => 7.IN1
 B => 8.IN0
+
+
+|CPU|projeto05:inst62
+AAAA <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+A => inst27.IN0
+A => inst91.IN0
+A => inst.IN0
+A => inst76.IN0
+A => inst77.IN0
+A => inst17.IN0
+A => inst71.IN0
+A => inst72.IN0
+A => inst6.IN0
+A => inst84.IN2
+A => inst48.IN0
+B => inst23.IN0
+B => inst26.IN1
+B => inst11.IN0
+B => inst37.IN0
+B => inst64.IN0
+B => inst78.IN0
+B => inst79.IN1
+B => inst71.IN1
+B => inst86.IN0
+B => inst48.IN1
+C => inst2.IN0
+C => inst11.IN1
+C => inst10.IN1
+C => inst64.IN1
+C => inst65.IN1
+C => inst78.IN1
+C => inst76.IN1
+C => ins16.IN1
+C => inst72.IN1
+C => inst73.IN0
+C => inst85.IN0
+C => inst87.IN1
+D => inst26.IN2
+D => inst3.IN0
+D => inst37.IN2
+D => inst65.IN2
+D => inst17.IN2
+D => ins16.IN2
+D => inst51.IN1
+D => inst49.IN1
+DDDD <= inst45.DB_MAX_OUTPUT_PORT_TYPE
+FFFF <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+BBBB <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+EEEE <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+GGGG <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+CCCC <= inst44.DB_MAX_OUTPUT_PORT_TYPE
 
 

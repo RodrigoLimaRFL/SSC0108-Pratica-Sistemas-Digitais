@@ -2,7 +2,132 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "ROM7segA0",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segB0",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segC0",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segD0",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segE0",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segF0",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segG0",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segA1",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segA2",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segA3",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segD1",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segD2",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segD3",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segE1",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segE2",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segE3",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segF1",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segF2",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segF3",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segG1",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segG2",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segG3",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segB1",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segC1",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segB2",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segC2",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segB3",
+					"strict" : false
+				},
+				{
+					"name" : "ROM7segC3",
+					"strict" : false
+				},
+				{
+					"name" : "resetMaster",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "CLK50",
+					"strict" : false
+				}
+			]
 		}
 	]
 }
