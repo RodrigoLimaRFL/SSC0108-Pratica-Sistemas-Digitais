@@ -1,0 +1,19 @@
+|UC
+RegLoad <= caso01.DB_MAX_OUTPUT_PORT_TYPE
+ROM11 => adfasdf.IN0
+ROM11 => caso10.IN0
+ROM11 => caso11.IN0
+ROM11 => caso00.IN1
+ROM10 => caso01.IN1
+ROM10 => inst2.IN0
+ROM10 => caso11.IN1
+ROM10 => caso00.IN0
+ContadorReinicia <= caso10.DB_MAX_OUTPUT_PORT_TYPE
+Jump <= caso11.DB_MAX_OUTPUT_PORT_TYPE
+OperacaoULA <= caso00.DB_MAX_OUTPUT_PORT_TYPE
+RegReset[0] <= asdasd[0].DB_MAX_OUTPUT_PORT_TYPE
+RegReset[1] <= asdasd[1].DB_MAX_OUTPUT_PORT_TYPE
+RegReset[2] <= asdasd[2].DB_MAX_OUTPUT_PORT_TYPE
+RegReset[3] <= asdasd[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

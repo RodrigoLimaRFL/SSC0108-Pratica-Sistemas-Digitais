@@ -1,0 +1,11 @@
+|Divide2
+Output2 <= Input3.DB_MAX_OUTPUT_PORT_TYPE
+Input3 => Output2.DATAIN
+Output3 <= <GND>
+Output1 <= Input2.DB_MAX_OUTPUT_PORT_TYPE
+Input2 => Output1.DATAIN
+Output0 <= Input1.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => Output0.DATAIN
+Input0 => ~NO_FANOUT~
+
+

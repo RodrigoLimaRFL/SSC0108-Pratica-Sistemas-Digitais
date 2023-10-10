@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "RegLoad",
+					"strict" : false
+				},
+				{
+					"name" : "ContadorReinicia",
+					"strict" : false
+				},
+				{
+					"name" : "Jump",
+					"strict" : false
+				},
+				{
+					"name" : "OperacaoULA",
+					"strict" : false
+				},
+				{
+					"name" : "RegReset[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RegReset[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RegReset[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RegReset[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ROM10",
+					"strict" : false
+				},
+				{
+					"name" : "ROM11",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

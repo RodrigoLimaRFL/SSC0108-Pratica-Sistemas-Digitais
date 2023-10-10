@@ -1,0 +1,3 @@
+4 blocos subtratores completo e dois displays um para a soma e o outro para o Tarry out o SW0(A1), SW1(A2), SW2(A3), SW4(A4), SW5(B1), SW6(B2), SW6(B3) e SW7(B4).
+O primeiro Tin esta negado, cada Solucao S esta ligado a uma entrada do display e os Tout a cada entrada do segundo display.
+2 Displays para mostrar os valores de A e B
