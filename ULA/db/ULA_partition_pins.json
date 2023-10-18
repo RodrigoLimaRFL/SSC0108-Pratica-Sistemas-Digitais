@@ -4,43 +4,35 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Saida[3]",
+					"name" : "D01[3]",
 					"strict" : false
 				},
 				{
-					"name" : "Saida[2]",
+					"name" : "D01[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Saida[1]",
+					"name" : "D01[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Saida[0]",
+					"name" : "D01[0]",
 					"strict" : false
 				},
 				{
-					"name" : "A[2]",
+					"name" : "D10[3]",
 					"strict" : false
 				},
 				{
-					"name" : "B[2]",
+					"name" : "D10[2]",
 					"strict" : false
 				},
 				{
-					"name" : "B[0]",
+					"name" : "D10[1]",
 					"strict" : false
 				},
 				{
-					"name" : "A[0]",
-					"strict" : false
-				},
-				{
-					"name" : "A[1]",
-					"strict" : false
-				},
-				{
-					"name" : "B[1]",
+					"name" : "D10[0]",
 					"strict" : false
 				},
 				{
@@ -48,7 +40,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[3]",
+					"name" : "ROM[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ROM[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Q01[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Q10[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OpULA",
 					"strict" : false
 				},
 				{
@@ -56,7 +64,47 @@
 					"strict" : false
 				},
 				{
+					"name" : "reserMaster",
+					"strict" : false
+				},
+				{
 					"name" : "Controle[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Q01[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Q10[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Q01[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Q10[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Q10[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Q01[2]",
 					"strict" : false
 				}
 			]

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ULA
-Tue Aug 29 16:41:20 2023
+Wed Oct 18 16:17:52 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -47,16 +47,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Aug 29 16:41:20 2023       ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 18 16:17:52 2023       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
 ; Top-level Entity Name              ; ULA                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 15                                          ;
-;     Total combinational functions  ; 15                                          ;
+; Total logic elements               ; 29                                          ;
+;     Total combinational functions  ; 29                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 14                                          ;
+; Total pins                         ; 26                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -166,27 +166,27 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                          ;
-+----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                          ; Library ;
-+----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------+---------+
-; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/12547510/Documents/SSC0108/ULA/ULA.bdf                       ;         ;
-; busmux.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/busmux.tdf     ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.inc    ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.tdf    ;         ;
-; aglobal211.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/aglobal211.inc ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/muxlut.inc     ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/bypassff.inc   ;         ;
-; altshift.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altshift.inc   ;         ;
-; db/mux_arc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/12547510/Documents/SSC0108/ULA/db/mux_arc.tdf                ;         ;
-; somadorcompleto4bits.bdf         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/SSC0108/ULA/somadorcompleto4bits.bdf      ;         ;
-; somador.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/SSC0108/ULA/somador.bdf                   ;         ;
-; iwanttodie.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/SSC0108/ULA/iwanttodie.bdf                ;         ;
-; subtratorcompleto4bits.bdf       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/SSC0108/ULA/subtratorcompleto4bits.bdf    ;         ;
-; subtratorcompleto.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/SSC0108/ULA/subtratorcompleto.bdf         ;         ;
-; divide2.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/SSC0108/ULA/divide2.bdf                   ;         ;
-+----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                     ; Library ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/ULA/ULA.bdf                    ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/busmux.tdf                                ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.inc                               ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.tdf                               ;         ;
+; aglobal211.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/aglobal211.inc                            ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/muxlut.inc                                ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/bypassff.inc                              ;         ;
+; altshift.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altshift.inc                              ;         ;
+; db/mux_arc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/ULA/db/mux_arc.tdf             ;         ;
+; somadorcompleto4bits.bdf         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/ULA/somadorcompleto4bits.bdf   ;         ;
+; somador.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/ULA/somador.bdf                ;         ;
+; iwanttodie.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/ULA/iwanttodie.bdf             ;         ;
+; subtratorcompleto4bits.bdf       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/ULA/subtratorcompleto4bits.bdf ;         ;
+; subtratorcompleto.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/ULA/subtratorcompleto.bdf      ;         ;
+; divide2.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/ULA/divide2.bdf                ;         ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------------+
@@ -194,30 +194,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------------+
 ; Resource                                    ; Usage             ;
 +---------------------------------------------+-------------------+
-; Estimated Total logic elements              ; 15                ;
+; Estimated Total logic elements              ; 29                ;
 ;                                             ;                   ;
-; Total combinational functions               ; 15                ;
+; Total combinational functions               ; 29                ;
 ; Logic element usage by number of LUT inputs ;                   ;
-;     -- 4 input functions                    ; 12                ;
-;     -- 3 input functions                    ; 2                 ;
-;     -- <=2 input functions                  ; 1                 ;
+;     -- 4 input functions                    ; 23                ;
+;     -- 3 input functions                    ; 4                 ;
+;     -- <=2 input functions                  ; 2                 ;
 ;                                             ;                   ;
 ; Logic elements by mode                      ;                   ;
-;     -- normal mode                          ; 15                ;
+;     -- normal mode                          ; 29                ;
 ;     -- arithmetic mode                      ; 0                 ;
 ;                                             ;                   ;
 ; Total registers                             ; 0                 ;
 ;     -- Dedicated logic registers            ; 0                 ;
 ;     -- I/O registers                        ; 0                 ;
 ;                                             ;                   ;
-; I/O pins                                    ; 14                ;
+; I/O pins                                    ; 26                ;
 ;                                             ;                   ;
 ; Embedded Multiplier 9-bit elements          ; 0                 ;
 ;                                             ;                   ;
-; Maximum fan-out node                        ; Controle[0]~input ;
-; Maximum fan-out                             ; 10                ;
-; Total fan-out                               ; 74                ;
-; Average fan-out                             ; 1.72              ;
+; Maximum fan-out node                        ; Controle[1]~input ;
+; Maximum fan-out                             ; 8                 ;
+; Total fan-out                               ; 142               ;
+; Average fan-out                             ; 1.75              ;
 +---------------------------------------------+-------------------+
 
 
@@ -226,16 +226,16 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                       ; Entity Name            ; Library Name ;
 +-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+------------------------+--------------+
-; |ULA                              ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |ULA                                                      ; ULA                    ; work         ;
+; |ULA                              ; 29 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 26   ; 0            ; |ULA                                                      ; ULA                    ; work         ;
 ;    |Subtratorcompleto4bits:inst6| ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|Subtratorcompleto4bits:inst6                         ; Subtratorcompleto4bits ; work         ;
-;       |Subtratorcompleto:inst1|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst1 ; Subtratorcompleto      ; work         ;
-;       |Subtratorcompleto:inst3|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst3 ; Subtratorcompleto      ; work         ;
-;    |busmux:inst|                  ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|busmux:inst                                          ; busmux                 ; work         ;
-;       |lpm_mux:$00000|            ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|busmux:inst|lpm_mux:$00000                           ; lpm_mux                ; work         ;
-;          |mux_arc:auto_generated| ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|busmux:inst|lpm_mux:$00000|mux_arc:auto_generated    ; mux_arc                ; work         ;
-;    |somadorcompleto4bits:inSAst|  ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|somadorcompleto4bits:inSAst                          ; somadorcompleto4bits   ; work         ;
-;       |Somador:inst1|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|somadorcompleto4bits:inSAst|Somador:inst1            ; Somador                ; work         ;
-;       |Somador:inst3|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|somadorcompleto4bits:inSAst|Somador:inst3            ; Somador                ; work         ;
+;       |Subtratorcompleto:inst1|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst1 ; Subtratorcompleto      ; work         ;
+;       |Subtratorcompleto:inst2|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst2 ; Subtratorcompleto      ; work         ;
+;    |busmux:inst|                  ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|busmux:inst                                          ; busmux                 ; work         ;
+;       |lpm_mux:$00000|            ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|busmux:inst|lpm_mux:$00000                           ; lpm_mux                ; work         ;
+;          |mux_arc:auto_generated| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|busmux:inst|lpm_mux:$00000|mux_arc:auto_generated    ; mux_arc                ; work         ;
+;    |somadorcompleto4bits:inSAst|  ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|somadorcompleto4bits:inSAst                          ; somadorcompleto4bits   ; work         ;
+;       |Somador:inst1|             ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|somadorcompleto4bits:inSAst|Somador:inst1            ; Somador                ; work         ;
+;       |Somador:inst2|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA|somadorcompleto4bits:inSAst|Somador:inst2            ; Somador                ; work         ;
 +-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -299,15 +299,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 14                          ;
-; cycloneiii_lcell_comb ; 15                          ;
-;     normal            ; 15                          ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 12                          ;
+; boundary_port         ; 26                          ;
+; cycloneiii_lcell_comb ; 29                          ;
+;     normal            ; 29                          ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 23                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.12                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 4.60                        ;
 +-----------------------+-----------------------------+
 
 
@@ -326,7 +326,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue Aug 29 16:41:11 2023
+    Info: Processing started: Wed Oct 18 16:17:43 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -340,7 +340,7 @@ Info (12133): Instantiated megafunction "BUSMUX:inst" with the following paramet
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst|lpm_mux:$00000" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
 Info (12131): Elaborated megafunction instantiation "BUSMUX:inst|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_arc.tdf
-    Info (12023): Found entity 1: mux_arc File: C:/Users/12547510/Documents/SSC0108/ULA/db/mux_arc.tdf Line: 23
+    Info (12023): Found entity 1: mux_arc File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/ULA/db/mux_arc.tdf Line: 23
 Info (12128): Elaborating entity "mux_arc" for hierarchy "BUSMUX:inst|lpm_mux:$00000|mux_arc:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Warning (12125): Using design file somadorcompleto4bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: somadorcompleto4bits
@@ -369,14 +369,14 @@ Warning (275008): Primitive "GND" of instance "inst1" not used
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 29 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 15 logic cells
+Info (21057): Implemented 55 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 18 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 29 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
     Info: Peak virtual memory: 4760 megabytes
-    Info: Processing ended: Tue Aug 29 16:41:20 2023
+    Info: Processing ended: Wed Oct 18 16:17:52 2023
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:18
 
 
