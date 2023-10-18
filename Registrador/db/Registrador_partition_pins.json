@@ -24,11 +24,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "CLK",
+					"name" : "RegLoad",
 					"strict" : false
 				},
 				{
-					"name" : "load",
+					"name" : "ROM[14]",
+					"strict" : false
+				},
+				{
+					"name" : "OpULA",
 					"strict" : false
 				},
 				{
@@ -41,6 +45,18 @@
 				},
 				{
 					"name" : "D[3]",
+					"strict" : false
+				},
+				{
+					"name" : "resetMaster",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "CLK50",
 					"strict" : false
 				}
 			]
