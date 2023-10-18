@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPU
-Wed Oct 18 15:22:48 2023
+Wed Oct 18 17:01:07 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -20,12 +20,12 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
  12. Source assignments for ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated
  13. Parameter Settings for User Entity Instance: ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component
  14. Parameter Settings for User Entity Instance: ROM2:DFAFBG|debouncer:inst1
- 15. Parameter Settings for User Entity Instance: Contador:inst|debouncer:adgsdfgseg
- 16. Parameter Settings for User Entity Instance: debouncer:inst2
- 17. Parameter Settings for User Entity Instance: ULA:inst7|BUSMUX:inst
- 18. Parameter Settings for User Entity Instance: ULA:inst7|BUSMUX:inst9
- 19. Parameter Settings for User Entity Instance: ULA:inst7|BUSMUX:inst10
- 20. Parameter Settings for User Entity Instance: debouncer:inst3
+ 15. Parameter Settings for User Entity Instance: Contador:inst13|debouncer:adgsdfgseg
+ 16. Parameter Settings for User Entity Instance: Registrador:inst15|debouncer:inst2
+ 17. Parameter Settings for User Entity Instance: ULA:inst25|BUSMUX:inst
+ 18. Parameter Settings for User Entity Instance: ULA:inst25|BUSMUX:inst9
+ 19. Parameter Settings for User Entity Instance: ULA:inst25|BUSMUX:inst10
+ 20. Parameter Settings for User Entity Instance: Registrador:inst16|debouncer:inst2
  21. altsyncram Parameter Settings by Entity Instance
  22. Post-Synthesis Netlist Statistics for Top Partition
  23. Elapsed Time Per Partition
@@ -56,15 +56,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct 18 15:22:48 2023       ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 18 17:01:07 2023       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; CPU                                         ;
 ; Top-level Entity Name              ; CPU                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 166                                         ;
-;     Total combinational functions  ; 161                                         ;
-;     Dedicated logic registers      ; 54                                          ;
-; Total registers                    ; 54                                          ;
+; Total logic elements               ; 140                                         ;
+;     Total combinational functions  ; 134                                         ;
+;     Dedicated logic registers      ; 37                                          ;
+; Total registers                    ; 37                                          ;
 ; Total pins                         ; 61                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 4,096                                       ;
@@ -177,45 +177,45 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                  ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                                  ; Library ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
-; CPU.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/CPU.bdf                    ;         ;
-; projeto05.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/projeto05.bdf              ;         ;
-; rom2.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/rom2.bdf                   ;         ;
-; rom.vhd                          ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/rom.vhd                    ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf                                         ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                  ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.inc                                            ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_decode.inc                                         ;         ;
-; aglobal211.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/aglobal211.inc                                         ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/a_rdenreg.inc                                          ;         ;
-; altrom.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altrom.inc                                             ;         ;
-; altram.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altram.inc                                             ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altdpram.inc                                           ;         ;
-; db/altsyncram_nnr3.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/db/altsyncram_nnr3.tdf     ;         ;
-; mem01.mif                        ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/mem01.mif                  ;         ;
-; debouncer.v                      ; yes             ; Auto-Found Verilog HDL File              ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v                ;         ;
-; contador.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/contador.bdf               ;         ;
-; uc.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/uc.bdf                     ;         ;
-; registrador.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/registrador.bdf            ;         ;
-; 21mux.bdf                        ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/others/maxplus2/21mux.bdf                                            ;         ;
-; ula.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/ula.bdf                    ;         ;
-; busmux.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/busmux.tdf                                             ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.tdf                                            ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/muxlut.inc                                             ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/bypassff.inc                                           ;         ;
-; altshift.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altshift.inc                                           ;         ;
-; db/mux_arc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/db/mux_arc.tdf             ;         ;
-; somadorcompleto4bits.bdf         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/somadorcompleto4bits.bdf   ;         ;
-; somador.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/somador.bdf                ;         ;
-; iwanttodie.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/iwanttodie.bdf             ;         ;
-; subtratorcompleto4bits.bdf       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/subtratorcompleto4bits.bdf ;         ;
-; subtratorcompleto.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/subtratorcompleto.bdf      ;         ;
-; divide2.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/divide2.bdf                ;         ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                     ; Library ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; CPU.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/CPU.bdf                    ;         ;
+; projeto05.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/projeto05.bdf              ;         ;
+; rom2.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/rom2.bdf                   ;         ;
+; rom.vhd                          ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/rom.vhd                    ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf                            ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/stratix_ram_block.inc                     ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.inc                               ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_decode.inc                            ;         ;
+; aglobal211.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/aglobal211.inc                            ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/a_rdenreg.inc                             ;         ;
+; altrom.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altrom.inc                                ;         ;
+; altram.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altram.inc                                ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altdpram.inc                              ;         ;
+; db/altsyncram_nnr3.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/db/altsyncram_nnr3.tdf     ;         ;
+; mem01.mif                        ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/mem01.mif                  ;         ;
+; debouncer.v                      ; yes             ; Auto-Found Verilog HDL File              ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v                ;         ;
+; contador.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/contador.bdf               ;         ;
+; uc.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/uc.bdf                     ;         ;
+; registrador.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/registrador.bdf            ;         ;
+; 21mux.bdf                        ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/others/maxplus2/21mux.bdf                               ;         ;
+; ula.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/ula.bdf                    ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/busmux.tdf                                ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.tdf                               ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/muxlut.inc                                ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/bypassff.inc                              ;         ;
+; altshift.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altshift.inc                              ;         ;
+; db/mux_arc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/db/mux_arc.tdf             ;         ;
+; somadorcompleto4bits.bdf         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/somadorcompleto4bits.bdf   ;         ;
+; somador.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/somador.bdf                ;         ;
+; iwanttodie.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/iwanttodie.bdf             ;         ;
+; subtratorcompleto4bits.bdf       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/subtratorcompleto4bits.bdf ;         ;
+; subtratorcompleto.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/subtratorcompleto.bdf      ;         ;
+; divide2.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/divide2.bdf                ;         ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------------+
@@ -223,20 +223,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------------+
 ; Resource                                    ; Usage             ;
 +---------------------------------------------+-------------------+
-; Estimated Total logic elements              ; 166               ;
+; Estimated Total logic elements              ; 140               ;
 ;                                             ;                   ;
-; Total combinational functions               ; 161               ;
+; Total combinational functions               ; 134               ;
 ; Logic element usage by number of LUT inputs ;                   ;
-;     -- 4 input functions                    ; 93                ;
+;     -- 4 input functions                    ; 86                ;
 ;     -- 3 input functions                    ; 20                ;
-;     -- <=2 input functions                  ; 48                ;
+;     -- <=2 input functions                  ; 28                ;
 ;                                             ;                   ;
 ; Logic elements by mode                      ;                   ;
-;     -- normal mode                          ; 131               ;
-;     -- arithmetic mode                      ; 30                ;
+;     -- normal mode                          ; 119               ;
+;     -- arithmetic mode                      ; 15                ;
 ;                                             ;                   ;
-; Total registers                             ; 54                ;
-;     -- Dedicated logic registers            ; 54                ;
+; Total registers                             ; 37                ;
+;     -- Dedicated logic registers            ; 37                ;
 ;     -- I/O registers                        ; 0                 ;
 ;                                             ;                   ;
 ; I/O pins                                    ; 61                ;
@@ -245,9 +245,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0                 ;
 ;                                             ;                   ;
 ; Maximum fan-out node                        ; resetMaster~input ;
-; Maximum fan-out                             ; 53                ;
-; Total fan-out                               ; 1017              ;
-; Average fan-out                             ; 2.88              ;
+; Maximum fan-out                             ; 34                ;
+; Total fan-out                               ; 868               ;
+; Average fan-out                             ; 2.81              ;
 +---------------------------------------------+-------------------+
 
 
@@ -256,25 +256,25 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                      ; Entity Name            ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+------------------------+--------------+
-; |CPU                                         ; 161 (23)            ; 54 (0)                    ; 4096        ; 0            ; 0       ; 0         ; 61   ; 0            ; |CPU                                                                                     ; CPU                    ; work         ;
-;    |Contador:inst|                           ; 60 (32)             ; 26 (8)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|Contador:inst                                                                       ; Contador               ; work         ;
-;       |debouncer:adgsdfgseg|                 ; 28 (28)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|Contador:inst|debouncer:adgsdfgseg                                                  ; debouncer              ; work         ;
-;    |ROM2:DFAFBG|                             ; 28 (0)              ; 18 (0)                    ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ROM2:DFAFBG                                                                         ; ROM2                   ; work         ;
-;       |debouncer:inst1|                      ; 28 (28)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ROM2:DFAFBG|debouncer:inst1                                                         ; debouncer              ; work         ;
+; |CPU                                         ; 134 (0)             ; 37 (0)                    ; 4096        ; 0            ; 0       ; 0         ; 61   ; 0            ; |CPU                                                                                     ; CPU                    ; work         ;
+;    |Contador:inst13|                         ; 52 (32)             ; 26 (8)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|Contador:inst13                                                                     ; Contador               ; work         ;
+;       |debouncer:adgsdfgseg|                 ; 20 (20)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|Contador:inst13|debouncer:adgsdfgseg                                                ; debouncer              ; work         ;
+;    |ROM2:DFAFBG|                             ; 10 (0)              ; 1 (0)                     ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ROM2:DFAFBG                                                                         ; ROM2                   ; work         ;
+;       |debouncer:inst1|                      ; 10 (10)             ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ROM2:DFAFBG|debouncer:inst1                                                         ; debouncer              ; work         ;
 ;       |rom:inst|                             ; 0 (0)               ; 0 (0)                     ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ROM2:DFAFBG|rom:inst                                                                ; rom                    ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component                                ; altsyncram             ; work         ;
 ;             |altsyncram_nnr3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated ; altsyncram_nnr3        ; work         ;
-;    |Registrador:asdfdadg|                    ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|Registrador:asdfdadg                                                                ; Registrador            ; work         ;
-;    |Registrador:inst4|                       ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|Registrador:inst4                                                                   ; Registrador            ; work         ;
-;    |ULA:inst7|                               ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:inst7                                                                           ; ULA                    ; work         ;
-;       |Subtratorcompleto4bits:inst6|         ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:inst7|Subtratorcompleto4bits:inst6                                              ; Subtratorcompleto4bits ; work         ;
-;          |Subtratorcompleto:inst1|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:inst7|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst1                      ; Subtratorcompleto      ; work         ;
-;          |Subtratorcompleto:inst3|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:inst7|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst3                      ; Subtratorcompleto      ; work         ;
-;       |somadorcompleto4bits:inSAst|          ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:inst7|somadorcompleto4bits:inSAst                                               ; somadorcompleto4bits   ; work         ;
-;          |Somador:inst1|                     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:inst7|somadorcompleto4bits:inSAst|Somador:inst1                                 ; Somador                ; work         ;
-;          |Somador:inst2|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:inst7|somadorcompleto4bits:inSAst|Somador:inst2                                 ; Somador                ; work         ;
-;    |debouncer:inst2|                         ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|debouncer:inst2                                                                     ; debouncer              ; work         ;
-;    |debouncer:inst3|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|debouncer:inst3                                                                     ; debouncer              ; work         ;
+;    |Registrador:inst15|                      ; 2 (1)               ; 5 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|Registrador:inst15                                                                  ; Registrador            ; work         ;
+;       |debouncer:inst2|                      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|Registrador:inst15|debouncer:inst2                                                  ; debouncer              ; work         ;
+;    |Registrador:inst16|                      ; 2 (1)               ; 5 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|Registrador:inst16                                                                  ; Registrador            ; work         ;
+;       |debouncer:inst2|                      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|Registrador:inst16|debouncer:inst2                                                  ; debouncer              ; work         ;
+;    |ULA:inst25|                              ; 26 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:inst25                                                                          ; ULA                    ; work         ;
+;       |Subtratorcompleto4bits:inst6|         ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:inst25|Subtratorcompleto4bits:inst6                                             ; Subtratorcompleto4bits ; work         ;
+;          |Subtratorcompleto:inst1|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:inst25|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst1                     ; Subtratorcompleto      ; work         ;
+;          |Subtratorcompleto:inst3|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:inst25|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst3                     ; Subtratorcompleto      ; work         ;
+;       |somadorcompleto4bits:inSAst|          ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:inst25|somadorcompleto4bits:inSAst                                              ; somadorcompleto4bits   ; work         ;
+;          |Somador:inst1|                     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:inst25|somadorcompleto4bits:inSAst|Somador:inst1                                ; Somador                ; work         ;
+;          |Somador:inst2|                     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:inst25|somadorcompleto4bits:inSAst|Somador:inst2                                ; Somador                ; work         ;
 ;    |projeto05:inst56|                        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|projeto05:inst56                                                                    ; projeto05              ; work         ;
 ;    |projeto05:inst57|                        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|projeto05:inst57                                                                    ; projeto05              ; work         ;
 ;    |projeto05:inst58|                        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|projeto05:inst58                                                                    ; projeto05              ; work         ;
@@ -294,47 +294,64 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                            ;
-+----------------------------------------+------------------------------------------------------+
-; Register name                          ; Reason for Removal                                   ;
-+----------------------------------------+------------------------------------------------------+
-; debouncer:inst2|intermediate           ; Merged with ROM2:DFAFBG|debouncer:inst1|intermediate ;
-; debouncer:inst3|intermediate           ; Merged with ROM2:DFAFBG|debouncer:inst1|intermediate ;
-; debouncer:inst2|counter[15]            ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[15]  ;
-; debouncer:inst3|counter[15]            ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[15]  ;
-; debouncer:inst2|counter[14]            ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[14]  ;
-; debouncer:inst3|counter[14]            ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[14]  ;
-; debouncer:inst2|counter[13]            ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[13]  ;
-; debouncer:inst3|counter[13]            ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[13]  ;
-; debouncer:inst2|counter[12]            ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[12]  ;
-; debouncer:inst3|counter[12]            ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[12]  ;
-; debouncer:inst2|counter[11]            ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[11]  ;
-; debouncer:inst3|counter[11]            ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[11]  ;
-; debouncer:inst2|counter[10]            ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[10]  ;
-; debouncer:inst3|counter[10]            ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[10]  ;
-; debouncer:inst2|counter[9]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[9]   ;
-; debouncer:inst3|counter[9]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[9]   ;
-; debouncer:inst2|counter[8]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[8]   ;
-; debouncer:inst3|counter[8]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[8]   ;
-; debouncer:inst2|counter[7]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[7]   ;
-; debouncer:inst3|counter[7]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[7]   ;
-; debouncer:inst2|counter[6]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[6]   ;
-; debouncer:inst3|counter[6]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[6]   ;
-; debouncer:inst2|counter[5]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[5]   ;
-; debouncer:inst3|counter[5]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[5]   ;
-; debouncer:inst2|counter[4]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[4]   ;
-; debouncer:inst3|counter[4]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[4]   ;
-; debouncer:inst2|counter[3]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[3]   ;
-; debouncer:inst3|counter[3]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[3]   ;
-; debouncer:inst2|counter[2]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[2]   ;
-; debouncer:inst3|counter[2]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[2]   ;
-; debouncer:inst2|counter[1]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[1]   ;
-; debouncer:inst3|counter[1]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[1]   ;
-; debouncer:inst2|counter[0]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[0]   ;
-; debouncer:inst3|counter[0]             ; Merged with ROM2:DFAFBG|debouncer:inst1|counter[0]   ;
-; Total Number of Removed Registers = 34 ;                                                      ;
-+----------------------------------------+------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                              ;
++-------------------------------------------------+---------------------------------------------------------------+
+; Register name                                   ; Reason for Removal                                            ;
++-------------------------------------------------+---------------------------------------------------------------+
+; ROM2:DFAFBG|debouncer:inst1|intermediate        ; Merged with Contador:inst13|debouncer:adgsdfgseg|intermediate ;
+; Registrador:inst15|debouncer:inst2|intermediate ; Merged with Contador:inst13|debouncer:adgsdfgseg|intermediate ;
+; Registrador:inst16|debouncer:inst2|intermediate ; Merged with Contador:inst13|debouncer:adgsdfgseg|intermediate ;
+; ROM2:DFAFBG|debouncer:inst1|counter[15]         ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[15]  ;
+; Registrador:inst15|debouncer:inst2|counter[15]  ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[15]  ;
+; Registrador:inst16|debouncer:inst2|counter[15]  ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[15]  ;
+; ROM2:DFAFBG|debouncer:inst1|counter[14]         ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[14]  ;
+; Registrador:inst15|debouncer:inst2|counter[14]  ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[14]  ;
+; Registrador:inst16|debouncer:inst2|counter[14]  ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[14]  ;
+; ROM2:DFAFBG|debouncer:inst1|counter[13]         ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[13]  ;
+; Registrador:inst15|debouncer:inst2|counter[13]  ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[13]  ;
+; Registrador:inst16|debouncer:inst2|counter[13]  ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[13]  ;
+; ROM2:DFAFBG|debouncer:inst1|counter[12]         ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[12]  ;
+; Registrador:inst15|debouncer:inst2|counter[12]  ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[12]  ;
+; Registrador:inst16|debouncer:inst2|counter[12]  ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[12]  ;
+; ROM2:DFAFBG|debouncer:inst1|counter[11]         ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[11]  ;
+; Registrador:inst15|debouncer:inst2|counter[11]  ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[11]  ;
+; Registrador:inst16|debouncer:inst2|counter[11]  ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[11]  ;
+; ROM2:DFAFBG|debouncer:inst1|counter[10]         ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[10]  ;
+; Registrador:inst15|debouncer:inst2|counter[10]  ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[10]  ;
+; Registrador:inst16|debouncer:inst2|counter[10]  ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[10]  ;
+; ROM2:DFAFBG|debouncer:inst1|counter[9]          ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[9]   ;
+; Registrador:inst15|debouncer:inst2|counter[9]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[9]   ;
+; Registrador:inst16|debouncer:inst2|counter[9]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[9]   ;
+; ROM2:DFAFBG|debouncer:inst1|counter[8]          ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[8]   ;
+; Registrador:inst15|debouncer:inst2|counter[8]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[8]   ;
+; Registrador:inst16|debouncer:inst2|counter[8]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[8]   ;
+; ROM2:DFAFBG|debouncer:inst1|counter[7]          ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[7]   ;
+; Registrador:inst15|debouncer:inst2|counter[7]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[7]   ;
+; Registrador:inst16|debouncer:inst2|counter[7]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[7]   ;
+; ROM2:DFAFBG|debouncer:inst1|counter[6]          ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[6]   ;
+; Registrador:inst15|debouncer:inst2|counter[6]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[6]   ;
+; Registrador:inst16|debouncer:inst2|counter[6]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[6]   ;
+; ROM2:DFAFBG|debouncer:inst1|counter[5]          ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[5]   ;
+; Registrador:inst15|debouncer:inst2|counter[5]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[5]   ;
+; Registrador:inst16|debouncer:inst2|counter[5]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[5]   ;
+; ROM2:DFAFBG|debouncer:inst1|counter[4]          ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[4]   ;
+; Registrador:inst15|debouncer:inst2|counter[4]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[4]   ;
+; Registrador:inst16|debouncer:inst2|counter[4]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[4]   ;
+; ROM2:DFAFBG|debouncer:inst1|counter[3]          ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[3]   ;
+; Registrador:inst15|debouncer:inst2|counter[3]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[3]   ;
+; Registrador:inst16|debouncer:inst2|counter[3]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[3]   ;
+; ROM2:DFAFBG|debouncer:inst1|counter[2]          ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[2]   ;
+; Registrador:inst15|debouncer:inst2|counter[2]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[2]   ;
+; Registrador:inst16|debouncer:inst2|counter[2]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[2]   ;
+; ROM2:DFAFBG|debouncer:inst1|counter[1]          ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[1]   ;
+; Registrador:inst15|debouncer:inst2|counter[1]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[1]   ;
+; Registrador:inst16|debouncer:inst2|counter[1]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[1]   ;
+; ROM2:DFAFBG|debouncer:inst1|counter[0]          ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[0]   ;
+; Registrador:inst15|debouncer:inst2|counter[0]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[0]   ;
+; Registrador:inst16|debouncer:inst2|counter[0]   ; Merged with Contador:inst13|debouncer:adgsdfgseg|counter[0]   ;
+; Total Number of Removed Registers = 51          ;                                                               ;
++-------------------------------------------------+---------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -342,25 +359,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 54    ;
-; Number of registers using Synchronous Clear  ; 32    ;
+; Total registers                              ; 37    ;
+; Number of registers using Synchronous Clear  ; 16    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 46    ;
+; Number of registers using Asynchronous Clear ; 29    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 42    ;
+; Number of registers using Clock Enable       ; 27    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |CPU|ROM2:DFAFBG|debouncer:inst1|counter[4]                                     ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |CPU|Contador:inst|debouncer:adgsdfgseg|counter[0]                              ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |CPU|ULA:inst7|busmux:inst|lpm_mux:$00000|mux_arc:auto_generated|result_node[1] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |CPU|Contador:inst13|debouncer:adgsdfgseg|counter[0]                             ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |CPU|ULA:inst25|busmux:inst|lpm_mux:$00000|mux_arc:auto_generated|result_node[2] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -443,8 +459,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Contador:inst13|debouncer:adgsdfgseg ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; DELAY_BITS     ; 16    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Contador:inst|debouncer:adgsdfgseg ;
+; Parameter Settings for User Entity Instance: Registrador:inst15|debouncer:inst2 ;
 +----------------+-------+--------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                   ;
 +----------------+-------+--------------------------------------------------------+
@@ -453,28 +479,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: debouncer:inst2 ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; DELAY_BITS     ; 16    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ULA:inst7|BUSMUX:inst ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; WIDTH          ; 4     ; Untyped                                   ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ULA:inst7|BUSMUX:inst9 ;
+; Parameter Settings for User Entity Instance: ULA:inst25|BUSMUX:inst ;
 +----------------+-------+--------------------------------------------+
 ; Parameter Name ; Value ; Type                                       ;
 +----------------+-------+--------------------------------------------+
@@ -484,7 +490,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ULA:inst7|BUSMUX:inst10 ;
+; Parameter Settings for User Entity Instance: ULA:inst25|BUSMUX:inst9 ;
 +----------------+-------+---------------------------------------------+
 ; Parameter Name ; Value ; Type                                        ;
 +----------------+-------+---------------------------------------------+
@@ -493,13 +499,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: debouncer:inst3 ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; DELAY_BITS     ; 16    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:inst25|BUSMUX:inst10 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; WIDTH          ; 4     ; Untyped                                      ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Registrador:inst16|debouncer:inst2 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; DELAY_BITS     ; 16    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -529,23 +545,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 61                          ;
-; cycloneiii_ff         ; 54                          ;
-;     CLR               ; 12                          ;
+; cycloneiii_ff         ; 37                          ;
+;     CLR               ; 10                          ;
 ;     ENA               ; 8                           ;
-;     ENA CLR           ; 2                           ;
-;     ENA CLR SCLR      ; 32                          ;
-; cycloneiii_lcell_comb ; 203                         ;
-;     arith             ; 30                          ;
-;         2 data inputs ; 30                          ;
-;     normal            ; 173                         ;
-;         1 data inputs ; 44                          ;
-;         2 data inputs ; 16                          ;
+;     ENA CLR           ; 3                           ;
+;     ENA CLR SCLR      ; 16                          ;
+; cycloneiii_lcell_comb ; 176                         ;
+;     arith             ; 15                          ;
+;         2 data inputs ; 15                          ;
+;     normal            ; 161                         ;
+;         1 data inputs ; 43                          ;
+;         2 data inputs ; 12                          ;
 ;         3 data inputs ; 20                          ;
-;         4 data inputs ; 93                          ;
+;         4 data inputs ; 86                          ;
 ; cycloneiii_ram_block  ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 2.75                        ;
+; Average LUT depth     ; 2.77                        ;
 +-----------------------+-----------------------------+
 
 
@@ -554,7 +570,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -564,7 +580,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Wed Oct 18 15:22:38 2023
+    Info: Processing started: Wed Oct 18 17:00:57 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -596,12 +612,12 @@ Warning (12125): Using design file rom2.bdf, which is not specified as a design 
     Info (12023): Found entity 1: ROM2
 Info (12128): Elaborating entity "ROM2" for hierarchy "ROM2:DFAFBG"
 Warning (12125): Using design file rom.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: rom-SYN File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/rom.vhd Line: 53
-    Info (12023): Found entity 1: rom File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/rom.vhd Line: 43
+    Info (12022): Found design unit 1: rom-SYN File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/rom.vhd Line: 53
+    Info (12023): Found entity 1: rom File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/rom.vhd Line: 43
 Info (12128): Elaborating entity "rom" for hierarchy "ROM2:DFAFBG|rom:inst"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component" File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/rom.vhd Line: 60
-Info (12130): Elaborated megafunction instantiation "ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component" File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/rom.vhd Line: 60
-Info (12133): Instantiated megafunction "ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/rom.vhd Line: 60
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component" File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/rom.vhd Line: 60
+Info (12130): Elaborated megafunction instantiation "ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component" File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/rom.vhd Line: 60
+Info (12133): Instantiated megafunction "ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/rom.vhd Line: 60
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -653,82 +669,81 @@ Info (12133): Instantiated megafunction "ROM2:DFAFBG|rom:inst|altsyncram:altsync
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_nnr3.tdf
-    Info (12023): Found entity 1: altsyncram_nnr3 File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/db/altsyncram_nnr3.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_nnr3 File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/db/altsyncram_nnr3.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_nnr3" for hierarchy "ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Warning (12125): Using design file debouncer.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: debouncer File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 28
+    Info (12023): Found entity 1: debouncer File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 28
 Info (12128): Elaborating entity "debouncer" for hierarchy "ROM2:DFAFBG|debouncer:inst1"
-Warning (10230): Verilog HDL assignment warning at debouncer.v(71): truncated value with size 32 to match size of target (16) File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 71
+Warning (10230): Verilog HDL assignment warning at debouncer.v(71): truncated value with size 32 to match size of target (16) File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 71
 Warning (12125): Using design file contador.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Contador
-Info (12128): Elaborating entity "Contador" for hierarchy "Contador:inst"
+Info (12128): Elaborating entity "Contador" for hierarchy "Contador:inst13"
 Warning (12125): Using design file uc.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: UC
-Info (12128): Elaborating entity "UC" for hierarchy "UC:inst6"
+Info (12128): Elaborating entity "UC" for hierarchy "UC:inst"
 Warning (12125): Using design file registrador.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Registrador
-Info (12128): Elaborating entity "Registrador" for hierarchy "Registrador:inst4"
-Info (12128): Elaborating entity "21mux" for hierarchy "Registrador:inst4|21mux:inst10"
-Info (12130): Elaborated megafunction instantiation "Registrador:inst4|21mux:inst10"
+Info (12128): Elaborating entity "Registrador" for hierarchy "Registrador:inst15"
+Info (12128): Elaborating entity "21mux" for hierarchy "Registrador:inst15|21mux:inst10"
+Info (12130): Elaborated megafunction instantiation "Registrador:inst15|21mux:inst10"
 Warning (12125): Using design file ula.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: ULA
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:inst7"
-Info (12128): Elaborating entity "BUSMUX" for hierarchy "ULA:inst7|BUSMUX:inst"
-Info (12130): Elaborated megafunction instantiation "ULA:inst7|BUSMUX:inst"
-Info (12133): Instantiated megafunction "ULA:inst7|BUSMUX:inst" with the following parameter:
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:inst25"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "ULA:inst25|BUSMUX:inst"
+Info (12130): Elaborated megafunction instantiation "ULA:inst25|BUSMUX:inst"
+Info (12133): Instantiated megafunction "ULA:inst25|BUSMUX:inst" with the following parameter:
     Info (12134): Parameter "WIDTH" = "4"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "ULA:inst7|BUSMUX:inst|lpm_mux:$00000" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
-Info (12131): Elaborated megafunction instantiation "ULA:inst7|BUSMUX:inst|lpm_mux:$00000", which is child of megafunction instantiation "ULA:inst7|BUSMUX:inst" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "ULA:inst25|BUSMUX:inst|lpm_mux:$00000" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12131): Elaborated megafunction instantiation "ULA:inst25|BUSMUX:inst|lpm_mux:$00000", which is child of megafunction instantiation "ULA:inst25|BUSMUX:inst" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_arc.tdf
-    Info (12023): Found entity 1: mux_arc File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/db/mux_arc.tdf Line: 23
-Info (12128): Elaborating entity "mux_arc" for hierarchy "ULA:inst7|BUSMUX:inst|lpm_mux:$00000|mux_arc:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+    Info (12023): Found entity 1: mux_arc File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/db/mux_arc.tdf Line: 23
+Info (12128): Elaborating entity "mux_arc" for hierarchy "ULA:inst25|BUSMUX:inst|lpm_mux:$00000|mux_arc:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Warning (12125): Using design file somadorcompleto4bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: somadorcompleto4bits
-Info (12128): Elaborating entity "somadorcompleto4bits" for hierarchy "ULA:inst7|somadorcompleto4bits:inSAst"
+Info (12128): Elaborating entity "somadorcompleto4bits" for hierarchy "ULA:inst25|somadorcompleto4bits:inSAst"
 Warning (275008): Primitive "GND" of instance "inst5" not used
 Warning (12125): Using design file somador.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Somador
-Info (12128): Elaborating entity "Somador" for hierarchy "ULA:inst7|somadorcompleto4bits:inSAst|Somador:inst3"
+Info (12128): Elaborating entity "Somador" for hierarchy "ULA:inst25|somadorcompleto4bits:inSAst|Somador:inst3"
 Warning (12125): Using design file iwanttodie.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: iwanttodie
-Info (12128): Elaborating entity "iwanttodie" for hierarchy "ULA:inst7|iwanttodie:inst7"
+Info (12128): Elaborating entity "iwanttodie" for hierarchy "ULA:inst25|iwanttodie:inst7"
 Warning (275009): Pin "IN3" not connected
 Warning (275008): Primitive "GND" of instance "inst" not used
 Warning (12125): Using design file subtratorcompleto4bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Subtratorcompleto4bits
-Info (12128): Elaborating entity "Subtratorcompleto4bits" for hierarchy "ULA:inst7|Subtratorcompleto4bits:inst6"
+Info (12128): Elaborating entity "Subtratorcompleto4bits" for hierarchy "ULA:inst25|Subtratorcompleto4bits:inst6"
 Warning (275008): Primitive "GND" of instance "inst4" not used
 Warning (12125): Using design file subtratorcompleto.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Subtratorcompleto
-Info (12128): Elaborating entity "Subtratorcompleto" for hierarchy "ULA:inst7|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst"
+Info (12128): Elaborating entity "Subtratorcompleto" for hierarchy "ULA:inst25|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst"
 Warning (12125): Using design file divide2.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Divide2
-Info (12128): Elaborating entity "Divide2" for hierarchy "ULA:inst7|Divide2:inst3"
+Info (12128): Elaborating entity "Divide2" for hierarchy "ULA:inst25|Divide2:inst3"
 Warning (275009): Pin "Input0" not connected
 Warning (275008): Primitive "GND" of instance "inst1" not used
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "Contador:inst|inst7" is converted into an equivalent circuit using register "Contador:inst|inst7~_emulated" and latch "Contador:inst|inst7~1"
-    Warning (13310): Register "Contador:inst|inst6" is converted into an equivalent circuit using register "Contador:inst|inst6~_emulated" and latch "Contador:inst|inst6~1"
-    Warning (13310): Register "Contador:inst|inst1" is converted into an equivalent circuit using register "Contador:inst|inst1~_emulated" and latch "Contador:inst|inst1~1"
-    Warning (13310): Register "Contador:inst|inst" is converted into an equivalent circuit using register "Contador:inst|inst~_emulated" and latch "Contador:inst|inst~1"
-    Warning (13310): Register "ROM2:DFAFBG|debouncer:inst1|out_key" is converted into an equivalent circuit using register "ROM2:DFAFBG|debouncer:inst1|out_key~_emulated" and latch "ROM2:DFAFBG|debouncer:inst1|out_key~1" File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
-    Warning (13310): Register "Contador:inst|debouncer:adgsdfgseg|out_key" is converted into an equivalent circuit using register "Contador:inst|debouncer:adgsdfgseg|out_key~_emulated" and latch "Contador:inst|debouncer:adgsdfgseg|out_key~1" File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
-    Warning (13310): Register "debouncer:inst2|out_key" is converted into an equivalent circuit using register "debouncer:inst2|out_key~_emulated" and latch "ROM2:DFAFBG|debouncer:inst1|out_key~1" File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
-    Warning (13310): Register "debouncer:inst3|out_key" is converted into an equivalent circuit using register "debouncer:inst3|out_key~_emulated" and latch "ROM2:DFAFBG|debouncer:inst1|out_key~1" File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
-    Warning (13310): Register "ROM2:DFAFBG|debouncer:inst1|intermediate" is converted into an equivalent circuit using register "ROM2:DFAFBG|debouncer:inst1|intermediate~_emulated" and latch "ROM2:DFAFBG|debouncer:inst1|out_key~1" File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 50
-    Warning (13310): Register "Contador:inst|debouncer:adgsdfgseg|intermediate" is converted into an equivalent circuit using register "Contador:inst|debouncer:adgsdfgseg|intermediate~_emulated" and latch "Contador:inst|debouncer:adgsdfgseg|out_key~1" File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 50
+    Warning (13310): Register "Contador:inst13|inst7" is converted into an equivalent circuit using register "Contador:inst13|inst7~_emulated" and latch "Contador:inst13|inst7~1"
+    Warning (13310): Register "Contador:inst13|inst6" is converted into an equivalent circuit using register "Contador:inst13|inst6~_emulated" and latch "Contador:inst13|inst6~1"
+    Warning (13310): Register "Contador:inst13|inst1" is converted into an equivalent circuit using register "Contador:inst13|inst1~_emulated" and latch "Contador:inst13|inst1~1"
+    Warning (13310): Register "Contador:inst13|inst" is converted into an equivalent circuit using register "Contador:inst13|inst~_emulated" and latch "Contador:inst13|inst~1"
+    Warning (13310): Register "ROM2:DFAFBG|debouncer:inst1|out_key" is converted into an equivalent circuit using register "ROM2:DFAFBG|debouncer:inst1|out_key~_emulated" and latch "ROM2:DFAFBG|debouncer:inst1|out_key~1" File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
+    Warning (13310): Register "Contador:inst13|debouncer:adgsdfgseg|out_key" is converted into an equivalent circuit using register "Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated" and latch "ROM2:DFAFBG|debouncer:inst1|out_key~1" File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
+    Warning (13310): Register "Registrador:inst15|debouncer:inst2|out_key" is converted into an equivalent circuit using register "Registrador:inst15|debouncer:inst2|out_key~_emulated" and latch "ROM2:DFAFBG|debouncer:inst1|out_key~1" File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
+    Warning (13310): Register "Registrador:inst16|debouncer:inst2|out_key" is converted into an equivalent circuit using register "Registrador:inst16|debouncer:inst2|out_key~_emulated" and latch "ROM2:DFAFBG|debouncer:inst1|out_key~1" File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
+    Warning (13310): Register "Contador:inst13|debouncer:adgsdfgseg|intermediate" is converted into an equivalent circuit using register "Contador:inst13|debouncer:adgsdfgseg|intermediate~_emulated" and latch "ROM2:DFAFBG|debouncer:inst1|out_key~1" File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 50
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 248 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 222 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 58 output pins
-    Info (21061): Implemented 171 logic cells
+    Info (21061): Implemented 145 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 51 warnings
-    Info: Peak virtual memory: 4827 megabytes
-    Info: Processing ended: Wed Oct 18 15:22:48 2023
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 50 warnings
+    Info: Peak virtual memory: 4823 megabytes
+    Info: Processing ended: Wed Oct 18 17:01:07 2023
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Total CPU time (on all processors): 00:00:20
 
 

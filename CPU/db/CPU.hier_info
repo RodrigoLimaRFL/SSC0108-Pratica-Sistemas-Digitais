@@ -1,34 +1,26 @@
 |CPU
 ROM7segA0 <= projeto05:inst56.AAAA
 CLK50 => ROM2:DFAFBG.CLOCK_50
-CLK50 => Contador:inst.clock
-CLK50 => debouncer:inst2.clk_fpga
-CLK50 => debouncer:inst3.clk_fpga
+CLK50 => Contador:inst13.clock
+CLK50 => Registrador:inst15.CLK50
+CLK50 => Registrador:inst16.CLK50
 resetMaster => ROM2:DFAFBG.reset
-resetMaster => inst1.IN1
-resetMaster => Contador:inst.reset
-resetMaster => debouncer:inst2.rst_debouncer
-resetMaster => inst41.IN0
-resetMaster => debouncer:inst3.rst_debouncer
-resetMaster => inst49.IN0
-resetMaster => inst51.IN0
-resetMaster => inst53.IN0
-resetMaster => inst55.IN0
-resetMaster => inst43.IN0
-resetMaster => inst45.IN0
-resetMaster => inst47.IN0
+resetMaster => Contador:inst13.resetMaster
+resetMaster => Registrador:inst15.resetMaster
+resetMaster => ULA:inst25.reserMaster
+resetMaster => Registrador:inst16.resetMaster
 CLK => ROM2:DFAFBG.KEY
 CLK => inst14.IN0
-CLK => debouncer:inst2.input_key
-CLK => debouncer:inst3.input_key
-Contador7 <= Contador:inst.q7
-Contador6 <= Contador:inst.q6
-Contador5 <= Contador:inst.q5
-Contador4 <= Contador:inst.q4
-Contador3 <= Contador:inst.q3
-Contador2 <= Contador:inst.q2
-Contador1 <= Contador:inst.q1
-Contador0 <= Contador:inst.q0
+CLK => Registrador:inst15.clock
+CLK => Registrador:inst16.clock
+Contador7 <= Contador:inst13.q7
+Contador6 <= Contador:inst13.q6
+Contador5 <= Contador:inst13.q5
+Contador4 <= Contador:inst13.q4
+Contador3 <= Contador:inst13.q3
+Contador2 <= Contador:inst13.q2
+Contador1 <= Contador:inst13.q1
+Contador0 <= Contador:inst13.q0
 ROM7segB0 <= projeto05:inst56.BBBB
 ROM7segC0 <= projeto05:inst56.CCCC
 ROM7segD0 <= projeto05:inst56.DDDD
@@ -57,14 +49,14 @@ ROM7segC2 <= projeto05:inst58.CCCC
 ROM7segB3 <= projeto05:inst59.BBBB
 ROM7segC3 <= projeto05:inst59.CCCC
 Reg01A <= Registrador01A.DB_MAX_OUTPUT_PORT_TYPE
-D01[3] <= inst46.DB_MAX_OUTPUT_PORT_TYPE
-D01[2] <= inst44.DB_MAX_OUTPUT_PORT_TYPE
-D01[1] <= inst42.DB_MAX_OUTPUT_PORT_TYPE
-D01[0] <= inst40.DB_MAX_OUTPUT_PORT_TYPE
-D10[3] <= inst54.DB_MAX_OUTPUT_PORT_TYPE
-D10[2] <= inst52.DB_MAX_OUTPUT_PORT_TYPE
-D10[1] <= inst50.DB_MAX_OUTPUT_PORT_TYPE
-D10[0] <= inst48.DB_MAX_OUTPUT_PORT_TYPE
+D01[3] <= ULA:inst25.D01[0]
+D01[2] <= ULA:inst25.D01[1]
+D01[1] <= ULA:inst25.D01[2]
+D01[0] <= ULA:inst25.D01[3]
+D10[3] <= ULA:inst25.D10[0]
+D10[2] <= ULA:inst25.D10[1]
+D10[1] <= ULA:inst25.D10[2]
+D10[0] <= ULA:inst25.D10[3]
 Reg01B <= Registrador01B.DB_MAX_OUTPUT_PORT_TYPE
 Reg01C <= Registrador01C.DB_MAX_OUTPUT_PORT_TYPE
 Reg01D <= Registrador01D.DB_MAX_OUTPUT_PORT_TYPE
@@ -461,7 +453,7 @@ input_key => intermediate.DATAIN
 out_key <= out_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|Contador:inst
+|CPU|Contador:inst13
 q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 jump => inst15.IN0
 jump => inst14.IN0
@@ -487,18 +479,11 @@ Operando[2] => inst23.IN1
 Operando[2] => inst21.IN1
 Operando[3] => inst27.IN1
 Operando[3] => inst25.IN1
-clear => inst12.IN1
-clear => inst16.IN1
-clear => inst20.IN1
-clear => inst24.IN1
-clear => inst28.IN1
-clear => inst32.IN1
-clear => inst36.IN1
-clear => inst40.IN1
-vcc => inst.IN0
+reset => inst45.IN0
+resetMaster => inst45.IN1
+resetMaster => debouncer:adgsdfgseg.rst_debouncer
 clock => debouncer:adgsdfgseg.clk_fpga
-reset => debouncer:adgsdfgseg.rst_debouncer
-input => debouncer:adgsdfgseg.input_key
+input => inst47.IN0
 q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 q2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 q3 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
@@ -508,7 +493,7 @@ q6 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 q7 <= asd.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|Contador:inst|debouncer:adgsdfgseg
+|CPU|Contador:inst13|debouncer:adgsdfgseg
 clk_fpga => counter[0].CLK
 clk_fpga => counter[1].CLK
 clk_fpga => counter[2].CLK
@@ -552,7 +537,7 @@ input_key => intermediate.DATAIN
 out_key <= out_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|UC:inst6
+|CPU|UC:inst
 RegLoad <= caso01.DB_MAX_OUTPUT_PORT_TYPE
 ROM11 => adfasdf.IN0
 ROM11 => caso10.IN0
@@ -565,10 +550,6 @@ ROM10 => caso00.IN0
 ContadorReinicia <= caso10.DB_MAX_OUTPUT_PORT_TYPE
 Jump <= caso11.DB_MAX_OUTPUT_PORT_TYPE
 OperacaoULA <= caso00.DB_MAX_OUTPUT_PORT_TYPE
-RegReset[0] <= asdasd[0].DB_MAX_OUTPUT_PORT_TYPE
-RegReset[1] <= asdasd[1].DB_MAX_OUTPUT_PORT_TYPE
-RegReset[2] <= asdasd[2].DB_MAX_OUTPUT_PORT_TYPE
-RegReset[3] <= asdasd[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|projeto05:inst57
@@ -775,58 +756,24 @@ GGGG <= inst43.DB_MAX_OUTPUT_PORT_TYPE
 CCCC <= inst44.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|Registrador:inst4
+|CPU|Registrador:inst15
 Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
-CLK => inst.CLK
-CLK => inst11.CLK
-CLK => inst13.CLK
-CLK => inst15.CLK
-load => 21mux:inst10.S
-load => 21mux:inst12.S
-load => 21mux:inst14.S
-load => 21mux:inst16.S
+CLK50 => debouncer:inst2.clk_fpga
+resetMaster => debouncer:inst2.rst_debouncer
+clock => debouncer:inst2.input_key
+RegLoad => inst17.IN0
+ROM[14] => inst25.IN0
+OpULA => inst25.IN1
 D[3] => 21mux:inst16.A
 D[2] => 21mux:inst14.A
 D[1] => 21mux:inst12.A
 D[0] => 21mux:inst10.A
 
 
-|CPU|Registrador:inst4|21mux:inst10
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|CPU|Registrador:inst4|21mux:inst12
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|CPU|Registrador:inst4|21mux:inst14
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|CPU|Registrador:inst4|21mux:inst16
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|CPU|debouncer:inst2
+|CPU|Registrador:inst15|debouncer:inst2
 clk_fpga => counter[0].CLK
 clk_fpga => counter[1].CLK
 clk_fpga => counter[2].CLK
@@ -870,11 +817,51 @@ input_key => intermediate.DATAIN
 out_key <= out_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|ULA:inst7
-Saida[0] <= BUSMUX:inst.result[0]
-Saida[1] <= BUSMUX:inst.result[1]
-Saida[2] <= BUSMUX:inst.result[2]
-Saida[3] <= BUSMUX:inst.result[3]
+|CPU|Registrador:inst15|21mux:inst10
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|CPU|Registrador:inst15|21mux:inst12
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|CPU|Registrador:inst15|21mux:inst14
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|CPU|Registrador:inst15|21mux:inst16
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|CPU|ULA:inst25
+D01[0] <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+D01[1] <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+D01[2] <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+D01[3] <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+reserMaster => inst41.IN0
+reserMaster => inst43.IN0
+reserMaster => inst45.IN0
+reserMaster => inst47.IN0
+reserMaster => inst49.IN0
+reserMaster => inst51.IN0
+reserMaster => inst53.IN0
+reserMaster => inst55.IN0
 Controle[0] => BUSMUX:inst9.sel
 Controle[0] => BUSMUX:inst10.sel
 Controle[1] => BUSMUX:inst.sel
@@ -894,17 +881,37 @@ A[3] => somadorcompleto4bits:inSAst.A4
 A[3] => iwanttodie:inst7.IN3
 A[3] => Subtratorcompleto4bits:inst6.B4
 A[3] => Divide2:inst3.Input3
-B[0] => somadorcompleto4bits:inSAst.B1
-B[0] => Subtratorcompleto4bits:inst6.A1
-B[1] => somadorcompleto4bits:inSAst.B2
-B[1] => Subtratorcompleto4bits:inst6.A2
-B[2] => somadorcompleto4bits:inSAst.B3
-B[2] => Subtratorcompleto4bits:inst6.A3
-B[3] => somadorcompleto4bits:inSAst.B4
-B[3] => Subtratorcompleto4bits:inst6.A4
+Q10[0] => inst29.IN0
+Q10[1] => inst32.IN0
+Q10[2] => inst35.IN0
+Q10[3] => inst38.IN0
+ROM[12] => inst31.IN1
+ROM[12] => inst28.IN1
+ROM[12] => inst34.IN1
+ROM[12] => inst37.IN1
+ROM[13] => inst32.IN1
+ROM[13] => inst29.IN1
+ROM[13] => inst35.IN1
+ROM[13] => inst38.IN1
+Q01[0] => inst28.IN0
+Q01[1] => inst31.IN0
+Q01[2] => inst34.IN0
+Q01[3] => inst37.IN0
+OpULA => inst17.IN1
+OpULA => inst18.IN1
+OpULA => inst19.IN1
+OpULA => inst20.IN1
+OpULA => inst21.IN1
+OpULA => inst22.IN1
+OpULA => inst23.IN1
+OpULA => inst24.IN1
+D10[0] <= inst48.DB_MAX_OUTPUT_PORT_TYPE
+D10[1] <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+D10[2] <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+D10[3] <= inst54.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|ULA:inst7|BUSMUX:inst
+|CPU|ULA:inst25|BUSMUX:inst
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -920,7 +927,7 @@ result[2] <= lpm_mux:$00000.result[2]
 result[3] <= lpm_mux:$00000.result[3]
 
 
-|CPU|ULA:inst7|BUSMUX:inst|lpm_mux:$00000
+|CPU|ULA:inst25|BUSMUX:inst|lpm_mux:$00000
 data[0][0] => mux_arc:auto_generated.data[0]
 data[0][1] => mux_arc:auto_generated.data[1]
 data[0][2] => mux_arc:auto_generated.data[2]
@@ -939,7 +946,7 @@ result[2] <= mux_arc:auto_generated.result[2]
 result[3] <= mux_arc:auto_generated.result[3]
 
 
-|CPU|ULA:inst7|BUSMUX:inst|lpm_mux:$00000|mux_arc:auto_generated
+|CPU|ULA:inst25|BUSMUX:inst|lpm_mux:$00000|mux_arc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -962,7 +969,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|CPU|ULA:inst7|BUSMUX:inst9
+|CPU|ULA:inst25|BUSMUX:inst9
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -978,7 +985,7 @@ result[2] <= lpm_mux:$00000.result[2]
 result[3] <= lpm_mux:$00000.result[3]
 
 
-|CPU|ULA:inst7|BUSMUX:inst9|lpm_mux:$00000
+|CPU|ULA:inst25|BUSMUX:inst9|lpm_mux:$00000
 data[0][0] => mux_arc:auto_generated.data[0]
 data[0][1] => mux_arc:auto_generated.data[1]
 data[0][2] => mux_arc:auto_generated.data[2]
@@ -997,7 +1004,7 @@ result[2] <= mux_arc:auto_generated.result[2]
 result[3] <= mux_arc:auto_generated.result[3]
 
 
-|CPU|ULA:inst7|BUSMUX:inst9|lpm_mux:$00000|mux_arc:auto_generated
+|CPU|ULA:inst25|BUSMUX:inst9|lpm_mux:$00000|mux_arc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -1020,7 +1027,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|CPU|ULA:inst7|somadorcompleto4bits:inSAst
+|CPU|ULA:inst25|somadorcompleto4bits:inSAst
 Output[0] <= S[0].DB_MAX_OUTPUT_PORT_TYPE
 Output[1] <= S[1].DB_MAX_OUTPUT_PORT_TYPE
 Output[2] <= S[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -1035,7 +1042,7 @@ A1 => Somador:asdasd.A
 B1 => Somador:asdasd.B
 
 
-|CPU|ULA:inst7|somadorcompleto4bits:inSAst|Somador:inst3
+|CPU|ULA:inst25|somadorcompleto4bits:inSAst|Somador:inst3
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst3.IN0
@@ -1049,7 +1056,7 @@ Cin => inst4.IN1
 Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|ULA:inst7|somadorcompleto4bits:inSAst|Somador:inst2
+|CPU|ULA:inst25|somadorcompleto4bits:inSAst|Somador:inst2
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst3.IN0
@@ -1063,7 +1070,7 @@ Cin => inst4.IN1
 Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|ULA:inst7|somadorcompleto4bits:inSAst|Somador:inst1
+|CPU|ULA:inst25|somadorcompleto4bits:inSAst|Somador:inst1
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst3.IN0
@@ -1077,7 +1084,7 @@ Cin => inst4.IN1
 Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|ULA:inst7|somadorcompleto4bits:inSAst|Somador:asdasd
+|CPU|ULA:inst25|somadorcompleto4bits:inSAst|Somador:asdasd
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst3.IN0
@@ -1091,7 +1098,7 @@ Cin => inst4.IN1
 Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|ULA:inst7|iwanttodie:inst7
+|CPU|ULA:inst25|iwanttodie:inst7
 OUT0 <= <GND>
 OUT1 <= IN0.DB_MAX_OUTPUT_PORT_TYPE
 IN0 => OUT1.DATAIN
@@ -1102,7 +1109,7 @@ IN2 => OUT3.DATAIN
 IN3 => ~NO_FANOUT~
 
 
-|CPU|ULA:inst7|BUSMUX:inst10
+|CPU|ULA:inst25|BUSMUX:inst10
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -1118,7 +1125,7 @@ result[2] <= lpm_mux:$00000.result[2]
 result[3] <= lpm_mux:$00000.result[3]
 
 
-|CPU|ULA:inst7|BUSMUX:inst10|lpm_mux:$00000
+|CPU|ULA:inst25|BUSMUX:inst10|lpm_mux:$00000
 data[0][0] => mux_arc:auto_generated.data[0]
 data[0][1] => mux_arc:auto_generated.data[1]
 data[0][2] => mux_arc:auto_generated.data[2]
@@ -1137,7 +1144,7 @@ result[2] <= mux_arc:auto_generated.result[2]
 result[3] <= mux_arc:auto_generated.result[3]
 
 
-|CPU|ULA:inst7|BUSMUX:inst10|lpm_mux:$00000|mux_arc:auto_generated
+|CPU|ULA:inst25|BUSMUX:inst10|lpm_mux:$00000|mux_arc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -1160,7 +1167,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|CPU|ULA:inst7|Subtratorcompleto4bits:inst6
+|CPU|ULA:inst25|Subtratorcompleto4bits:inst6
 OUTPOUT[0] <= S[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPOUT[1] <= S[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPOUT[2] <= S[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -1175,7 +1182,7 @@ A4 => Subtratorcompleto:inst3.A
 B4 => Subtratorcompleto:inst3.B
 
 
-|CPU|ULA:inst7|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst
+|CPU|ULA:inst25|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst10.IN0
 A => inst.IN0
@@ -1188,7 +1195,7 @@ Tin => inst4.IN1
 Tout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|ULA:inst7|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst1
+|CPU|ULA:inst25|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst1
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst10.IN0
 A => inst.IN0
@@ -1201,7 +1208,7 @@ Tin => inst4.IN1
 Tout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|ULA:inst7|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst2
+|CPU|ULA:inst25|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst2
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst10.IN0
 A => inst.IN0
@@ -1214,7 +1221,7 @@ Tin => inst4.IN1
 Tout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|ULA:inst7|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst3
+|CPU|ULA:inst25|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst3
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst10.IN0
 A => inst.IN0
@@ -1227,7 +1234,7 @@ Tin => inst4.IN1
 Tout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|ULA:inst7|Divide2:inst3
+|CPU|ULA:inst25|Divide2:inst3
 Output2 <= Input3.DB_MAX_OUTPUT_PORT_TYPE
 Input3 => Output2.DATAIN
 Output3 <= <GND>
@@ -1238,58 +1245,24 @@ Input1 => Output0.DATAIN
 Input0 => ~NO_FANOUT~
 
 
-|CPU|Registrador:asdfdadg
+|CPU|Registrador:inst16
 Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
-CLK => inst.CLK
-CLK => inst11.CLK
-CLK => inst13.CLK
-CLK => inst15.CLK
-load => 21mux:inst10.S
-load => 21mux:inst12.S
-load => 21mux:inst14.S
-load => 21mux:inst16.S
+CLK50 => debouncer:inst2.clk_fpga
+resetMaster => debouncer:inst2.rst_debouncer
+clock => debouncer:inst2.input_key
+RegLoad => inst17.IN0
+ROM[14] => inst25.IN0
+OpULA => inst25.IN1
 D[3] => 21mux:inst16.A
 D[2] => 21mux:inst14.A
 D[1] => 21mux:inst12.A
 D[0] => 21mux:inst10.A
 
 
-|CPU|Registrador:asdfdadg|21mux:inst10
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|CPU|Registrador:asdfdadg|21mux:inst12
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|CPU|Registrador:asdfdadg|21mux:inst14
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|CPU|Registrador:asdfdadg|21mux:inst16
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|CPU|debouncer:inst3
+|CPU|Registrador:inst16|debouncer:inst2
 clk_fpga => counter[0].CLK
 clk_fpga => counter[1].CLK
 clk_fpga => counter[2].CLK
@@ -1331,6 +1304,38 @@ input_key => out_key~reg0.ADATA
 input_key => intermediate.ADATA
 input_key => intermediate.DATAIN
 out_key <= out_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU|Registrador:inst16|21mux:inst10
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|CPU|Registrador:inst16|21mux:inst12
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|CPU|Registrador:inst16|21mux:inst14
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|CPU|Registrador:inst16|21mux:inst16
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
 
 
 |CPU|projeto05:inst62
