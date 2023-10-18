@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Tue Sep 26 14:57:17 2023
+Analysis & Synthesis Status : Successful - Wed Oct 18 15:43:15 2023
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : Contador
 Top-level Entity Name : Contador
@@ -7,7 +7,7 @@ Total logic elements : 60
     Total combinational functions : 60
     Dedicated logic registers : 26
 Total registers : 26
-Total pins : 18
+Total pins : 17
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

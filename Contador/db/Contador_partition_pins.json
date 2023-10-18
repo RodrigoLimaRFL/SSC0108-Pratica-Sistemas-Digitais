@@ -40,11 +40,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clear",
+					"name" : "reset",
 					"strict" : false
 				},
 				{
-					"name" : "vcc",
+					"name" : "resetMaster",
 					"strict" : false
 				},
 				{
@@ -61,10 +61,6 @@
 				},
 				{
 					"name" : "Operando[3]",
-					"strict" : false
-				},
-				{
-					"name" : "reset",
 					"strict" : false
 				},
 				{

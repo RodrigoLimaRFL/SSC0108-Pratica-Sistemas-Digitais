@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Contador
-Tue Sep 26 14:57:17 2023
+Wed Oct 18 15:43:15 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Sep 26 14:57:17 2023       ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 18 15:43:15 2023       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; Contador                                    ;
 ; Top-level Entity Name              ; Contador                                    ;
@@ -54,7 +54,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Total combinational functions  ; 60                                          ;
 ;     Dedicated logic registers      ; 26                                          ;
 ; Total registers                    ; 26                                          ;
-; Total pins                         ; 18                                          ;
+; Total pins                         ; 17                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -166,46 +166,46 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                              ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+---------+
-; Contador.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/12547510/Documents/SSC0108/Contador/Contador.bdf ;         ;
-; debouncer.v                      ; yes             ; Auto-Found Verilog HDL File        ; C:/Users/12547510/Documents/SSC0108/Contador/debouncer.v  ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                         ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------+---------+
+; Contador.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/Contador/Contador.bdf ;         ;
+; debouncer.v                      ; yes             ; Auto-Found Verilog HDL File        ; C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/Contador/debouncer.v  ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 60          ;
-;                                             ;             ;
-; Total combinational functions               ; 60          ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 18          ;
-;     -- 3 input functions                    ; 13          ;
-;     -- <=2 input functions                  ; 29          ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 45          ;
-;     -- arithmetic mode                      ; 15          ;
-;                                             ;             ;
-; Total registers                             ; 26          ;
-;     -- Dedicated logic registers            ; 26          ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 18          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; reset~input ;
-; Maximum fan-out                             ; 21          ;
-; Total fan-out                               ; 304         ;
-; Average fan-out                             ; 2.49        ;
-+---------------------------------------------+-------------+
++-----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                     ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+; Estimated Total logic elements              ; 60                ;
+;                                             ;                   ;
+; Total combinational functions               ; 60                ;
+; Logic element usage by number of LUT inputs ;                   ;
+;     -- 4 input functions                    ; 22                ;
+;     -- 3 input functions                    ; 9                 ;
+;     -- <=2 input functions                  ; 29                ;
+;                                             ;                   ;
+; Logic elements by mode                      ;                   ;
+;     -- normal mode                          ; 45                ;
+;     -- arithmetic mode                      ; 15                ;
+;                                             ;                   ;
+; Total registers                             ; 26                ;
+;     -- Dedicated logic registers            ; 26                ;
+;     -- I/O registers                        ; 0                 ;
+;                                             ;                   ;
+; I/O pins                                    ; 17                ;
+;                                             ;                   ;
+; Embedded Multiplier 9-bit elements          ; 0                 ;
+;                                             ;                   ;
+; Maximum fan-out node                        ; resetMaster~input ;
+; Maximum fan-out                             ; 26                ;
+; Total fan-out                               ; 307               ;
+; Average fan-out                             ; 2.56              ;
++---------------------------------------------+-------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -213,7 +213,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+-------------+--------------+
-; |Contador                  ; 60 (32)             ; 26 (8)                    ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |Contador                      ; Contador    ; work         ;
+; |Contador                  ; 60 (32)             ; 26 (8)                    ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |Contador                      ; Contador    ; work         ;
 ;    |debouncer:adgsdfgseg|  ; 28 (28)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Contador|debouncer:adgsdfgseg ; debouncer   ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -258,7 +258,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 18                          ;
+; boundary_port         ; 17                          ;
 ; cycloneiii_ff         ; 26                          ;
 ;     CLR               ; 10                          ;
 ;     ENA CLR SCLR      ; 16                          ;
@@ -268,11 +268,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     normal            ; 45                          ;
 ;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 13                          ;
-;         3 data inputs ; 13                          ;
-;         4 data inputs ; 18                          ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 22                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.02                        ;
+; Average LUT depth     ; 3.05                        ;
 +-----------------------+-----------------------------+
 
 
@@ -291,35 +291,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue Sep 26 14:57:08 2023
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Contador -c Contador
+    Info: Processing started: Wed Oct 18 15:43:06 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off contador -c Contador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file contador.bdf
     Info (12023): Found entity 1: Contador
 Info (12127): Elaborating entity "Contador" for the top level hierarchy
 Warning (12125): Using design file debouncer.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: debouncer File: C:/Users/12547510/Documents/SSC0108/Contador/debouncer.v Line: 28
+    Info (12023): Found entity 1: debouncer File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/Contador/debouncer.v Line: 28
 Info (12128): Elaborating entity "debouncer" for hierarchy "debouncer:adgsdfgseg"
-Warning (10230): Verilog HDL assignment warning at debouncer.v(71): truncated value with size 32 to match size of target (16) File: C:/Users/12547510/Documents/SSC0108/Contador/debouncer.v Line: 71
+Warning (10230): Verilog HDL assignment warning at debouncer.v(71): truncated value with size 32 to match size of target (16) File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/Contador/debouncer.v Line: 71
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "inst" is converted into an equivalent circuit using register "inst~_emulated" and latch "inst~1"
     Warning (13310): Register "inst1" is converted into an equivalent circuit using register "inst1~_emulated" and latch "inst1~1"
     Warning (13310): Register "inst6" is converted into an equivalent circuit using register "inst6~_emulated" and latch "inst6~1"
     Warning (13310): Register "inst7" is converted into an equivalent circuit using register "inst7~_emulated" and latch "inst7~1"
-    Warning (13310): Register "debouncer:adgsdfgseg|out_key" is converted into an equivalent circuit using register "debouncer:adgsdfgseg|out_key~_emulated" and latch "debouncer:adgsdfgseg|out_key~1" File: C:/Users/12547510/Documents/SSC0108/Contador/debouncer.v Line: 42
-    Warning (13310): Register "debouncer:adgsdfgseg|intermediate" is converted into an equivalent circuit using register "debouncer:adgsdfgseg|intermediate~_emulated" and latch "debouncer:adgsdfgseg|out_key~1" File: C:/Users/12547510/Documents/SSC0108/Contador/debouncer.v Line: 50
+    Warning (13310): Register "debouncer:adgsdfgseg|out_key" is converted into an equivalent circuit using register "debouncer:adgsdfgseg|out_key~_emulated" and latch "debouncer:adgsdfgseg|out_key~1" File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/Contador/debouncer.v Line: 42
+    Warning (13310): Register "debouncer:adgsdfgseg|intermediate" is converted into an equivalent circuit using register "debouncer:adgsdfgseg|intermediate~_emulated" and latch "debouncer:adgsdfgseg|out_key~1" File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/Contador/debouncer.v Line: 50
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 78 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
+Info (21057): Implemented 77 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 60 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
     Info: Peak virtual memory: 4770 megabytes
-    Info: Processing ended: Tue Sep 26 14:57:17 2023
+    Info: Processing ended: Wed Oct 18 15:43:15 2023
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:18
 
 
