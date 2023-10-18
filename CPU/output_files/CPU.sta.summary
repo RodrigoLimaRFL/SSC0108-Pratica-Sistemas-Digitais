@@ -2,184 +2,184 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'resetMaster'
-Slack : -8.590
-TNS   : -77.545
-
 Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -8.449
-TNS   : -74.092
+Slack : -8.917
+TNS   : -142.235
+
+Type  : Slow 1200mV 85C Model Setup 'resetMaster'
+Slack : -8.796
+TNS   : -143.042
 
 Type  : Slow 1200mV 85C Model Setup 'CLK50'
-Slack : -4.303
-TNS   : -60.180
-
-Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : -0.015
-TNS   : -0.060
-
-Type  : Slow 1200mV 85C Model Hold 'resetMaster'
-Slack : 0.312
-TNS   : 0.000
+Slack : -4.921
+TNS   : -125.819
 
 Type  : Slow 1200mV 85C Model Hold 'CLK50'
-Slack : 0.588
+Slack : 0.262
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'resetMaster'
-Slack : -7.881
-TNS   : -58.280
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.289
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'resetMaster'
+Slack : 0.405
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'CLK'
-Slack : -7.740
-TNS   : -57.152
+Slack : -9.072
+TNS   : -66.760
+
+Type  : Slow 1200mV 85C Model Recovery 'resetMaster'
+Slack : -8.951
+TNS   : -65.792
 
 Type  : Slow 1200mV 85C Model Recovery 'CLK50'
-Slack : -2.430
-TNS   : -24.970
-
-Type  : Slow 1200mV 85C Model Removal 'CLK'
-Slack : 0.308
-TNS   : 0.000
+Slack : -2.158
+TNS   : -40.924
 
 Type  : Slow 1200mV 85C Model Removal 'CLK50'
-Slack : 0.479
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'CLK'
+Slack : 0.581
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'resetMaster'
-Slack : 0.554
+Slack : 0.891
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK50'
 Slack : -3.000
-TNS   : -27.415
+TNS   : -51.830
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -15.973
+TNS   : -26.253
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'resetMaster'
 Slack : -3.000
-TNS   : -15.973
-
-Type  : Slow 1200mV 0C Model Setup 'resetMaster'
-Slack : -7.749
-TNS   : -69.833
+TNS   : -26.253
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -7.626
-TNS   : -66.898
+Slack : -8.159
+TNS   : -130.305
+
+Type  : Slow 1200mV 0C Model Setup 'resetMaster'
+Slack : -7.946
+TNS   : -129.091
 
 Type  : Slow 1200mV 0C Model Setup 'CLK50'
-Slack : -3.955
-TNS   : -53.658
-
-Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : -0.027
-TNS   : -0.108
-
-Type  : Slow 1200mV 0C Model Hold 'resetMaster'
-Slack : 0.258
-TNS   : 0.000
+Slack : -4.542
+TNS   : -114.221
 
 Type  : Slow 1200mV 0C Model Hold 'CLK50'
-Slack : 0.543
+Slack : 0.282
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'resetMaster'
-Slack : -7.152
-TNS   : -52.725
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.315
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'resetMaster'
+Slack : 0.356
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'CLK'
-Slack : -7.029
-TNS   : -51.741
+Slack : -8.369
+TNS   : -60.861
+
+Type  : Slow 1200mV 0C Model Recovery 'resetMaster'
+Slack : -8.156
+TNS   : -59.157
 
 Type  : Slow 1200mV 0C Model Recovery 'CLK50'
-Slack : -2.129
-TNS   : -21.443
+Slack : -1.877
+TNS   : -34.726
+
+Type  : Slow 1200mV 0C Model Removal 'CLK50'
+Slack : 0.250
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'CLK'
-Slack : 0.299
+Slack : 0.468
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'resetMaster'
-Slack : 0.521
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'CLK50'
-Slack : 0.556
+Slack : 0.940
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK50'
 Slack : -3.000
-TNS   : -27.415
+TNS   : -51.830
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -15.929
+TNS   : -26.209
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'resetMaster'
 Slack : -3.000
-TNS   : -15.929
+TNS   : -26.209
 
 Type  : Fast 1200mV 0C Model Setup 'resetMaster'
-Slack : -3.568
-TNS   : -32.574
+Slack : -3.690
+TNS   : -58.815
 
 Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : -3.524
-TNS   : -30.820
+Slack : -3.535
+TNS   : -56.098
 
 Type  : Fast 1200mV 0C Model Setup 'CLK50'
-Slack : -1.820
-TNS   : -23.290
+Slack : -2.203
+TNS   : -43.577
 
 Type  : Fast 1200mV 0C Model Hold 'CLK50'
-Slack : -0.018
-TNS   : -0.033
+Slack : -0.250
+TNS   : -0.632
 
 Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : -0.013
-TNS   : -0.052
+Slack : -0.023
+TNS   : -0.092
 
 Type  : Fast 1200mV 0C Model Hold 'resetMaster'
-Slack : 0.084
+Slack : 0.184
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'resetMaster'
-Slack : -3.299
-TNS   : -23.883
+Slack : -3.833
+TNS   : -27.593
 
 Type  : Fast 1200mV 0C Model Recovery 'CLK'
-Slack : -3.250
-TNS   : -23.491
+Slack : -3.757
+TNS   : -26.985
 
 Type  : Fast 1200mV 0C Model Recovery 'CLK50'
-Slack : -1.497
-TNS   : -16.107
+Slack : -1.285
+TNS   : -26.711
 
 Type  : Fast 1200mV 0C Model Removal 'CLK50'
-Slack : -0.021
-TNS   : -0.042
+Slack : -0.310
+TNS   : -1.154
 
 Type  : Fast 1200mV 0C Model Removal 'CLK'
-Slack : 0.258
+Slack : 0.254
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'resetMaster'
-Slack : 0.366
+Slack : 0.364
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK50'
 Slack : -3.000
-TNS   : -23.038
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
-Slack : -3.000
-TNS   : -15.444
+TNS   : -43.040
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'resetMaster'
 Slack : -3.000
-TNS   : -14.968
+TNS   : -25.545
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -21.225
 
 ------------------------------------------------------------

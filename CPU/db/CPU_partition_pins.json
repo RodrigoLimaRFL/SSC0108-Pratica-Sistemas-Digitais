@@ -8,6 +8,38 @@
 					"strict" : false
 				},
 				{
+					"name" : "Contador7",
+					"strict" : false
+				},
+				{
+					"name" : "Contador6",
+					"strict" : false
+				},
+				{
+					"name" : "Contador5",
+					"strict" : false
+				},
+				{
+					"name" : "Contador4",
+					"strict" : false
+				},
+				{
+					"name" : "Contador3",
+					"strict" : false
+				},
+				{
+					"name" : "Contador2",
+					"strict" : false
+				},
+				{
+					"name" : "Contador1",
+					"strict" : false
+				},
+				{
+					"name" : "Contador0",
+					"strict" : false
+				},
+				{
 					"name" : "ROM7segB0",
 					"strict" : false
 				},
@@ -113,6 +145,94 @@
 				},
 				{
 					"name" : "ROM7segC3",
+					"strict" : false
+				},
+				{
+					"name" : "Reg01A",
+					"strict" : false
+				},
+				{
+					"name" : "D01[0]",
+					"strict" : false
+				},
+				{
+					"name" : "D01[1]",
+					"strict" : false
+				},
+				{
+					"name" : "D01[2]",
+					"strict" : false
+				},
+				{
+					"name" : "D01[3]",
+					"strict" : false
+				},
+				{
+					"name" : "D10[0]",
+					"strict" : false
+				},
+				{
+					"name" : "D10[1]",
+					"strict" : false
+				},
+				{
+					"name" : "D10[2]",
+					"strict" : false
+				},
+				{
+					"name" : "D10[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg01B",
+					"strict" : false
+				},
+				{
+					"name" : "Reg01C",
+					"strict" : false
+				},
+				{
+					"name" : "Reg01D",
+					"strict" : false
+				},
+				{
+					"name" : "Reg01E",
+					"strict" : false
+				},
+				{
+					"name" : "Reg01F",
+					"strict" : false
+				},
+				{
+					"name" : "Reg01G",
+					"strict" : false
+				},
+				{
+					"name" : "Reg10A",
+					"strict" : false
+				},
+				{
+					"name" : "Reg10B",
+					"strict" : false
+				},
+				{
+					"name" : "Reg10C",
+					"strict" : false
+				},
+				{
+					"name" : "Reg10D",
+					"strict" : false
+				},
+				{
+					"name" : "Reg10E",
+					"strict" : false
+				},
+				{
+					"name" : "Reg10F",
+					"strict" : false
+				},
+				{
+					"name" : "Reg10G",
 					"strict" : false
 				},
 				{

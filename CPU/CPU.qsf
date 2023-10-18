@@ -97,4 +97,20 @@ set_location_assignment PIN_W26 -to Reg10D
 set_location_assignment PIN_Y26 -to Reg10E
 set_location_assignment PIN_W27 -to Reg10F
 set_location_assignment PIN_W28 -to Reg10G
+set_location_assignment PIN_G19 -to Contador0
+set_location_assignment PIN_F19 -to Contador1
+set_location_assignment PIN_E19 -to Contador2
+set_location_assignment PIN_F21 -to Contador3
+set_location_assignment PIN_F18 -to Contador4
+set_location_assignment PIN_E18 -to Contador5
+set_location_assignment PIN_J19 -to Contador6
+set_location_assignment PIN_H19 -to Contador7
+set_location_assignment PIN_E21 -to D01[0]
+set_location_assignment PIN_E22 -to D01[1]
+set_location_assignment PIN_E25 -to D01[2]
+set_location_assignment PIN_E24 -to D01[3]
+set_location_assignment PIN_H21 -to D10[0]
+set_location_assignment PIN_G20 -to D10[1]
+set_location_assignment PIN_G22 -to D10[2]
+set_location_assignment PIN_G21 -to D10[3]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

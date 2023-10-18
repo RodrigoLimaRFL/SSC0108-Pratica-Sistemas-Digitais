@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("C:/Users/12547510/Documents/SSC0108/CPU/output_files/") File("CPU.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/output_files/") File("CPU.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

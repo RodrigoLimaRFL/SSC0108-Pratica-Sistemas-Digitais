@@ -1,11 +1,15 @@
 |CPU
 ROM7segA0 <= projeto05:inst56.AAAA
-CLK50 => ROM2:inst2.CLOCK_50
+CLK50 => ROM2:DFAFBG.CLOCK_50
 CLK50 => Contador:inst.clock
-resetMaster => ROM2:inst2.reset
-resetMaster => rffg.IN1
+CLK50 => debouncer:inst2.clk_fpga
+CLK50 => debouncer:inst3.clk_fpga
+resetMaster => ROM2:DFAFBG.reset
+resetMaster => inst1.IN1
 resetMaster => Contador:inst.reset
+resetMaster => debouncer:inst2.rst_debouncer
 resetMaster => inst41.IN0
+resetMaster => debouncer:inst3.rst_debouncer
 resetMaster => inst49.IN0
 resetMaster => inst51.IN0
 resetMaster => inst53.IN0
@@ -13,8 +17,18 @@ resetMaster => inst55.IN0
 resetMaster => inst43.IN0
 resetMaster => inst45.IN0
 resetMaster => inst47.IN0
-CLK => ROM2:inst2.KEY
-CLK => Contador:inst.input
+CLK => ROM2:DFAFBG.KEY
+CLK => inst14.IN0
+CLK => debouncer:inst2.input_key
+CLK => debouncer:inst3.input_key
+Contador7 <= Contador:inst.q7
+Contador6 <= Contador:inst.q6
+Contador5 <= Contador:inst.q5
+Contador4 <= Contador:inst.q4
+Contador3 <= Contador:inst.q3
+Contador2 <= Contador:inst.q2
+Contador1 <= Contador:inst.q1
+Contador0 <= Contador:inst.q0
 ROM7segB0 <= projeto05:inst56.BBBB
 ROM7segC0 <= projeto05:inst56.CCCC
 ROM7segD0 <= projeto05:inst56.DDDD
@@ -43,6 +57,14 @@ ROM7segC2 <= projeto05:inst58.CCCC
 ROM7segB3 <= projeto05:inst59.BBBB
 ROM7segC3 <= projeto05:inst59.CCCC
 Reg01A <= Registrador01A.DB_MAX_OUTPUT_PORT_TYPE
+D01[3] <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+D01[2] <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+D01[1] <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+D01[0] <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+D10[3] <= inst54.DB_MAX_OUTPUT_PORT_TYPE
+D10[2] <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+D10[1] <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+D10[0] <= inst48.DB_MAX_OUTPUT_PORT_TYPE
 Reg01B <= Registrador01B.DB_MAX_OUTPUT_PORT_TYPE
 Reg01C <= Registrador01C.DB_MAX_OUTPUT_PORT_TYPE
 Reg01D <= Registrador01D.DB_MAX_OUTPUT_PORT_TYPE
@@ -109,7 +131,7 @@ GGGG <= inst43.DB_MAX_OUTPUT_PORT_TYPE
 CCCC <= inst44.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|ROM2:inst2
+|CPU|ROM2:DFAFBG
 OUT[0] <= rom:inst.q[0]
 OUT[1] <= rom:inst.q[1]
 OUT[2] <= rom:inst.q[2]
@@ -139,7 +161,7 @@ IN[6] => rom:inst.address[6]
 IN[7] => rom:inst.address[7]
 
 
-|CPU|ROM2:inst2|rom:inst
+|CPU|ROM2:DFAFBG|rom:inst
 address[0] => altsyncram:altsyncram_component.address_a[0]
 address[1] => altsyncram:altsyncram_component.address_a[1]
 address[2] => altsyncram:altsyncram_component.address_a[2]
@@ -167,7 +189,7 @@ q[14] <= altsyncram:altsyncram_component.q_a[14]
 q[15] <= altsyncram:altsyncram_component.q_a[15]
 
 
-|CPU|ROM2:inst2|rom:inst|altsyncram:altsyncram_component
+|CPU|ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -232,7 +254,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|CPU|ROM2:inst2|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated
+|CPU|ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -395,7 +417,7 @@ q_a[14] <= ram_block1a14.PORTADATAOUT
 q_a[15] <= ram_block1a15.PORTADATAOUT
 
 
-|CPU|ROM2:inst2|debouncer:inst1
+|CPU|ROM2:DFAFBG|debouncer:inst1
 clk_fpga => counter[0].CLK
 clk_fpga => counter[1].CLK
 clk_fpga => counter[2].CLK
@@ -802,6 +824,50 @@ A => 6.IN0
 S => 6.IN1
 S => 7.IN1
 B => 8.IN0
+
+
+|CPU|debouncer:inst2
+clk_fpga => counter[0].CLK
+clk_fpga => counter[1].CLK
+clk_fpga => counter[2].CLK
+clk_fpga => counter[3].CLK
+clk_fpga => counter[4].CLK
+clk_fpga => counter[5].CLK
+clk_fpga => counter[6].CLK
+clk_fpga => counter[7].CLK
+clk_fpga => counter[8].CLK
+clk_fpga => counter[9].CLK
+clk_fpga => counter[10].CLK
+clk_fpga => counter[11].CLK
+clk_fpga => counter[12].CLK
+clk_fpga => counter[13].CLK
+clk_fpga => counter[14].CLK
+clk_fpga => counter[15].CLK
+clk_fpga => out_key~reg0.CLK
+clk_fpga => intermediate.CLK
+rst_debouncer => counter[0].ACLR
+rst_debouncer => counter[1].ACLR
+rst_debouncer => counter[2].ACLR
+rst_debouncer => counter[3].ACLR
+rst_debouncer => counter[4].ACLR
+rst_debouncer => counter[5].ACLR
+rst_debouncer => counter[6].ACLR
+rst_debouncer => counter[7].ACLR
+rst_debouncer => counter[8].ACLR
+rst_debouncer => counter[9].ACLR
+rst_debouncer => counter[10].ACLR
+rst_debouncer => counter[11].ACLR
+rst_debouncer => counter[12].ACLR
+rst_debouncer => counter[13].ACLR
+rst_debouncer => counter[14].ACLR
+rst_debouncer => counter[15].ACLR
+rst_debouncer => out_key~reg0.ALOAD
+rst_debouncer => intermediate.ALOAD
+input_key => always0.IN1
+input_key => out_key~reg0.ADATA
+input_key => intermediate.ADATA
+input_key => intermediate.DATAIN
+out_key <= out_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|ULA:inst7
@@ -1221,6 +1287,50 @@ A => 6.IN0
 S => 6.IN1
 S => 7.IN1
 B => 8.IN0
+
+
+|CPU|debouncer:inst3
+clk_fpga => counter[0].CLK
+clk_fpga => counter[1].CLK
+clk_fpga => counter[2].CLK
+clk_fpga => counter[3].CLK
+clk_fpga => counter[4].CLK
+clk_fpga => counter[5].CLK
+clk_fpga => counter[6].CLK
+clk_fpga => counter[7].CLK
+clk_fpga => counter[8].CLK
+clk_fpga => counter[9].CLK
+clk_fpga => counter[10].CLK
+clk_fpga => counter[11].CLK
+clk_fpga => counter[12].CLK
+clk_fpga => counter[13].CLK
+clk_fpga => counter[14].CLK
+clk_fpga => counter[15].CLK
+clk_fpga => out_key~reg0.CLK
+clk_fpga => intermediate.CLK
+rst_debouncer => counter[0].ACLR
+rst_debouncer => counter[1].ACLR
+rst_debouncer => counter[2].ACLR
+rst_debouncer => counter[3].ACLR
+rst_debouncer => counter[4].ACLR
+rst_debouncer => counter[5].ACLR
+rst_debouncer => counter[6].ACLR
+rst_debouncer => counter[7].ACLR
+rst_debouncer => counter[8].ACLR
+rst_debouncer => counter[9].ACLR
+rst_debouncer => counter[10].ACLR
+rst_debouncer => counter[11].ACLR
+rst_debouncer => counter[12].ACLR
+rst_debouncer => counter[13].ACLR
+rst_debouncer => counter[14].ACLR
+rst_debouncer => counter[15].ACLR
+rst_debouncer => out_key~reg0.ALOAD
+rst_debouncer => intermediate.ALOAD
+input_key => always0.IN1
+input_key => out_key~reg0.ADATA
+input_key => intermediate.ADATA
+input_key => intermediate.DATAIN
+out_key <= out_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|projeto05:inst62
