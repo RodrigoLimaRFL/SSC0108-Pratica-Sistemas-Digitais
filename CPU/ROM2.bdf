@@ -72,7 +72,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect 88 304 256 320)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "KEY" (rect 5 0 26 17)(font "Intel Clear" ))
+	(text "KEY" (rect 5 0 25 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -154,45 +154,15 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 0)(pt 0 0))
 	)
 )
-(symbol
-	(rect 256 248 448 360)
-	(text "debouncer" (rect 5 0 55 12)(font "Arial" ))
-	(text "inst1" (rect 8 96 30 113)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk_fpga" (rect 0 0 42 12)(font "Arial" ))
-		(text "clk_fpga" (rect 21 27 63 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "rst_debouncer" (rect 0 0 69 12)(font "Arial" ))
-		(text "rst_debouncer" (rect 21 43 90 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "input_key" (rect 0 0 48 12)(font "Arial" ))
-		(text "input_key" (rect 21 59 69 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 192 32)
-		(output)
-		(text "out_key" (rect 0 0 40 12)(font "Arial" ))
-		(text "out_key" (rect 138 27 178 39)(font "Arial" ))
-		(line (pt 192 32)(pt 176 32))
-	)
-	(parameter
-		"DELAY_BITS"
-		"16"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(rectangle (rect 16 16 176 96))
-	)
-	(annotation_block (parameter)(rect -48 -24 136 16))
+(connector
+	(pt 448 280)
+	(pt 296 280)
+)
+(connector
+	(pt 296 280)
+	(pt 296 312)
+)
+(connector
+	(pt 296 312)
+	(pt 256 312)
 )

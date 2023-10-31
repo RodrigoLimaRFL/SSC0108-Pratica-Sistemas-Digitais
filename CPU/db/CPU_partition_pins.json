@@ -4,31 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "ROM7segA0",
-					"strict" : false
-				},
-				{
-					"name" : "Contador7",
-					"strict" : false
-				},
-				{
-					"name" : "Contador6",
-					"strict" : false
-				},
-				{
-					"name" : "Contador5",
-					"strict" : false
-				},
-				{
-					"name" : "Contador4",
-					"strict" : false
-				},
-				{
-					"name" : "Contador3",
-					"strict" : false
-				},
-				{
-					"name" : "Contador2",
+					"name" : "Contador0",
 					"strict" : false
 				},
 				{
@@ -36,207 +12,123 @@
 					"strict" : false
 				},
 				{
-					"name" : "Contador0",
+					"name" : "Contador2",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segB0",
+					"name" : "Contador3",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segC0",
+					"name" : "Contador4",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segD0",
+					"name" : "Contador5",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segE0",
+					"name" : "Contador6",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segF0",
+					"name" : "Contador7",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segG0",
+					"name" : "Reg01[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segA1",
+					"name" : "Reg01[1]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segA2",
+					"name" : "Reg01[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segA3",
+					"name" : "Reg01[3]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segD1",
+					"name" : "Reg10[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segD2",
+					"name" : "Reg10[1]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segD3",
+					"name" : "Reg10[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segE1",
+					"name" : "Reg10[3]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segE2",
+					"name" : "ROMout[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segE3",
+					"name" : "ROMout[1]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segF1",
+					"name" : "ROMout[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segF2",
+					"name" : "ROMout[3]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segF3",
+					"name" : "ROMout[4]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segG1",
+					"name" : "ROMout[5]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segG2",
+					"name" : "ROMout[6]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segG3",
+					"name" : "ROMout[7]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segB1",
+					"name" : "ROMout[8]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segC1",
+					"name" : "ROMout[9]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segB2",
+					"name" : "ROMout[10]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segC2",
+					"name" : "ROMout[11]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segB3",
+					"name" : "ROMout[12]",
 					"strict" : false
 				},
 				{
-					"name" : "ROM7segC3",
+					"name" : "ROMout[13]",
 					"strict" : false
 				},
 				{
-					"name" : "Reg01A",
+					"name" : "ROMout[14]",
 					"strict" : false
 				},
 				{
-					"name" : "D01[0]",
-					"strict" : false
-				},
-				{
-					"name" : "D01[1]",
-					"strict" : false
-				},
-				{
-					"name" : "D01[2]",
-					"strict" : false
-				},
-				{
-					"name" : "D01[3]",
-					"strict" : false
-				},
-				{
-					"name" : "D10[0]",
-					"strict" : false
-				},
-				{
-					"name" : "D10[1]",
-					"strict" : false
-				},
-				{
-					"name" : "D10[2]",
-					"strict" : false
-				},
-				{
-					"name" : "D10[3]",
-					"strict" : false
-				},
-				{
-					"name" : "Reg01B",
-					"strict" : false
-				},
-				{
-					"name" : "Reg01C",
-					"strict" : false
-				},
-				{
-					"name" : "Reg01D",
-					"strict" : false
-				},
-				{
-					"name" : "Reg01E",
-					"strict" : false
-				},
-				{
-					"name" : "Reg01F",
-					"strict" : false
-				},
-				{
-					"name" : "Reg01G",
-					"strict" : false
-				},
-				{
-					"name" : "Reg10A",
-					"strict" : false
-				},
-				{
-					"name" : "Reg10B",
-					"strict" : false
-				},
-				{
-					"name" : "Reg10C",
-					"strict" : false
-				},
-				{
-					"name" : "Reg10D",
-					"strict" : false
-				},
-				{
-					"name" : "Reg10E",
-					"strict" : false
-				},
-				{
-					"name" : "Reg10F",
-					"strict" : false
-				},
-				{
-					"name" : "Reg10G",
-					"strict" : false
-				},
-				{
-					"name" : "resetMaster",
+					"name" : "ROMout[15]",
 					"strict" : false
 				},
 				{
@@ -244,7 +136,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "CLK50",
+					"name" : "resetMaster",
 					"strict" : false
 				}
 			]

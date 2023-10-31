@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/simulation/qsim
 vCPU
-Z1 !s110 1698773048
+Z1 !s110 1698775277
 !i10b 1
-!s100 d29LzajbbP[hneT^`J3X32
-IeJ]g^6cFFiMbNQlF8cbE[3
+!s100 FBfOH]`f7NA?n:cN;HdmZ1
+I[SP97AcI8;z;B]_h?iJYB3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1698773042
+Z3 w1698775276
 Z4 8CPU.vo
 Z5 FCPU.vo
 L0 32
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1698773048.000000
+Z7 !s108 1698775277.000000
 Z8 !s107 CPU.vo|
 Z9 !s90 -work|work|CPU.vo|
 !i113 1
@@ -33,21 +33,21 @@ n@c@p@u
 vCPU_vlg_vec_tst
 R1
 !i10b 1
-!s100 :3ZkEk<iGKo_@XR_KSB=12
-I2zhek0IVadLYVA0[]PPdQ1
+!s100 OmPI[kDD35_>CRe=zW[cM2
+IFCiBgHA]5TH6ej_ad493:0
 R2
 R0
-w1698773041
-8Waveform.vwf.vt
-FWaveform.vwf.vt
+w1698775275
+8Waveform3.vwf.vt
+FWaveform3.vwf.vt
 L0 30
 R6
 r1
 !s85 0
 31
 R7
-!s107 Waveform.vwf.vt|
-!s90 -work|work|Waveform.vwf.vt|
+!s107 Waveform3.vwf.vt|
+!s90 -work|work|Waveform3.vwf.vt|
 !i113 1
 R10
 R11
@@ -55,14 +55,14 @@ n@c@p@u_vlg_vec_tst
 vhard_block
 R1
 !i10b 1
-!s100 M4G5N=GWiIT:lm1bX69Fz1
-I[T:[_cGWaAl8[j:?ZE7HU0
+!s100 lzPUE2Vz=O=h8X0?f1AE]2
+Ia2CToRC@[oiS1`2@_lES=1
 R2
 R0
 R3
 R4
 R5
-L0 5484
+L0 2134
 R6
 r1
 !s85 0
