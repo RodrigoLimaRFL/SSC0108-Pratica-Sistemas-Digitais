@@ -1,5 +1,5 @@
 Fitter report for CPU
-Wed Oct 18 17:01:23 2023
+Tue Oct 31 14:17:31 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -70,17 +70,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Oct 18 17:01:23 2023       ;
+; Fitter Status                      ; Successful - Tue Oct 31 14:17:31 2023       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; CPU                                         ;
 ; Top-level Entity Name              ; CPU                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 136 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 134 / 114,480 ( < 1 % )                     ;
-;     Dedicated logic registers      ; 37 / 114,480 ( < 1 % )                      ;
-; Total registers                    ; 37                                          ;
+; Total logic elements               ; 165 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 163 / 114,480 ( < 1 % )                     ;
+;     Dedicated logic registers      ; 54 / 114,480 ( < 1 % )                      ;
+; Total registers                    ; 54                                          ;
 ; Total pins                         ; 61 / 529 ( 12 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 4,096 / 3,981,312 ( < 1 % )                 ;
@@ -157,14 +157,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.02        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.6%      ;
+;     Processor 2            ;   0.7%      ;
 ;     Processor 3            ;   0.5%      ;
-;     Processor 4            ;   0.4%      ;
+;     Processor 4            ;   0.5%      ;
 +----------------------------+-------------+
 
 
@@ -174,8 +174,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 325 ) ; 0.00 % ( 0 / 325 )         ; 0.00 % ( 0 / 325 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 325 ) ; 0.00 % ( 0 / 325 )         ; 0.00 % ( 0 / 325 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 371 ) ; 0.00 % ( 0 / 371 )         ; 0.00 % ( 0 / 371 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 371 ) ; 0.00 % ( 0 / 371 )         ; 0.00 % ( 0 / 371 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -198,7 +198,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 315 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 361 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -206,7 +206,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/output_files/CPU.pin.
+The pin-out file can be found in C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/output_files/CPU.pin.
 
 
 +---------------------------------------------------------------------------+
@@ -214,26 +214,26 @@ The pin-out file can be found in C:/Users/14585976/Desktop/dalas/SSC0108-Pratica
 +---------------------------------------------+-----------------------------+
 ; Resource                                    ; Usage                       ;
 +---------------------------------------------+-----------------------------+
-; Total logic elements                        ; 136 / 114,480 ( < 1 % )     ;
-;     -- Combinational with no register       ; 99                          ;
+; Total logic elements                        ; 165 / 114,480 ( < 1 % )     ;
+;     -- Combinational with no register       ; 111                         ;
 ;     -- Register only                        ; 2                           ;
-;     -- Combinational with a register        ; 35                          ;
+;     -- Combinational with a register        ; 52                          ;
 ;                                             ;                             ;
 ; Logic element usage by number of LUT inputs ;                             ;
-;     -- 4 input functions                    ; 86                          ;
-;     -- 3 input functions                    ; 20                          ;
-;     -- <=2 input functions                  ; 28                          ;
+;     -- 4 input functions                    ; 93                          ;
+;     -- 3 input functions                    ; 23                          ;
+;     -- <=2 input functions                  ; 47                          ;
 ;     -- Register only                        ; 2                           ;
 ;                                             ;                             ;
 ; Logic elements by mode                      ;                             ;
-;     -- normal mode                          ; 119                         ;
-;     -- arithmetic mode                      ; 15                          ;
+;     -- normal mode                          ; 133                         ;
+;     -- arithmetic mode                      ; 30                          ;
 ;                                             ;                             ;
-; Total registers*                            ; 37 / 117,053 ( < 1 % )      ;
-;     -- Dedicated logic registers            ; 37 / 114,480 ( < 1 % )      ;
+; Total registers*                            ; 54 / 117,053 ( < 1 % )      ;
+;     -- Dedicated logic registers            ; 54 / 114,480 ( < 1 % )      ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )           ;
 ;                                             ;                             ;
-; Total LABs:  partially or completely used   ; 14 / 7,155 ( < 1 % )        ;
+; Total LABs:  partially or completely used   ; 15 / 7,155 ( < 1 % )        ;
 ; Virtual pins                                ; 0                           ;
 ; I/O pins                                    ; 61 / 529 ( 12 % )           ;
 ;     -- Clock pins                           ; 1 / 7 ( 14 % )              ;
@@ -252,11 +252,11 @@ The pin-out file can be found in C:/Users/14585976/Desktop/dalas/SSC0108-Pratica
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )               ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )               ;
 ; Average interconnect usage (total/H/V)      ; 0.3% / 0.2% / 0.3%          ;
-; Peak interconnect usage (total/H/V)         ; 2.6% / 1.8% / 3.8%          ;
-; Maximum fan-out                             ; 193                         ;
-; Highest non-global fan-out                  ; 34                          ;
-; Total fan-out                               ; 617                         ;
-; Average fan-out                             ; 1.98                        ;
+; Peak interconnect usage (total/H/V)         ; 2.4% / 2.3% / 2.6%          ;
+; Maximum fan-out                             ; 195                         ;
+; Highest non-global fan-out                  ; 61                          ;
+; Total fan-out                               ; 781                         ;
+; Average fan-out                             ; 2.19                        ;
 +---------------------------------------------+-----------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -269,26 +269,26 @@ The pin-out file can be found in C:/Users/14585976/Desktop/dalas/SSC0108-Pratica
 +---------------------------------------------+------------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                    ; Low                            ;
 ;                                             ;                        ;                                ;
-; Total logic elements                        ; 136 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 99                     ; 0                              ;
+; Total logic elements                        ; 165 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 111                    ; 0                              ;
 ;     -- Register only                        ; 2                      ; 0                              ;
-;     -- Combinational with a register        ; 35                     ; 0                              ;
+;     -- Combinational with a register        ; 52                     ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic element usage by number of LUT inputs ;                        ;                                ;
-;     -- 4 input functions                    ; 86                     ; 0                              ;
-;     -- 3 input functions                    ; 20                     ; 0                              ;
-;     -- <=2 input functions                  ; 28                     ; 0                              ;
+;     -- 4 input functions                    ; 93                     ; 0                              ;
+;     -- 3 input functions                    ; 23                     ; 0                              ;
+;     -- <=2 input functions                  ; 47                     ; 0                              ;
 ;     -- Register only                        ; 2                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic elements by mode                      ;                        ;                                ;
-;     -- normal mode                          ; 119                    ; 0                              ;
-;     -- arithmetic mode                      ; 15                     ; 0                              ;
+;     -- normal mode                          ; 133                    ; 0                              ;
+;     -- arithmetic mode                      ; 30                     ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total registers                             ; 37                     ; 0                              ;
-;     -- Dedicated logic registers            ; 37 / 114480 ( < 1 % )  ; 0 / 114480 ( 0 % )             ;
+; Total registers                             ; 54                     ; 0                              ;
+;     -- Dedicated logic registers            ; 54 / 114480 ( < 1 % )  ; 0 / 114480 ( 0 % )             ;
 ;     -- I/O registers                        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total LABs:  partially or completely used   ; 14 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 15 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                        ;                                ;
 ; Virtual pins                                ; 0                      ; 0                              ;
 ; I/O pins                                    ; 61                     ; 0                              ;
@@ -305,8 +305,8 @@ The pin-out file can be found in C:/Users/14585976/Desktop/dalas/SSC0108-Pratica
 ;     -- Registered Output Connections        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Internal Connections                        ;                        ;                                ;
-;     -- Total Connections                    ; 740                    ; 5                              ;
-;     -- Registered Connections               ; 126                    ; 0                              ;
+;     -- Total Connections                    ; 904                    ; 5                              ;
+;     -- Registered Connections               ; 161                    ; 0                              ;
 ;                                             ;                        ;                                ;
 ; External Connections                        ;                        ;                                ;
 ;     -- Top                                  ; 0                      ; 0                              ;
@@ -338,9 +338,9 @@ The pin-out file can be found in C:/Users/14585976/Desktop/dalas/SSC0108-Pratica
 +-------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name        ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; CLK         ; Y23   ; 5        ; 115          ; 14           ; 7            ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; CLK50       ; Y2    ; 2        ; 0            ; 36           ; 14           ; 21                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; resetMaster ; AB28  ; 5        ; 115          ; 17           ; 0            ; 34                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; CLK         ; Y23   ; 5        ; 115          ; 14           ; 7            ; 14                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; CLK50       ; Y2    ; 2        ; 0            ; 36           ; 14           ; 38                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; resetMaster ; AB28  ; 5        ; 115          ; 17           ; 0            ; 61                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 +-------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -1310,31 +1310,32 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                      ; Entity Name            ; Library Name ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------+------------------------+--------------+
-; |CPU                                         ; 136 (0)     ; 37 (0)                    ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 61   ; 0            ; 99 (0)       ; 2 (0)             ; 35 (0)           ; |CPU                                                                                     ; CPU                    ; work         ;
-;    |Contador:inst13|                         ; 53 (32)     ; 26 (8)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 27 (24)      ; 1 (0)             ; 25 (8)           ; |CPU|Contador:inst13                                                                     ; Contador               ; work         ;
-;       |debouncer:adgsdfgseg|                 ; 21 (21)     ; 18 (18)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 1 (1)             ; 17 (17)          ; |CPU|Contador:inst13|debouncer:adgsdfgseg                                                ; debouncer              ; work         ;
-;    |ROM2:DFAFBG|                             ; 10 (0)      ; 1 (0)                     ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (0)        ; 0 (0)             ; 1 (0)            ; |CPU|ROM2:DFAFBG                                                                         ; ROM2                   ; work         ;
-;       |debouncer:inst1|                      ; 10 (10)     ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 1 (1)            ; |CPU|ROM2:DFAFBG|debouncer:inst1                                                         ; debouncer              ; work         ;
+; |CPU                                         ; 165 (0)     ; 54 (0)                    ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 61   ; 0            ; 111 (0)      ; 2 (0)             ; 52 (0)           ; |CPU                                                                                     ; CPU                    ; work         ;
+;    |Contador:inst13|                         ; 61 (32)     ; 26 (8)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 35 (24)      ; 1 (0)             ; 25 (8)           ; |CPU|Contador:inst13                                                                     ; Contador               ; work         ;
+;       |debouncer:adgsdfgseg|                 ; 29 (29)     ; 18 (18)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 1 (1)             ; 17 (17)          ; |CPU|Contador:inst13|debouncer:adgsdfgseg                                                ; debouncer              ; work         ;
+;    |ROM2:DFAFBG|                             ; 29 (0)      ; 18 (0)                    ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (0)       ; 1 (0)             ; 17 (0)           ; |CPU|ROM2:DFAFBG                                                                         ; ROM2                   ; work         ;
+;       |debouncer:inst1|                      ; 29 (29)     ; 18 (18)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 1 (1)             ; 17 (17)          ; |CPU|ROM2:DFAFBG|debouncer:inst1                                                         ; debouncer              ; work         ;
 ;       |rom:inst|                             ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |CPU|ROM2:DFAFBG|rom:inst                                                                ; rom                    ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |CPU|ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component                                ; altsyncram             ; work         ;
 ;             |altsyncram_nnr3:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |CPU|ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated ; altsyncram_nnr3        ; work         ;
-;    |Registrador:inst15|                      ; 6 (5)       ; 5 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 1 (1)             ; 4 (3)            ; |CPU|Registrador:inst15                                                                  ; Registrador            ; work         ;
-;       |debouncer:inst2|                      ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|Registrador:inst15|debouncer:inst2                                                  ; debouncer              ; work         ;
-;    |Registrador:inst16|                      ; 6 (5)       ; 5 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 5 (4)            ; |CPU|Registrador:inst16                                                                  ; Registrador            ; work         ;
-;       |debouncer:inst2|                      ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|Registrador:inst16|debouncer:inst2                                                  ; debouncer              ; work         ;
-;    |ULA:inst25|                              ; 26 (20)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (18)      ; 0 (0)             ; 5 (2)            ; |CPU|ULA:inst25                                                                          ; ULA                    ; work         ;
-;       |Subtratorcompleto4bits:inst6|         ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 1 (0)            ; |CPU|ULA:inst25|Subtratorcompleto4bits:inst6                                             ; Subtratorcompleto4bits ; work         ;
+;    |Registrador:inst3|                       ; 7 (5)       ; 5 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (1)        ; 0 (0)             ; 5 (4)            ; |CPU|Registrador:inst3                                                                   ; Registrador            ; work         ;
+;       |debouncer:inst2|                      ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|Registrador:inst3|debouncer:inst2                                                   ; debouncer              ; work         ;
+;    |Registrador:inst4|                       ; 6 (5)       ; 5 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 5 (4)            ; |CPU|Registrador:inst4                                                                   ; Registrador            ; work         ;
+;       |debouncer:inst2|                      ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|Registrador:inst4|debouncer:inst2                                                   ; debouncer              ; work         ;
+;    |ULA:inst25|                              ; 28 (20)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (16)      ; 0 (0)             ; 8 (4)            ; |CPU|ULA:inst25                                                                          ; ULA                    ; work         ;
+;       |Subtratorcompleto4bits:inst6|         ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; |CPU|ULA:inst25|Subtratorcompleto4bits:inst6                                             ; Subtratorcompleto4bits ; work         ;
 ;          |Subtratorcompleto:inst1|           ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |CPU|ULA:inst25|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst1                     ; Subtratorcompleto      ; work         ;
-;          |Subtratorcompleto:inst3|           ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|ULA:inst25|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst3                     ; Subtratorcompleto      ; work         ;
-;       |somadorcompleto4bits:inSAst|          ; 4 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 2 (0)            ; |CPU|ULA:inst25|somadorcompleto4bits:inSAst                                              ; somadorcompleto4bits   ; work         ;
+;          |Subtratorcompleto:inst3|           ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |CPU|ULA:inst25|Subtratorcompleto4bits:inst6|Subtratorcompleto:inst3                     ; Subtratorcompleto      ; work         ;
+;       |somadorcompleto4bits:inSAst|          ; 6 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 4 (0)            ; |CPU|ULA:inst25|somadorcompleto4bits:inSAst                                              ; somadorcompleto4bits   ; work         ;
+;          |Somador:asdasd|                    ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; |CPU|ULA:inst25|somadorcompleto4bits:inSAst|Somador:asdasd                               ; Somador                ; work         ;
 ;          |Somador:inst1|                     ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|ULA:inst25|somadorcompleto4bits:inSAst|Somador:inst1                                ; Somador                ; work         ;
 ;          |Somador:inst2|                     ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|ULA:inst25|somadorcompleto4bits:inSAst|Somador:inst2                                ; Somador                ; work         ;
 ;    |projeto05:inst56|                        ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |CPU|projeto05:inst56                                                                    ; projeto05              ; work         ;
 ;    |projeto05:inst57|                        ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |CPU|projeto05:inst57                                                                    ; projeto05              ; work         ;
 ;    |projeto05:inst58|                        ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |CPU|projeto05:inst58                                                                    ; projeto05              ; work         ;
 ;    |projeto05:inst59|                        ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |CPU|projeto05:inst59                                                                    ; projeto05              ; work         ;
-;    |projeto05:inst61|                        ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 1 (1)            ; |CPU|projeto05:inst61                                                                    ; projeto05              ; work         ;
-;    |projeto05:inst62|                        ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 1 (1)            ; |CPU|projeto05:inst62                                                                    ; projeto05              ; work         ;
+;    |projeto05:inst61|                        ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |CPU|projeto05:inst61                                                                    ; projeto05              ; work         ;
+;    |projeto05:inst62|                        ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |CPU|projeto05:inst62                                                                    ; projeto05              ; work         ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1414,6 +1415,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                                                ; Pad To Core Index ; Setting ;
 +--------------------------------------------------------------------+-------------------+---------+
 ; resetMaster                                                        ;                   ;         ;
+;      - Registrador:inst4|inst                                      ; 0                 ; 0       ;
+;      - Registrador:inst3|inst                                      ; 0                 ; 0       ;
+;      - Registrador:inst3|inst11                                    ; 0                 ; 0       ;
+;      - Registrador:inst3|inst13                                    ; 0                 ; 0       ;
+;      - Registrador:inst3|inst15                                    ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|counter[0]                      ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|counter[1]                      ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|counter[2]                      ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|counter[3]                      ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|counter[4]                      ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|counter[5]                      ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|counter[6]                      ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|counter[7]                      ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|counter[8]                      ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|counter[9]                      ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|counter[10]                     ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|counter[11]                     ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|counter[12]                     ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|counter[13]                     ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|counter[14]                     ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|counter[15]                     ; 0                 ; 0       ;
 ;      - Contador:inst13|debouncer:adgsdfgseg|counter[0]             ; 0                 ; 0       ;
 ;      - Contador:inst13|debouncer:adgsdfgseg|counter[1]             ; 0                 ; 0       ;
 ;      - Contador:inst13|debouncer:adgsdfgseg|counter[2]             ; 0                 ; 0       ;
@@ -1431,59 +1453,72 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Contador:inst13|debouncer:adgsdfgseg|counter[14]            ; 0                 ; 0       ;
 ;      - Contador:inst13|debouncer:adgsdfgseg|counter[15]            ; 0                 ; 0       ;
 ;      - ULA:inst25|inst42~0                                         ; 0                 ; 0       ;
+;      - Registrador:inst4|inst13                                    ; 0                 ; 0       ;
+;      - Registrador:inst4|inst15                                    ; 0                 ; 0       ;
+;      - Registrador:inst4|inst11                                    ; 0                 ; 0       ;
 ;      - ULA:inst25|inst46~1                                         ; 0                 ; 0       ;
+;      - Contador:inst13|inst40~0                                    ; 0                 ; 0       ;
+;      - Registrador:inst3|debouncer:inst2|out_key~_emulated         ; 0                 ; 0       ;
+;      - Registrador:inst3|debouncer:inst2|out_key~0                 ; 1                 ; 0       ;
+;      - Registrador:inst4|debouncer:inst2|out_key~_emulated         ; 0                 ; 0       ;
+;      - Registrador:inst4|debouncer:inst2|out_key~0                 ; 1                 ; 0       ;
 ;      - ROM2:DFAFBG|debouncer:inst1|out_key~_emulated               ; 0                 ; 0       ;
 ;      - ROM2:DFAFBG|debouncer:inst1|out_key~2                       ; 1                 ; 0       ;
-;      - Contador:inst13|inst40~0                                    ; 0                 ; 0       ;
-;      - Registrador:inst15|debouncer:inst2|out_key~_emulated        ; 0                 ; 0       ;
-;      - Registrador:inst15|debouncer:inst2|out_key~0                ; 1                 ; 0       ;
-;      - Registrador:inst16|debouncer:inst2|out_key~_emulated        ; 0                 ; 0       ;
-;      - Registrador:inst16|debouncer:inst2|out_key~0                ; 1                 ; 0       ;
 ;      - Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated      ; 0                 ; 0       ;
-;      - Contador:inst13|debouncer:adgsdfgseg|out_key~0              ; 1                 ; 0       ;
+;      - Contador:inst13|debouncer:adgsdfgseg|out_key~2              ; 1                 ; 0       ;
 ;      - Contador:inst13|inst24                                      ; 0                 ; 0       ;
 ;      - Contador:inst13|inst20                                      ; 0                 ; 0       ;
 ;      - Contador:inst13|inst16                                      ; 0                 ; 0       ;
 ;      - Contador:inst13|inst12                                      ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|intermediate~_emulated          ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|intermediate~0                  ; 1                 ; 0       ;
 ;      - Contador:inst13|debouncer:adgsdfgseg|intermediate~_emulated ; 0                 ; 0       ;
-;      - Contador:inst13|debouncer:adgsdfgseg|intermediate~0         ; 0                 ; 0       ;
-;      - ROM2:DFAFBG|debouncer:inst1|out_key~1                       ; 1                 ; 0       ;
-; CLK                                                                ;                   ;         ;
-;      - ROM2:DFAFBG|debouncer:inst1|out_key~2                       ; 1                 ; 0       ;
-;      - Registrador:inst15|debouncer:inst2|out_key~0                ; 1                 ; 0       ;
-;      - Registrador:inst16|debouncer:inst2|out_key~0                ; 1                 ; 0       ;
-;      - ROM2:DFAFBG|debouncer:inst1|out_key~4                       ; 0                 ; 0       ;
-;      - Contador:inst13|debouncer:adgsdfgseg|out_key~0              ; 1                 ; 0       ;
 ;      - Contador:inst13|debouncer:adgsdfgseg|intermediate~0         ; 1                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|out_key~1                       ; 1                 ; 0       ;
+;      - Contador:inst13|debouncer:adgsdfgseg|out_key~1              ; 1                 ; 0       ;
+; CLK                                                                ;                   ;         ;
+;      - Registrador:inst3|debouncer:inst2|out_key~0                 ; 0                 ; 0       ;
+;      - Registrador:inst4|debouncer:inst2|out_key~0                 ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|out_key~2                       ; 1                 ; 0       ;
+;      - Contador:inst13|debouncer:adgsdfgseg|out_key~2              ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|out_key~5                       ; 1                 ; 0       ;
+;      - Contador:inst13|debouncer:adgsdfgseg|out_key~5              ; 1                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|intermediate~0                  ; 1                 ; 0       ;
 ;      - ROM2:DFAFBG|debouncer:inst1|always0~0                       ; 0                 ; 0       ;
+;      - Contador:inst13|debouncer:adgsdfgseg|intermediate~0         ; 1                 ; 0       ;
+;      - Contador:inst13|debouncer:adgsdfgseg|always0~0              ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|intermediate~1                  ; 0                 ; 0       ;
 ;      - Contador:inst13|debouncer:adgsdfgseg|intermediate~1         ; 0                 ; 0       ;
-;      - ROM2:DFAFBG|debouncer:inst1|out_key~1                       ; 0                 ; 0       ;
+;      - ROM2:DFAFBG|debouncer:inst1|out_key~1                       ; 1                 ; 0       ;
+;      - Contador:inst13|debouncer:adgsdfgseg|out_key~1              ; 0                 ; 0       ;
 ; CLK50                                                              ;                   ;         ;
 +--------------------------------------------------------------------+-------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                            ;
-+------------------------------------------------+---------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; Name                                           ; Location            ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+------------------------------------------------+---------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; CLK50                                          ; PIN_Y2              ; 5       ; Clock                      ; no     ; --                   ; --               ; --                        ;
-; CLK50                                          ; PIN_Y2              ; 17      ; Clock                      ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; Contador:inst13|debouncer:adgsdfgseg|out_key~0 ; LCCOMB_X113_Y20_N0  ; 8       ; Clock                      ; yes    ; Global Clock         ; GCLK7            ; --                        ;
-; Contador:inst13|inst1~0                        ; LCCOMB_X105_Y29_N28 ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; Contador:inst13|inst40~0                       ; LCCOMB_X106_Y29_N10 ; 4       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; Contador:inst13|inst6~0                        ; LCCOMB_X103_Y29_N16 ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; Contador:inst13|inst7~0                        ; LCCOMB_X103_Y29_N30 ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; Contador:inst13|inst~0                         ; LCCOMB_X105_Y29_N6  ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; ROM2:DFAFBG|debouncer:inst1|always0~0          ; LCCOMB_X113_Y20_N30 ; 16      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; ROM2:DFAFBG|debouncer:inst1|out_key~2          ; LCCOMB_X113_Y20_N18 ; 1       ; Clock                      ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; ROM2:DFAFBG|debouncer:inst1|out_key~9          ; LCCOMB_X113_Y20_N10 ; 20      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; Registrador:inst15|debouncer:inst2|out_key~0   ; LCCOMB_X113_Y20_N16 ; 4       ; Clock                      ; yes    ; Global Clock         ; GCLK5            ; --                        ;
-; Registrador:inst15|inst17~0                    ; LCCOMB_X106_Y27_N28 ; 4       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; Registrador:inst16|debouncer:inst2|out_key~0   ; LCCOMB_X113_Y20_N4  ; 4       ; Clock                      ; yes    ; Global Clock         ; GCLK9            ; --                        ;
-; Registrador:inst16|inst17~0                    ; LCCOMB_X106_Y27_N22 ; 4       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; resetMaster                                    ; PIN_AB28            ; 34      ; Async. clear, Latch enable ; no     ; --                   ; --               ; --                        ;
-+------------------------------------------------+---------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                             ;
++-------------------------------------------------+---------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
+; Name                                            ; Location            ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-------------------------------------------------+---------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
+; CLK50                                           ; PIN_Y2              ; 5       ; Clock                      ; no     ; --                   ; --               ; --                        ;
+; CLK50                                           ; PIN_Y2              ; 34      ; Clock                      ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; Contador:inst13|debouncer:adgsdfgseg|always0~0  ; LCCOMB_X113_Y18_N14 ; 16      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; Contador:inst13|debouncer:adgsdfgseg|out_key~10 ; LCCOMB_X113_Y18_N8  ; 17      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; Contador:inst13|debouncer:adgsdfgseg|out_key~2  ; LCCOMB_X113_Y18_N16 ; 8       ; Clock                      ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; Contador:inst13|inst1~0                         ; LCCOMB_X77_Y16_N24  ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; Contador:inst13|inst40~0                        ; LCCOMB_X76_Y16_N22  ; 4       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; Contador:inst13|inst6~0                         ; LCCOMB_X79_Y16_N2   ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; Contador:inst13|inst7~0                         ; LCCOMB_X79_Y16_N28  ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; Contador:inst13|inst~0                          ; LCCOMB_X77_Y16_N6   ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; ROM2:DFAFBG|debouncer:inst1|always0~0           ; LCCOMB_X111_Y17_N4  ; 16      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; ROM2:DFAFBG|debouncer:inst1|out_key~10          ; LCCOMB_X111_Y17_N10 ; 19      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; ROM2:DFAFBG|debouncer:inst1|out_key~2           ; LCCOMB_X111_Y17_N0  ; 1       ; Clock                      ; yes    ; Global Clock         ; GCLK9            ; --                        ;
+; Registrador:inst3|debouncer:inst2|out_key~0     ; LCCOMB_X111_Y17_N2  ; 4       ; Clock                      ; yes    ; Global Clock         ; GCLK8            ; --                        ;
+; Registrador:inst3|inst17~0                      ; LCCOMB_X81_Y16_N16  ; 4       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; Registrador:inst4|debouncer:inst2|out_key~0     ; LCCOMB_X111_Y17_N30 ; 4       ; Clock                      ; yes    ; Global Clock         ; GCLK5            ; --                        ;
+; Registrador:inst4|inst17~0                      ; LCCOMB_X81_Y16_N14  ; 4       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; resetMaster                                     ; PIN_AB28            ; 61      ; Async. clear, Latch enable ; no     ; --                   ; --               ; --                        ;
++-------------------------------------------------+---------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1491,21 +1526,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------+---------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                                           ; Location            ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------------------------------+---------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; CLK50                                          ; PIN_Y2              ; 17      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
-; Contador:inst13|debouncer:adgsdfgseg|out_key~0 ; LCCOMB_X113_Y20_N0  ; 8       ; 0                                    ; Global Clock         ; GCLK7            ; --                        ;
-; ROM2:DFAFBG|debouncer:inst1|out_key~2          ; LCCOMB_X113_Y20_N18 ; 1       ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
-; Registrador:inst15|debouncer:inst2|out_key~0   ; LCCOMB_X113_Y20_N16 ; 4       ; 0                                    ; Global Clock         ; GCLK5            ; --                        ;
-; Registrador:inst16|debouncer:inst2|out_key~0   ; LCCOMB_X113_Y20_N4  ; 4       ; 0                                    ; Global Clock         ; GCLK9            ; --                        ;
+; CLK50                                          ; PIN_Y2              ; 34      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
+; Contador:inst13|debouncer:adgsdfgseg|out_key~2 ; LCCOMB_X113_Y18_N16 ; 8       ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
+; ROM2:DFAFBG|debouncer:inst1|out_key~2          ; LCCOMB_X111_Y17_N0  ; 1       ; 0                                    ; Global Clock         ; GCLK9            ; --                        ;
+; Registrador:inst3|debouncer:inst2|out_key~0    ; LCCOMB_X111_Y17_N2  ; 4       ; 0                                    ; Global Clock         ; GCLK8            ; --                        ;
+; Registrador:inst4|debouncer:inst2|out_key~0    ; LCCOMB_X111_Y17_N30 ; 4       ; 0                                    ; Global Clock         ; GCLK5            ; --                        ;
 +------------------------------------------------+---------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-+------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------+-----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
-; Name                                                                                           ; Type ; Mode ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF       ; Location        ; Mixed Width RDW Mode ; Port A RDW Mode        ; Port B RDW Mode        ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs ;
-+------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------+-----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
-; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 256          ; 16           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 4096 ; 256                         ; 16                          ; --                          ; --                          ; 4096                ; 1    ; Mem01.mif ; M9K_X104_Y29_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-+------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------+-----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
++------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------+----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
+; Name                                                                                           ; Type ; Mode ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF       ; Location       ; Mixed Width RDW Mode ; Port A RDW Mode        ; Port B RDW Mode        ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs ;
++------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------+----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
+; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 256          ; 16           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 4096 ; 256                         ; 16                          ; --                          ; --                          ; 4096                ; 1    ; Mem01.mif ; M9K_X78_Y16_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
++------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------+----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
 
@@ -1554,85 +1589,85 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 257 / 342,891 ( < 1 % ) ;
-; C16 interconnects     ; 102 / 10,120 ( 1 % )    ;
-; C4 interconnects      ; 352 / 209,544 ( < 1 % ) ;
-; Direct links          ; 30 / 342,891 ( < 1 % )  ;
+; Block interconnects   ; 274 / 342,891 ( < 1 % ) ;
+; C16 interconnects     ; 97 / 10,120 ( < 1 % )   ;
+; C4 interconnects      ; 334 / 209,544 ( < 1 % ) ;
+; Direct links          ; 36 / 342,891 ( < 1 % )  ;
 ; Global clocks         ; 5 / 20 ( 25 % )         ;
-; Local interconnects   ; 55 / 119,088 ( < 1 % )  ;
-; R24 interconnects     ; 82 / 9,963 ( < 1 % )    ;
-; R4 interconnects      ; 318 / 289,782 ( < 1 % ) ;
+; Local interconnects   ; 78 / 119,088 ( < 1 % )  ;
+; R24 interconnects     ; 80 / 9,963 ( < 1 % )    ;
+; R4 interconnects      ; 325 / 289,782 ( < 1 % ) ;
 +-----------------------+-------------------------+
 
 
-+---------------------------------------------------------------------------+
-; LAB Logic Elements                                                        ;
-+--------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 9.71) ; Number of LABs  (Total = 14) ;
-+--------------------------------------------+------------------------------+
-; 1                                          ; 2                            ;
-; 2                                          ; 0                            ;
-; 3                                          ; 0                            ;
-; 4                                          ; 1                            ;
-; 5                                          ; 0                            ;
-; 6                                          ; 2                            ;
-; 7                                          ; 2                            ;
-; 8                                          ; 0                            ;
-; 9                                          ; 0                            ;
-; 10                                         ; 0                            ;
-; 11                                         ; 0                            ;
-; 12                                         ; 0                            ;
-; 13                                         ; 2                            ;
-; 14                                         ; 1                            ;
-; 15                                         ; 0                            ;
-; 16                                         ; 4                            ;
-+--------------------------------------------+------------------------------+
++----------------------------------------------------------------------------+
+; LAB Logic Elements                                                         ;
++---------------------------------------------+------------------------------+
+; Number of Logic Elements  (Average = 11.00) ; Number of LABs  (Total = 15) ;
++---------------------------------------------+------------------------------+
+; 1                                           ; 1                            ;
+; 2                                           ; 0                            ;
+; 3                                           ; 0                            ;
+; 4                                           ; 0                            ;
+; 5                                           ; 1                            ;
+; 6                                           ; 0                            ;
+; 7                                           ; 4                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 1                            ;
+; 10                                          ; 0                            ;
+; 11                                          ; 0                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 1                            ;
+; 14                                          ; 1                            ;
+; 15                                          ; 1                            ;
+; 16                                          ; 5                            ;
++---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.93) ; Number of LABs  (Total = 14) ;
+; LAB-wide Signals  (Average = 1.27) ; Number of LABs  (Total = 15) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 2                            ;
+; 1 Async. clear                     ; 5                            ;
 ; 1 Clock                            ; 6                            ;
-; 1 Clock enable                     ; 1                            ;
-; 1 Sync. clear                      ; 1                            ;
+; 1 Clock enable                     ; 2                            ;
+; 1 Sync. clear                      ; 2                            ;
 ; 2 Clock enables                    ; 1                            ;
-; 2 Clocks                           ; 2                            ;
+; 2 Clocks                           ; 3                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 12.36) ; Number of LABs  (Total = 14) ;
+; Number of Signals Sourced  (Average = 14.60) ; Number of LABs  (Total = 15) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 1                            ;
+; 1                                            ; 0                            ;
 ; 2                                            ; 1                            ;
 ; 3                                            ; 0                            ;
-; 4                                            ; 1                            ;
-; 5                                            ; 0                            ;
-; 6                                            ; 1                            ;
-; 7                                            ; 2                            ;
+; 4                                            ; 0                            ;
+; 5                                            ; 1                            ;
+; 6                                            ; 0                            ;
+; 7                                            ; 3                            ;
 ; 8                                            ; 0                            ;
-; 9                                            ; 0                            ;
-; 10                                           ; 1                            ;
-; 11                                           ; 0                            ;
+; 9                                            ; 1                            ;
+; 10                                           ; 0                            ;
+; 11                                           ; 1                            ;
 ; 12                                           ; 0                            ;
-; 13                                           ; 1                            ;
-; 14                                           ; 0                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 1                            ;
 ; 15                                           ; 1                            ;
-; 16                                           ; 1                            ;
+; 16                                           ; 0                            ;
 ; 17                                           ; 0                            ;
-; 18                                           ; 0                            ;
-; 19                                           ; 1                            ;
-; 20                                           ; 1                            ;
-; 21                                           ; 1                            ;
+; 18                                           ; 3                            ;
+; 19                                           ; 0                            ;
+; 20                                           ; 0                            ;
+; 21                                           ; 0                            ;
 ; 22                                           ; 0                            ;
 ; 23                                           ; 0                            ;
-; 24                                           ; 0                            ;
+; 24                                           ; 1                            ;
 ; 25                                           ; 0                            ;
 ; 26                                           ; 0                            ;
 ; 27                                           ; 0                            ;
@@ -1640,61 +1675,62 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 ; 29                                           ; 0                            ;
 ; 30                                           ; 0                            ;
 ; 31                                           ; 0                            ;
-; 32                                           ; 1                            ;
+; 32                                           ; 2                            ;
 +----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 6.79) ; Number of LABs  (Total = 14) ;
+; Number of Signals Sourced Out  (Average = 7.67) ; Number of LABs  (Total = 15) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 2                            ;
+; 1                                               ; 1                            ;
 ; 2                                               ; 0                            ;
 ; 3                                               ; 1                            ;
-; 4                                               ; 3                            ;
-; 5                                               ; 0                            ;
+; 4                                               ; 1                            ;
+; 5                                               ; 2                            ;
 ; 6                                               ; 1                            ;
-; 7                                               ; 3                            ;
+; 7                                               ; 4                            ;
 ; 8                                               ; 0                            ;
-; 9                                               ; 1                            ;
+; 9                                               ; 2                            ;
 ; 10                                              ; 0                            ;
 ; 11                                              ; 0                            ;
 ; 12                                              ; 0                            ;
-; 13                                              ; 2                            ;
+; 13                                              ; 1                            ;
 ; 14                                              ; 0                            ;
 ; 15                                              ; 0                            ;
-; 16                                              ; 1                            ;
+; 16                                              ; 2                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 8.86) ; Number of LABs  (Total = 14) ;
+; Number of Distinct Inputs  (Average = 9.13) ; Number of LABs  (Total = 15) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
 ; 1                                           ; 0                            ;
 ; 2                                           ; 0                            ;
-; 3                                           ; 1                            ;
+; 3                                           ; 0                            ;
 ; 4                                           ; 5                            ;
-; 5                                           ; 0                            ;
-; 6                                           ; 0                            ;
-; 7                                           ; 1                            ;
-; 8                                           ; 3                            ;
+; 5                                           ; 1                            ;
+; 6                                           ; 2                            ;
+; 7                                           ; 0                            ;
+; 8                                           ; 2                            ;
 ; 9                                           ; 0                            ;
 ; 10                                          ; 0                            ;
-; 11                                          ; 1                            ;
-; 12                                          ; 0                            ;
-; 13                                          ; 0                            ;
+; 11                                          ; 0                            ;
+; 12                                          ; 1                            ;
+; 13                                          ; 1                            ;
 ; 14                                          ; 0                            ;
 ; 15                                          ; 0                            ;
 ; 16                                          ; 0                            ;
 ; 17                                          ; 0                            ;
-; 18                                          ; 0                            ;
-; 19                                          ; 1                            ;
-; 20                                          ; 2                            ;
+; 18                                          ; 1                            ;
+; 19                                          ; 0                            ;
+; 20                                          ; 1                            ;
+; 21                                          ; 1                            ;
 +---------------------------------------------+------------------------------+
 
 
@@ -1864,14 +1900,14 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +-----------------------+----------------------+-------------------+
 ; Source Clock(s)       ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------------+----------------------+-------------------+
-; CLK,resetMaster,I/O   ; CLK,resetMaster      ; 66.1              ;
-; CLK50,resetMaster,I/O ; CLK50                ; 19.1              ;
-; CLK,resetMaster,I/O   ; CLK,resetMaster,I/O  ; 13.8              ;
-; I/O                   ; CLK50                ; 13.8              ;
-; I/O                   ; CLK,resetMaster,I/O  ; 10.7              ;
-; resetMaster           ; CLK50                ; 4.7               ;
-; CLK,resetMaster       ; CLK,resetMaster      ; 4.1               ;
-; I/O                   ; CLK,resetMaster      ; 2.9               ;
+; CLK,resetMaster,I/O   ; CLK,resetMaster      ; 50.3              ;
+; resetMaster,CLK50,I/O ; CLK50                ; 31.6              ;
+; I/O                   ; CLK50                ; 28.8              ;
+; CLK,resetMaster,I/O   ; CLK,resetMaster,I/O  ; 17.3              ;
+; I/O                   ; CLK,resetMaster,I/O  ; 11.0              ;
+; resetMaster           ; CLK50                ; 9.6               ;
+; I/O                   ; CLK,resetMaster      ; 8.2               ;
+; CLK,resetMaster       ; CLK,resetMaster      ; 3.1               ;
 +-----------------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -1882,59 +1918,78 @@ This will disable optimization of problematic paths and expose them for further 
 +----------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+-------------------+
 ; Source Register                                                                                                      ; Destination Register                                                                                                 ; Delay Added in ns ;
 +----------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+-------------------+
-; resetMaster                                                                                                          ; Registrador:inst15|inst                                                                                              ; 5.521             ;
-; ROM2:DFAFBG|debouncer:inst1|out_key~1                                                                                ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 3.848             ;
-; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 3.848             ;
-; CLK                                                                                                                  ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 3.848             ;
-; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a10~porta_address_reg0 ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a3~porta_address_reg0  ; 3.766             ;
-; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a1~porta_address_reg0  ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a3~porta_address_reg0  ; 3.766             ;
-; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a11~porta_address_reg0 ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a3~porta_address_reg0  ; 3.766             ;
-; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a0~porta_address_reg0  ; Contador:inst13|inst1~_emulated                                                                                      ; 3.553             ;
-; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a2~porta_address_reg0  ; Contador:inst13|inst7~_emulated                                                                                      ; 3.466             ;
-; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a3~porta_address_reg0  ; Contador:inst13|inst7~_emulated                                                                                      ; 3.436             ;
-; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a8~porta_address_reg0  ; Registrador:inst15|inst                                                                                              ; 3.256             ;
-; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a9~porta_address_reg0  ; Registrador:inst15|inst                                                                                              ; 3.256             ;
-; Contador:inst13|debouncer:adgsdfgseg|intermediate~_emulated                                                          ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 3.209             ;
-; Contador:inst13|inst1~1                                                                                              ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a3~porta_address_reg0  ; 2.705             ;
-; Contador:inst13|inst1~_emulated                                                                                      ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a3~porta_address_reg0  ; 2.705             ;
-; Contador:inst13|debouncer:adgsdfgseg|counter[1]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.529             ;
-; Contador:inst13|debouncer:adgsdfgseg|counter[0]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.529             ;
-; Contador:inst13|inst~_emulated                                                                                       ; Contador:inst13|inst1~_emulated                                                                                      ; 2.510             ;
-; Contador:inst13|inst~1                                                                                               ; Contador:inst13|inst1~_emulated                                                                                      ; 2.510             ;
-; Contador:inst13|inst6~_emulated                                                                                      ; Contador:inst13|inst7~_emulated                                                                                      ; 2.333             ;
-; Contador:inst13|inst6~1                                                                                              ; Contador:inst13|inst7~_emulated                                                                                      ; 2.333             ;
-; Contador:inst13|inst7~_emulated                                                                                      ; Contador:inst13|inst7~_emulated                                                                                      ; 2.247             ;
-; Contador:inst13|inst7~1                                                                                              ; Contador:inst13|inst7~_emulated                                                                                      ; 2.247             ;
-; Contador:inst13|debouncer:adgsdfgseg|counter[14]                                                                     ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 1.999             ;
-; Contador:inst13|debouncer:adgsdfgseg|counter[13]                                                                     ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 1.999             ;
-; Contador:inst13|debouncer:adgsdfgseg|counter[12]                                                                     ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 1.999             ;
-; Contador:inst13|debouncer:adgsdfgseg|counter[15]                                                                     ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 1.999             ;
-; Contador:inst13|debouncer:adgsdfgseg|counter[10]                                                                     ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 1.999             ;
-; Contador:inst13|debouncer:adgsdfgseg|counter[9]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 1.999             ;
-; Contador:inst13|debouncer:adgsdfgseg|counter[8]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 1.999             ;
-; Contador:inst13|debouncer:adgsdfgseg|counter[11]                                                                     ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 1.999             ;
-; Contador:inst13|debouncer:adgsdfgseg|counter[6]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 1.999             ;
-; Contador:inst13|debouncer:adgsdfgseg|counter[5]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 1.999             ;
-; Contador:inst13|debouncer:adgsdfgseg|counter[4]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 1.999             ;
-; Contador:inst13|debouncer:adgsdfgseg|counter[3]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 1.999             ;
-; Contador:inst13|debouncer:adgsdfgseg|counter[2]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 1.999             ;
-; Contador:inst13|debouncer:adgsdfgseg|counter[7]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 1.999             ;
-; Registrador:inst16|inst11                                                                                            ; Registrador:inst15|inst                                                                                              ; 1.805             ;
-; Registrador:inst16|inst13                                                                                            ; Registrador:inst15|inst                                                                                              ; 1.805             ;
-; Registrador:inst16|inst15                                                                                            ; Registrador:inst15|inst                                                                                              ; 1.805             ;
-; Registrador:inst15|inst15                                                                                            ; Registrador:inst15|inst                                                                                              ; 1.805             ;
-; Registrador:inst15|inst13                                                                                            ; Registrador:inst15|inst                                                                                              ; 1.805             ;
-; Registrador:inst15|inst11                                                                                            ; Registrador:inst15|inst                                                                                              ; 1.805             ;
-; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a12~porta_address_reg0 ; Registrador:inst15|inst                                                                                              ; 1.805             ;
-; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a13~porta_address_reg0 ; Registrador:inst15|inst                                                                                              ; 1.805             ;
-; Contador:inst13|inst8                                                                                                ; Contador:inst13|inst10                                                                                               ; 0.823             ;
-; Contador:inst13|agh                                                                                                  ; Contador:inst13|inst10                                                                                               ; 0.823             ;
-; Contador:inst13|inst10                                                                                               ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a0~porta_address_reg0  ; 0.703             ;
-; Contador:inst13|asd                                                                                                  ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a13~porta_address_reg0 ; 0.699             ;
-; Registrador:inst16|inst                                                                                              ; Registrador:inst15|inst                                                                                              ; 0.392             ;
-; Registrador:inst15|inst                                                                                              ; Registrador:inst15|inst                                                                                              ; 0.353             ;
+; resetMaster                                                                                                          ; Registrador:inst3|inst11                                                                                             ; 6.019             ;
+; ROM2:DFAFBG|debouncer:inst1|out_key~1                                                                                ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 4.210             ;
+; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 4.210             ;
+; CLK                                                                                                                  ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 4.210             ;
+; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 4.121             ;
+; Contador:inst13|debouncer:adgsdfgseg|out_key~1                                                                       ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 4.121             ;
+; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a10~porta_address_reg0 ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a1~porta_address_reg0  ; 3.844             ;
+; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a11~porta_address_reg0 ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a1~porta_address_reg0  ; 3.844             ;
+; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a0~porta_address_reg0  ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a1~porta_address_reg0  ; 3.844             ;
+; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a2~porta_address_reg0  ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a3~porta_address_reg0  ; 3.754             ;
+; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a3~porta_address_reg0  ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a3~porta_address_reg0  ; 3.713             ;
+; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a8~porta_address_reg0  ; Registrador:inst3|inst                                                                                               ; 3.600             ;
+; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a9~porta_address_reg0  ; Registrador:inst3|inst                                                                                               ; 3.600             ;
+; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a1~porta_address_reg0  ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a3~porta_address_reg0  ; 3.533             ;
+; Contador:inst13|debouncer:adgsdfgseg|intermediate~_emulated                                                          ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 3.479             ;
+; ROM2:DFAFBG|debouncer:inst1|intermediate~_emulated                                                                   ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 3.287             ;
+; Contador:inst13|debouncer:adgsdfgseg|counter[1]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.799             ;
+; Contador:inst13|debouncer:adgsdfgseg|counter[0]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.799             ;
+; ROM2:DFAFBG|debouncer:inst1|counter[1]                                                                               ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 2.648             ;
+; ROM2:DFAFBG|debouncer:inst1|counter[0]                                                                               ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 2.648             ;
+; Contador:inst13|inst~_emulated                                                                                       ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a1~porta_address_reg0  ; 2.335             ;
+; Contador:inst13|inst~1                                                                                               ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a1~porta_address_reg0  ; 2.335             ;
+; Contador:inst13|debouncer:adgsdfgseg|counter[14]                                                                     ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.254             ;
+; Contador:inst13|debouncer:adgsdfgseg|counter[15]                                                                     ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.254             ;
+; Contador:inst13|debouncer:adgsdfgseg|counter[12]                                                                     ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.254             ;
+; Contador:inst13|debouncer:adgsdfgseg|counter[13]                                                                     ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.254             ;
+; Contador:inst13|debouncer:adgsdfgseg|counter[10]                                                                     ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.254             ;
+; Contador:inst13|debouncer:adgsdfgseg|counter[9]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.254             ;
+; Contador:inst13|debouncer:adgsdfgseg|counter[8]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.254             ;
+; Contador:inst13|debouncer:adgsdfgseg|counter[7]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.254             ;
+; Contador:inst13|debouncer:adgsdfgseg|counter[6]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.254             ;
+; Contador:inst13|debouncer:adgsdfgseg|counter[5]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.254             ;
+; Contador:inst13|debouncer:adgsdfgseg|counter[4]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.254             ;
+; Contador:inst13|debouncer:adgsdfgseg|counter[3]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.254             ;
+; Contador:inst13|debouncer:adgsdfgseg|counter[2]                                                                      ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.254             ;
+; Contador:inst13|debouncer:adgsdfgseg|counter[11]                                                                     ; Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated                                                               ; 2.254             ;
+; Contador:inst13|inst6~_emulated                                                                                      ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a3~porta_address_reg0  ; 2.145             ;
+; Contador:inst13|inst6~1                                                                                              ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a3~porta_address_reg0  ; 2.145             ;
+; Contador:inst13|inst1~1                                                                                              ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a3~porta_address_reg0  ; 2.116             ;
+; Contador:inst13|inst1~_emulated                                                                                      ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a3~porta_address_reg0  ; 2.116             ;
+; Contador:inst13|inst7~1                                                                                              ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a3~porta_address_reg0  ; 2.093             ;
+; Contador:inst13|inst7~_emulated                                                                                      ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a3~porta_address_reg0  ; 2.093             ;
+; ROM2:DFAFBG|debouncer:inst1|counter[14]                                                                              ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 2.039             ;
+; ROM2:DFAFBG|debouncer:inst1|counter[15]                                                                              ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 2.039             ;
+; ROM2:DFAFBG|debouncer:inst1|counter[12]                                                                              ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 2.039             ;
+; ROM2:DFAFBG|debouncer:inst1|counter[13]                                                                              ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 2.039             ;
+; ROM2:DFAFBG|debouncer:inst1|counter[10]                                                                              ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 2.039             ;
+; ROM2:DFAFBG|debouncer:inst1|counter[9]                                                                               ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 2.039             ;
+; ROM2:DFAFBG|debouncer:inst1|counter[8]                                                                               ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 2.039             ;
+; ROM2:DFAFBG|debouncer:inst1|counter[7]                                                                               ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 2.039             ;
+; ROM2:DFAFBG|debouncer:inst1|counter[6]                                                                               ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 2.039             ;
+; ROM2:DFAFBG|debouncer:inst1|counter[5]                                                                               ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 2.039             ;
+; ROM2:DFAFBG|debouncer:inst1|counter[4]                                                                               ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 2.039             ;
+; ROM2:DFAFBG|debouncer:inst1|counter[3]                                                                               ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 2.039             ;
+; ROM2:DFAFBG|debouncer:inst1|counter[2]                                                                               ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 2.039             ;
+; ROM2:DFAFBG|debouncer:inst1|counter[11]                                                                              ; ROM2:DFAFBG|debouncer:inst1|out_key~_emulated                                                                        ; 2.039             ;
+; Registrador:inst4|inst11                                                                                             ; Registrador:inst3|inst                                                                                               ; 1.807             ;
+; Registrador:inst3|inst11                                                                                             ; Registrador:inst3|inst                                                                                               ; 1.807             ;
+; Registrador:inst4|inst13                                                                                             ; Registrador:inst3|inst                                                                                               ; 1.807             ;
+; Registrador:inst4|inst15                                                                                             ; Registrador:inst3|inst                                                                                               ; 1.807             ;
+; Registrador:inst3|inst15                                                                                             ; Registrador:inst3|inst                                                                                               ; 1.807             ;
+; Registrador:inst3|inst13                                                                                             ; Registrador:inst3|inst                                                                                               ; 1.807             ;
+; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a12~porta_address_reg0 ; Registrador:inst3|inst                                                                                               ; 1.807             ;
+; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a13~porta_address_reg0 ; Registrador:inst3|inst                                                                                               ; 1.807             ;
+; Contador:inst13|inst10                                                                                               ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a0~porta_address_reg0  ; 0.644             ;
+; Contador:inst13|inst8                                                                                                ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a11~porta_address_reg0 ; 0.639             ;
+; Contador:inst13|agh                                                                                                  ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a2~porta_address_reg0  ; 0.639             ;
+; Contador:inst13|asd                                                                                                  ; ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated|ram_block1a13~porta_address_reg0 ; 0.639             ;
+; Registrador:inst4|inst                                                                                               ; Registrador:inst3|inst                                                                                               ; 0.310             ;
+; Registrador:inst3|inst                                                                                               ; Registrador:inst3|inst                                                                                               ; 0.310             ;
 +----------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+-------------------+
-Note: This table only shows the top 51 path(s) that have the largest delay added for hold.
+Note: This table only shows the top 70 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -1965,38 +2020,40 @@ Info (169124): Fitter converted 5 user pins into dedicated programming pins
     Info (169125): Pin ~ALTERA_nCEO~ is reserved at location P28
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
-Warning (335093): The Timing Analyzer is analyzing 5 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Warning (335093): The Timing Analyzer is analyzing 6 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'CPU.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: DFAFBG|inst1|out_key~2  from: datac  to: combout
-    Info (332098): Cell: inst13|adgsdfgseg|out_key~0  from: datac  to: combout
-    Info (332098): Cell: inst15|inst2|out_key~0  from: datac  to: combout
-    Info (332098): Cell: inst16|inst2|out_key~0  from: datac  to: combout
+    Info (332098): Cell: inst13|adgsdfgseg|out_key~2  from: datac  to: combout
+    Info (332098): Cell: inst3|inst2|out_key~0  from: datac  to: combout
+    Info (332098): Cell: inst4|inst2|out_key~0  from: datac  to: combout
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176353): Automatically promoted node CLK50~input (placed in PIN Y2 (CLK2, DIFFCLK_1p))
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node ROM2:DFAFBG|debouncer:inst1|out_key~_emulated File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
-        Info (176357): Destination node Registrador:inst15|debouncer:inst2|out_key~_emulated File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
-        Info (176357): Destination node Registrador:inst16|debouncer:inst2|out_key~_emulated File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
-        Info (176357): Destination node Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
-Info (176353): Automatically promoted node ROM2:DFAFBG|debouncer:inst1|out_key~2  File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node Contador:inst13|debouncer:adgsdfgseg|out_key~0  File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
+        Info (176357): Destination node ROM2:DFAFBG|debouncer:inst1|out_key~_emulated File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
+        Info (176357): Destination node Contador:inst13|debouncer:adgsdfgseg|out_key~_emulated File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
+        Info (176357): Destination node Registrador:inst3|debouncer:inst2|out_key~_emulated File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
+        Info (176357): Destination node Registrador:inst4|debouncer:inst2|out_key~_emulated File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
+Info (176353): Automatically promoted node ROM2:DFAFBG|debouncer:inst1|out_key~2  File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node Contador:inst13|debouncer:adgsdfgseg|out_key~1 File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
-Info (176353): Automatically promoted node Registrador:inst15|debouncer:inst2|out_key~0  File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
+        Info (176357): Destination node ROM2:DFAFBG|debouncer:inst1|out_key~3 File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
+Info (176353): Automatically promoted node Contador:inst13|debouncer:adgsdfgseg|out_key~2  File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node Registrador:inst16|debouncer:inst2|out_key~0  File: C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
+    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
+        Info (176357): Destination node Contador:inst13|debouncer:adgsdfgseg|out_key~3 File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
+Info (176353): Automatically promoted node Registrador:inst3|debouncer:inst2|out_key~0  File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+Info (176353): Automatically promoted node Registrador:inst4|debouncer:inst2|out_key~0  File: C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/debouncer.v Line: 42
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -2005,20 +2062,20 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:05
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X104_Y24 to location X115_Y36
+    Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X69_Y12 to location X80_Y23
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.61 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.68 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/output_files/CPU.fit.smsg
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (144001): Generated suppressed messages file C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/output_files/CPU.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5713 megabytes
-    Info: Processing ended: Wed Oct 18 17:01:24 2023
+    Info: Peak virtual memory: 5712 megabytes
+    Info: Processing ended: Tue Oct 31 14:17:31 2023
     Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:23
 
@@ -2026,6 +2083,6 @@ Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/14585976/Desktop/dalas/SSC0108-Pratica-Sistemas-Digitais/CPU/output_files/CPU.fit.smsg.
+The suppressed messages can be found in C:/Users/12547510/Documents/pratica-sist-dig/SSC0108-Pratica-Sistemas-Digitais/CPU/output_files/CPU.fit.smsg.
 
 

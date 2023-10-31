@@ -1,0 +1,176 @@
+// Copyright (C) 2021  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/31/2023 14:24:01"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          CPU
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module CPU_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg CLK;
+reg CLK50;
+reg resetMaster;
+// wires                                               
+wire Contador0;
+wire Contador1;
+wire Contador2;
+wire Contador3;
+wire Contador4;
+wire Contador5;
+wire Contador6;
+wire Contador7;
+wire [0:3] D01;
+wire [0:3] D10;
+wire Reg01A;
+wire Reg01B;
+wire Reg01C;
+wire Reg01D;
+wire Reg01E;
+wire Reg01F;
+wire Reg01G;
+wire Reg10A;
+wire Reg10B;
+wire Reg10C;
+wire Reg10D;
+wire Reg10E;
+wire Reg10F;
+wire Reg10G;
+wire ROM7segA0;
+wire ROM7segA1;
+wire ROM7segA2;
+wire ROM7segA3;
+wire ROM7segB0;
+wire ROM7segB1;
+wire ROM7segB2;
+wire ROM7segB3;
+wire ROM7segC0;
+wire ROM7segC1;
+wire ROM7segC2;
+wire ROM7segC3;
+wire ROM7segD0;
+wire ROM7segD1;
+wire ROM7segD2;
+wire ROM7segD3;
+wire ROM7segE0;
+wire ROM7segE1;
+wire ROM7segE2;
+wire ROM7segE3;
+wire ROM7segF0;
+wire ROM7segF1;
+wire ROM7segF2;
+wire ROM7segF3;
+wire ROM7segG0;
+wire ROM7segG1;
+wire ROM7segG2;
+wire ROM7segG3;
+
+// assign statements (if any)                          
+CPU i1 (
+// port map - connection between master ports and signals/registers   
+	.CLK(CLK),
+	.CLK50(CLK50),
+	.Contador0(Contador0),
+	.Contador1(Contador1),
+	.Contador2(Contador2),
+	.Contador3(Contador3),
+	.Contador4(Contador4),
+	.Contador5(Contador5),
+	.Contador6(Contador6),
+	.Contador7(Contador7),
+	.D01(D01),
+	.D10(D10),
+	.Reg01A(Reg01A),
+	.Reg01B(Reg01B),
+	.Reg01C(Reg01C),
+	.Reg01D(Reg01D),
+	.Reg01E(Reg01E),
+	.Reg01F(Reg01F),
+	.Reg01G(Reg01G),
+	.Reg10A(Reg10A),
+	.Reg10B(Reg10B),
+	.Reg10C(Reg10C),
+	.Reg10D(Reg10D),
+	.Reg10E(Reg10E),
+	.Reg10F(Reg10F),
+	.Reg10G(Reg10G),
+	.resetMaster(resetMaster),
+	.ROM7segA0(ROM7segA0),
+	.ROM7segA1(ROM7segA1),
+	.ROM7segA2(ROM7segA2),
+	.ROM7segA3(ROM7segA3),
+	.ROM7segB0(ROM7segB0),
+	.ROM7segB1(ROM7segB1),
+	.ROM7segB2(ROM7segB2),
+	.ROM7segB3(ROM7segB3),
+	.ROM7segC0(ROM7segC0),
+	.ROM7segC1(ROM7segC1),
+	.ROM7segC2(ROM7segC2),
+	.ROM7segC3(ROM7segC3),
+	.ROM7segD0(ROM7segD0),
+	.ROM7segD1(ROM7segD1),
+	.ROM7segD2(ROM7segD2),
+	.ROM7segD3(ROM7segD3),
+	.ROM7segE0(ROM7segE0),
+	.ROM7segE1(ROM7segE1),
+	.ROM7segE2(ROM7segE2),
+	.ROM7segE3(ROM7segE3),
+	.ROM7segF0(ROM7segF0),
+	.ROM7segF1(ROM7segF1),
+	.ROM7segF2(ROM7segF2),
+	.ROM7segF3(ROM7segF3),
+	.ROM7segG0(ROM7segG0),
+	.ROM7segG1(ROM7segG1),
+	.ROM7segG2(ROM7segG2),
+	.ROM7segG3(ROM7segG3)
+);
+initial 
+begin 
+#4000000 $finish;
+end 
+
+// CLK
+always
+begin
+	CLK = 1'b0;
+	CLK = #500 1'b1;
+	#500;
+end 
+
+// CLK50
+always
+begin
+	CLK50 = 1'b0;
+	CLK50 = #1000 1'b1;
+	#1000;
+end 
+
+// resetMaster
+initial
+begin
+	resetMaster = 1'b0;
+end 
+endmodule
+

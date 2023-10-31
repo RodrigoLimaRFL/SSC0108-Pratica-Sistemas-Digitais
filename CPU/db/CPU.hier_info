@@ -2,17 +2,17 @@
 ROM7segA0 <= projeto05:inst56.AAAA
 CLK50 => ROM2:DFAFBG.CLOCK_50
 CLK50 => Contador:inst13.clock
-CLK50 => Registrador:inst15.CLK50
-CLK50 => Registrador:inst16.CLK50
+CLK50 => Registrador:inst3.CLK50
+CLK50 => Registrador:inst4.CLK50
 resetMaster => ROM2:DFAFBG.reset
 resetMaster => Contador:inst13.resetMaster
-resetMaster => Registrador:inst15.resetMaster
+resetMaster => Registrador:inst3.resetMaster
 resetMaster => ULA:inst25.reserMaster
-resetMaster => Registrador:inst16.resetMaster
+resetMaster => Registrador:inst4.resetMaster
 CLK => ROM2:DFAFBG.KEY
-CLK => inst14.IN0
-CLK => Registrador:inst15.clock
-CLK => Registrador:inst16.clock
+CLK => Contador:inst13.input
+CLK => Registrador:inst3.clock
+CLK => Registrador:inst4.clock
 Contador7 <= Contador:inst13.q7
 Contador6 <= Contador:inst13.q6
 Contador5 <= Contador:inst13.q5
@@ -756,13 +756,14 @@ GGGG <= inst43.DB_MAX_OUTPUT_PORT_TYPE
 CCCC <= inst44.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|Registrador:inst15
+|CPU|Registrador:inst3
 Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
-CLK50 => debouncer:inst2.clk_fpga
+resetMaster => insasdfghjklt.IN0
 resetMaster => debouncer:inst2.rst_debouncer
+CLK50 => debouncer:inst2.clk_fpga
 clock => debouncer:inst2.input_key
 RegLoad => inst17.IN0
 ROM[14] => inst25.IN0
@@ -773,7 +774,7 @@ D[1] => 21mux:inst12.A
 D[0] => 21mux:inst10.A
 
 
-|CPU|Registrador:inst15|debouncer:inst2
+|CPU|Registrador:inst3|debouncer:inst2
 clk_fpga => counter[0].CLK
 clk_fpga => counter[1].CLK
 clk_fpga => counter[2].CLK
@@ -817,7 +818,7 @@ input_key => intermediate.DATAIN
 out_key <= out_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|Registrador:inst15|21mux:inst10
+|CPU|Registrador:inst3|21mux:inst10
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -825,7 +826,7 @@ S => 7.IN1
 B => 8.IN0
 
 
-|CPU|Registrador:inst15|21mux:inst12
+|CPU|Registrador:inst3|21mux:inst12
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -833,7 +834,7 @@ S => 7.IN1
 B => 8.IN0
 
 
-|CPU|Registrador:inst15|21mux:inst14
+|CPU|Registrador:inst3|21mux:inst14
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -841,7 +842,7 @@ S => 7.IN1
 B => 8.IN0
 
 
-|CPU|Registrador:inst15|21mux:inst16
+|CPU|Registrador:inst3|21mux:inst16
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -1245,13 +1246,14 @@ Input1 => Output0.DATAIN
 Input0 => ~NO_FANOUT~
 
 
-|CPU|Registrador:inst16
+|CPU|Registrador:inst4
 Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
-CLK50 => debouncer:inst2.clk_fpga
+resetMaster => insasdfghjklt.IN0
 resetMaster => debouncer:inst2.rst_debouncer
+CLK50 => debouncer:inst2.clk_fpga
 clock => debouncer:inst2.input_key
 RegLoad => inst17.IN0
 ROM[14] => inst25.IN0
@@ -1262,7 +1264,7 @@ D[1] => 21mux:inst12.A
 D[0] => 21mux:inst10.A
 
 
-|CPU|Registrador:inst16|debouncer:inst2
+|CPU|Registrador:inst4|debouncer:inst2
 clk_fpga => counter[0].CLK
 clk_fpga => counter[1].CLK
 clk_fpga => counter[2].CLK
@@ -1306,7 +1308,7 @@ input_key => intermediate.DATAIN
 out_key <= out_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|Registrador:inst16|21mux:inst10
+|CPU|Registrador:inst4|21mux:inst10
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -1314,7 +1316,7 @@ S => 7.IN1
 B => 8.IN0
 
 
-|CPU|Registrador:inst16|21mux:inst12
+|CPU|Registrador:inst4|21mux:inst12
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -1322,7 +1324,7 @@ S => 7.IN1
 B => 8.IN0
 
 
-|CPU|Registrador:inst16|21mux:inst14
+|CPU|Registrador:inst4|21mux:inst14
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -1330,7 +1332,7 @@ S => 7.IN1
 B => 8.IN0
 
 
-|CPU|Registrador:inst16|21mux:inst16
+|CPU|Registrador:inst4|21mux:inst16
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1

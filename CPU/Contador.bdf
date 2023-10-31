@@ -92,7 +92,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect -200 328 -32 344)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "resetMaster" (rect 5 0 63 12)(font "Arial" ))
+	(text "resetMaster" (rect 5 0 62 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -108,7 +108,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect -408 424 -240 440)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reset" (rect 5 0 29 17)(font "Intel Clear" ))
+	(text "reset" (rect 5 0 28 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -1934,7 +1934,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect -400 344 -368 376)
+	(rect 0 344 32 376)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst46" (rect 3 21 31 38)(font "Intel Clear" )(invisible))
 	(port
@@ -1954,6 +1954,31 @@ https://fpgasoftware.intel.com/eula.
 	(rect -168 656 -120 688)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst47" (rect 3 21 31 38)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
+(symbol
+	(rect 40 312 88 344)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst48" (rect 3 21 31 38)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -2123,11 +2148,6 @@ https://fpgasoftware.intel.com/eula.
 	(text "clk" (rect 232 328 246 345)(font "Intel Clear" ))
 	(pt 264 344)
 	(pt 224 344)
-)
-(connector
-	(text "vcc" (rect 240 312 255 329)(font "Intel Clear" ))
-	(pt 264 328)
-	(pt 232 328)
 )
 (connector
 	(pt 264 280)
@@ -2773,15 +2793,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt -96 416)
 )
 (connector
-	(text "vcc" (rect -352 312 -337 329)(font "Intel Clear" ))
-	(pt -384 328)
-	(pt -296 328)
-)
-(connector
-	(pt -384 328)
-	(pt -384 344)
-)
-(connector
 	(text "resetMaster" (rect -127 616 -71 633)(font "Intel Clear" ))
 	(pt -216 632)
 	(pt -80 632)
@@ -2810,6 +2821,18 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt -264 672)
 	(pt -264 720)
+)
+(connector
+	(pt 16 328)
+	(pt 16 344)
+)
+(connector
+	(pt 16 328)
+	(pt 40 328)
+)
+(connector
+	(pt 88 328)
+	(pt 264 328)
 )
 (junction (pt 192 272))
 (junction (pt 128 288))
