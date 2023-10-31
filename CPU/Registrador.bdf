@@ -70,22 +70,6 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(input)
-	(rect -96 368 72 384)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLK50" (rect 5 0 36 17)(font "Intel Clear" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect -96 416 72 432)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "resetMaster" (rect 5 0 61 17)(font "Intel Clear" ))
@@ -120,7 +104,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect -16 16 152 32)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "D[0..3]" (rect 5 0 40 12)(font "Arial" ))
+	(text "D[0..3]" (rect 5 0 39 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -576,48 +560,6 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 256 568 448 680)
-	(text "debouncer" (rect 5 0 55 12)(font "Arial" ))
-	(text "inst2" (rect 8 96 30 113)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk_fpga" (rect 0 0 42 12)(font "Arial" ))
-		(text "clk_fpga" (rect 21 27 63 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "rst_debouncer" (rect 0 0 69 12)(font "Arial" ))
-		(text "rst_debouncer" (rect 21 43 90 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "input_key" (rect 0 0 48 12)(font "Arial" ))
-		(text "input_key" (rect 21 59 69 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 192 32)
-		(output)
-		(text "out_key" (rect 0 0 40 12)(font "Arial" ))
-		(text "out_key" (rect 138 27 178 39)(font "Arial" ))
-		(line (pt 192 32)(pt 176 32))
-	)
-	(parameter
-		"DELAY_BITS"
-		"16"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(rectangle (rect 16 16 176 96))
-	)
-	(annotation_block (parameter)(rect 448 528 632 568))
-)
-(symbol
 	(rect 456 464 504 496)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst8" (rect 3 21 25 38)(font "Intel Clear" ))
@@ -871,25 +813,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 96 472)
 )
 (connector
-	(text "CLK50" (rect 200 584 231 601)(font "Intel Clear" ))
-	(pt 256 600)
-	(pt 192 600)
-)
-(connector
-	(text "resetMaster" (rect 184 600 240 617)(font "Intel Clear" ))
-	(pt 256 616)
-	(pt 176 616)
-)
-(connector
-	(text "clock" (rect 200 616 224 633)(font "Intel Clear" ))
-	(pt 256 632)
-	(pt 192 632)
-)
-(connector
-	(pt 448 600)
-	(pt 448 480)
-)
-(connector
 	(pt 456 480)
 	(pt 448 480)
 )
@@ -993,6 +916,15 @@ https://fpgasoftware.intel.com/eula.
 	(text "D[3]" (rect 228 0 248 17)(font "Intel Clear" ))
 	(pt 184 16)
 	(pt 232 16)
+)
+(connector
+	(pt 448 632)
+	(pt 448 480)
+)
+(connector
+	(text "clock" (rect 200 616 224 633)(font "Intel Clear" ))
+	(pt 192 632)
+	(pt 448 632)
 )
 (junction (pt 176 24))
 (junction (pt 168 24))

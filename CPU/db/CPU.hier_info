@@ -1,26 +1,20 @@
 |CPU
 ROM7segA0 <= projeto05:inst56.AAAA
-CLK50 => ROM2:DFAFBG.CLOCK_50
-CLK50 => Contador:inst13.clock
-CLK50 => Registrador:inst3.CLK50
-CLK50 => Registrador:inst4.CLK50
-resetMaster => ROM2:DFAFBG.reset
-resetMaster => Contador:inst13.resetMaster
-resetMaster => Registrador:inst3.resetMaster
+CLK50 => debouncer:inst5.clk_fpga
+resetDebouncer => debouncer:inst5.rst_debouncer
+CLK => debouncer:inst5.input_key
+Contador7 <= Contador:inst6.q7
+resetMaster => Contador:inst6.resetMaster
+resetMaster => Registrador:inst8.resetMaster
 resetMaster => ULA:inst25.reserMaster
-resetMaster => Registrador:inst4.resetMaster
-CLK => ROM2:DFAFBG.KEY
-CLK => Contador:inst13.input
-CLK => Registrador:inst3.clock
-CLK => Registrador:inst4.clock
-Contador7 <= Contador:inst13.q7
-Contador6 <= Contador:inst13.q6
-Contador5 <= Contador:inst13.q5
-Contador4 <= Contador:inst13.q4
-Contador3 <= Contador:inst13.q3
-Contador2 <= Contador:inst13.q2
-Contador1 <= Contador:inst13.q1
-Contador0 <= Contador:inst13.q0
+resetMaster => Registrador:inst9.resetMaster
+Contador6 <= Contador:inst6.q6
+Contador5 <= Contador:inst6.q5
+Contador4 <= Contador:inst6.q4
+Contador3 <= Contador:inst6.q3
+Contador2 <= Contador:inst6.q2
+Contador1 <= Contador:inst6.q1
+Contador0 <= Contador:inst6.q0
 ROM7segB0 <= projeto05:inst56.BBBB
 ROM7segC0 <= projeto05:inst56.CCCC
 ROM7segD0 <= projeto05:inst56.DDDD
@@ -123,7 +117,7 @@ GGGG <= inst43.DB_MAX_OUTPUT_PORT_TYPE
 CCCC <= inst44.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|ROM2:DFAFBG
+|CPU|ROM2:inst7
 OUT[0] <= rom:inst.q[0]
 OUT[1] <= rom:inst.q[1]
 OUT[2] <= rom:inst.q[2]
@@ -140,9 +134,7 @@ OUT[12] <= rom:inst.q[12]
 OUT[13] <= rom:inst.q[13]
 OUT[14] <= rom:inst.q[14]
 OUT[15] <= rom:inst.q[15]
-CLOCK_50 => debouncer:inst1.clk_fpga
-reset => debouncer:inst1.rst_debouncer
-KEY => debouncer:inst1.input_key
+KEY => rom:inst.clock
 IN[0] => rom:inst.address[0]
 IN[1] => rom:inst.address[1]
 IN[2] => rom:inst.address[2]
@@ -153,7 +145,7 @@ IN[6] => rom:inst.address[6]
 IN[7] => rom:inst.address[7]
 
 
-|CPU|ROM2:DFAFBG|rom:inst
+|CPU|ROM2:inst7|rom:inst
 address[0] => altsyncram:altsyncram_component.address_a[0]
 address[1] => altsyncram:altsyncram_component.address_a[1]
 address[2] => altsyncram:altsyncram_component.address_a[2]
@@ -181,7 +173,7 @@ q[14] <= altsyncram:altsyncram_component.q_a[14]
 q[15] <= altsyncram:altsyncram_component.q_a[15]
 
 
-|CPU|ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component
+|CPU|ROM2:inst7|rom:inst|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -203,18 +195,18 @@ data_a[13] => ~NO_FANOUT~
 data_a[14] => ~NO_FANOUT~
 data_a[15] => ~NO_FANOUT~
 data_b[0] => ~NO_FANOUT~
-address_a[0] => altsyncram_nnr3:auto_generated.address_a[0]
-address_a[1] => altsyncram_nnr3:auto_generated.address_a[1]
-address_a[2] => altsyncram_nnr3:auto_generated.address_a[2]
-address_a[3] => altsyncram_nnr3:auto_generated.address_a[3]
-address_a[4] => altsyncram_nnr3:auto_generated.address_a[4]
-address_a[5] => altsyncram_nnr3:auto_generated.address_a[5]
-address_a[6] => altsyncram_nnr3:auto_generated.address_a[6]
-address_a[7] => altsyncram_nnr3:auto_generated.address_a[7]
+address_a[0] => altsyncram_onr3:auto_generated.address_a[0]
+address_a[1] => altsyncram_onr3:auto_generated.address_a[1]
+address_a[2] => altsyncram_onr3:auto_generated.address_a[2]
+address_a[3] => altsyncram_onr3:auto_generated.address_a[3]
+address_a[4] => altsyncram_onr3:auto_generated.address_a[4]
+address_a[5] => altsyncram_onr3:auto_generated.address_a[5]
+address_a[6] => altsyncram_onr3:auto_generated.address_a[6]
+address_a[7] => altsyncram_onr3:auto_generated.address_a[7]
 address_b[0] => ~NO_FANOUT~
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
-clock0 => altsyncram_nnr3:auto_generated.clock0
+clock0 => altsyncram_onr3:auto_generated.clock0
 clock1 => ~NO_FANOUT~
 clocken0 => ~NO_FANOUT~
 clocken1 => ~NO_FANOUT~
@@ -224,29 +216,29 @@ aclr0 => ~NO_FANOUT~
 aclr1 => ~NO_FANOUT~
 byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
-q_a[0] <= altsyncram_nnr3:auto_generated.q_a[0]
-q_a[1] <= altsyncram_nnr3:auto_generated.q_a[1]
-q_a[2] <= altsyncram_nnr3:auto_generated.q_a[2]
-q_a[3] <= altsyncram_nnr3:auto_generated.q_a[3]
-q_a[4] <= altsyncram_nnr3:auto_generated.q_a[4]
-q_a[5] <= altsyncram_nnr3:auto_generated.q_a[5]
-q_a[6] <= altsyncram_nnr3:auto_generated.q_a[6]
-q_a[7] <= altsyncram_nnr3:auto_generated.q_a[7]
-q_a[8] <= altsyncram_nnr3:auto_generated.q_a[8]
-q_a[9] <= altsyncram_nnr3:auto_generated.q_a[9]
-q_a[10] <= altsyncram_nnr3:auto_generated.q_a[10]
-q_a[11] <= altsyncram_nnr3:auto_generated.q_a[11]
-q_a[12] <= altsyncram_nnr3:auto_generated.q_a[12]
-q_a[13] <= altsyncram_nnr3:auto_generated.q_a[13]
-q_a[14] <= altsyncram_nnr3:auto_generated.q_a[14]
-q_a[15] <= altsyncram_nnr3:auto_generated.q_a[15]
+q_a[0] <= altsyncram_onr3:auto_generated.q_a[0]
+q_a[1] <= altsyncram_onr3:auto_generated.q_a[1]
+q_a[2] <= altsyncram_onr3:auto_generated.q_a[2]
+q_a[3] <= altsyncram_onr3:auto_generated.q_a[3]
+q_a[4] <= altsyncram_onr3:auto_generated.q_a[4]
+q_a[5] <= altsyncram_onr3:auto_generated.q_a[5]
+q_a[6] <= altsyncram_onr3:auto_generated.q_a[6]
+q_a[7] <= altsyncram_onr3:auto_generated.q_a[7]
+q_a[8] <= altsyncram_onr3:auto_generated.q_a[8]
+q_a[9] <= altsyncram_onr3:auto_generated.q_a[9]
+q_a[10] <= altsyncram_onr3:auto_generated.q_a[10]
+q_a[11] <= altsyncram_onr3:auto_generated.q_a[11]
+q_a[12] <= altsyncram_onr3:auto_generated.q_a[12]
+q_a[13] <= altsyncram_onr3:auto_generated.q_a[13]
+q_a[14] <= altsyncram_onr3:auto_generated.q_a[14]
+q_a[15] <= altsyncram_onr3:auto_generated.q_a[15]
 q_b[0] <= <GND>
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|CPU|ROM2:DFAFBG|rom:inst|altsyncram:altsyncram_component|altsyncram_nnr3:auto_generated
+|CPU|ROM2:inst7|rom:inst|altsyncram:altsyncram_component|altsyncram_onr3:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -409,7 +401,7 @@ q_a[14] <= ram_block1a14.PORTADATAOUT
 q_a[15] <= ram_block1a15.PORTADATAOUT
 
 
-|CPU|ROM2:DFAFBG|debouncer:inst1
+|CPU|debouncer:inst5
 clk_fpga => counter[0].CLK
 clk_fpga => counter[1].CLK
 clk_fpga => counter[2].CLK
@@ -453,7 +445,7 @@ input_key => intermediate.DATAIN
 out_key <= out_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|Contador:inst13
+|CPU|Contador:inst6
 q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 jump => inst15.IN0
 jump => inst14.IN0
@@ -481,8 +473,6 @@ Operando[3] => inst27.IN1
 Operando[3] => inst25.IN1
 reset => inst45.IN0
 resetMaster => inst45.IN1
-resetMaster => debouncer:adgsdfgseg.rst_debouncer
-clock => debouncer:adgsdfgseg.clk_fpga
 input => inst47.IN0
 q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 q2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
@@ -491,50 +481,6 @@ q4 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 q5 <= agh.DB_MAX_OUTPUT_PORT_TYPE
 q6 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 q7 <= asd.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|CPU|Contador:inst13|debouncer:adgsdfgseg
-clk_fpga => counter[0].CLK
-clk_fpga => counter[1].CLK
-clk_fpga => counter[2].CLK
-clk_fpga => counter[3].CLK
-clk_fpga => counter[4].CLK
-clk_fpga => counter[5].CLK
-clk_fpga => counter[6].CLK
-clk_fpga => counter[7].CLK
-clk_fpga => counter[8].CLK
-clk_fpga => counter[9].CLK
-clk_fpga => counter[10].CLK
-clk_fpga => counter[11].CLK
-clk_fpga => counter[12].CLK
-clk_fpga => counter[13].CLK
-clk_fpga => counter[14].CLK
-clk_fpga => counter[15].CLK
-clk_fpga => out_key~reg0.CLK
-clk_fpga => intermediate.CLK
-rst_debouncer => counter[0].ACLR
-rst_debouncer => counter[1].ACLR
-rst_debouncer => counter[2].ACLR
-rst_debouncer => counter[3].ACLR
-rst_debouncer => counter[4].ACLR
-rst_debouncer => counter[5].ACLR
-rst_debouncer => counter[6].ACLR
-rst_debouncer => counter[7].ACLR
-rst_debouncer => counter[8].ACLR
-rst_debouncer => counter[9].ACLR
-rst_debouncer => counter[10].ACLR
-rst_debouncer => counter[11].ACLR
-rst_debouncer => counter[12].ACLR
-rst_debouncer => counter[13].ACLR
-rst_debouncer => counter[14].ACLR
-rst_debouncer => counter[15].ACLR
-rst_debouncer => out_key~reg0.ALOAD
-rst_debouncer => intermediate.ALOAD
-input_key => always0.IN1
-input_key => out_key~reg0.ADATA
-input_key => intermediate.ADATA
-input_key => intermediate.DATAIN
-out_key <= out_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|UC:inst
@@ -756,15 +702,13 @@ GGGG <= inst43.DB_MAX_OUTPUT_PORT_TYPE
 CCCC <= inst44.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|Registrador:inst3
+|CPU|Registrador:inst8
 Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 resetMaster => insasdfghjklt.IN0
-resetMaster => debouncer:inst2.rst_debouncer
-CLK50 => debouncer:inst2.clk_fpga
-clock => debouncer:inst2.input_key
+clock => inst8.IN0
 RegLoad => inst17.IN0
 ROM[14] => inst25.IN0
 OpULA => inst25.IN1
@@ -774,51 +718,7 @@ D[1] => 21mux:inst12.A
 D[0] => 21mux:inst10.A
 
 
-|CPU|Registrador:inst3|debouncer:inst2
-clk_fpga => counter[0].CLK
-clk_fpga => counter[1].CLK
-clk_fpga => counter[2].CLK
-clk_fpga => counter[3].CLK
-clk_fpga => counter[4].CLK
-clk_fpga => counter[5].CLK
-clk_fpga => counter[6].CLK
-clk_fpga => counter[7].CLK
-clk_fpga => counter[8].CLK
-clk_fpga => counter[9].CLK
-clk_fpga => counter[10].CLK
-clk_fpga => counter[11].CLK
-clk_fpga => counter[12].CLK
-clk_fpga => counter[13].CLK
-clk_fpga => counter[14].CLK
-clk_fpga => counter[15].CLK
-clk_fpga => out_key~reg0.CLK
-clk_fpga => intermediate.CLK
-rst_debouncer => counter[0].ACLR
-rst_debouncer => counter[1].ACLR
-rst_debouncer => counter[2].ACLR
-rst_debouncer => counter[3].ACLR
-rst_debouncer => counter[4].ACLR
-rst_debouncer => counter[5].ACLR
-rst_debouncer => counter[6].ACLR
-rst_debouncer => counter[7].ACLR
-rst_debouncer => counter[8].ACLR
-rst_debouncer => counter[9].ACLR
-rst_debouncer => counter[10].ACLR
-rst_debouncer => counter[11].ACLR
-rst_debouncer => counter[12].ACLR
-rst_debouncer => counter[13].ACLR
-rst_debouncer => counter[14].ACLR
-rst_debouncer => counter[15].ACLR
-rst_debouncer => out_key~reg0.ALOAD
-rst_debouncer => intermediate.ALOAD
-input_key => always0.IN1
-input_key => out_key~reg0.ADATA
-input_key => intermediate.ADATA
-input_key => intermediate.DATAIN
-out_key <= out_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|CPU|Registrador:inst3|21mux:inst10
+|CPU|Registrador:inst8|21mux:inst10
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -826,7 +726,7 @@ S => 7.IN1
 B => 8.IN0
 
 
-|CPU|Registrador:inst3|21mux:inst12
+|CPU|Registrador:inst8|21mux:inst12
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -834,7 +734,7 @@ S => 7.IN1
 B => 8.IN0
 
 
-|CPU|Registrador:inst3|21mux:inst14
+|CPU|Registrador:inst8|21mux:inst14
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -842,7 +742,7 @@ S => 7.IN1
 B => 8.IN0
 
 
-|CPU|Registrador:inst3|21mux:inst16
+|CPU|Registrador:inst8|21mux:inst16
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -1246,15 +1146,13 @@ Input1 => Output0.DATAIN
 Input0 => ~NO_FANOUT~
 
 
-|CPU|Registrador:inst4
+|CPU|Registrador:inst9
 Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 resetMaster => insasdfghjklt.IN0
-resetMaster => debouncer:inst2.rst_debouncer
-CLK50 => debouncer:inst2.clk_fpga
-clock => debouncer:inst2.input_key
+clock => inst8.IN0
 RegLoad => inst17.IN0
 ROM[14] => inst25.IN0
 OpULA => inst25.IN1
@@ -1264,51 +1162,7 @@ D[1] => 21mux:inst12.A
 D[0] => 21mux:inst10.A
 
 
-|CPU|Registrador:inst4|debouncer:inst2
-clk_fpga => counter[0].CLK
-clk_fpga => counter[1].CLK
-clk_fpga => counter[2].CLK
-clk_fpga => counter[3].CLK
-clk_fpga => counter[4].CLK
-clk_fpga => counter[5].CLK
-clk_fpga => counter[6].CLK
-clk_fpga => counter[7].CLK
-clk_fpga => counter[8].CLK
-clk_fpga => counter[9].CLK
-clk_fpga => counter[10].CLK
-clk_fpga => counter[11].CLK
-clk_fpga => counter[12].CLK
-clk_fpga => counter[13].CLK
-clk_fpga => counter[14].CLK
-clk_fpga => counter[15].CLK
-clk_fpga => out_key~reg0.CLK
-clk_fpga => intermediate.CLK
-rst_debouncer => counter[0].ACLR
-rst_debouncer => counter[1].ACLR
-rst_debouncer => counter[2].ACLR
-rst_debouncer => counter[3].ACLR
-rst_debouncer => counter[4].ACLR
-rst_debouncer => counter[5].ACLR
-rst_debouncer => counter[6].ACLR
-rst_debouncer => counter[7].ACLR
-rst_debouncer => counter[8].ACLR
-rst_debouncer => counter[9].ACLR
-rst_debouncer => counter[10].ACLR
-rst_debouncer => counter[11].ACLR
-rst_debouncer => counter[12].ACLR
-rst_debouncer => counter[13].ACLR
-rst_debouncer => counter[14].ACLR
-rst_debouncer => counter[15].ACLR
-rst_debouncer => out_key~reg0.ALOAD
-rst_debouncer => intermediate.ALOAD
-input_key => always0.IN1
-input_key => out_key~reg0.ADATA
-input_key => intermediate.ADATA
-input_key => intermediate.DATAIN
-out_key <= out_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|CPU|Registrador:inst4|21mux:inst10
+|CPU|Registrador:inst9|21mux:inst10
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -1316,7 +1170,7 @@ S => 7.IN1
 B => 8.IN0
 
 
-|CPU|Registrador:inst4|21mux:inst12
+|CPU|Registrador:inst9|21mux:inst12
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -1324,7 +1178,7 @@ S => 7.IN1
 B => 8.IN0
 
 
-|CPU|Registrador:inst4|21mux:inst14
+|CPU|Registrador:inst9|21mux:inst14
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1
@@ -1332,7 +1186,7 @@ S => 7.IN1
 B => 8.IN0
 
 
-|CPU|Registrador:inst4|21mux:inst16
+|CPU|Registrador:inst9|21mux:inst16
 Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
 A => 6.IN0
 S => 6.IN1

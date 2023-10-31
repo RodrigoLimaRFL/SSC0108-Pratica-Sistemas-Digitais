@@ -240,6 +240,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "resetDebouncer",
+					"strict" : false
+				},
+				{
 					"name" : "CLK",
 					"strict" : false
 				},

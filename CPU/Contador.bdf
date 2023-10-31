@@ -22,7 +22,7 @@ https://fpgasoftware.intel.com/eula.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -440 712 -272 728)
+	(rect -384 664 -216 680)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "input" (rect 5 0 28 17)(font "Intel Clear" ))
 	(pt 168 8)
@@ -36,23 +36,6 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 	(annotation_block (location)(rect -504 728 -440 752))
-)
-(pin
-	(input)
-	(rect -296 608 -128 624)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clock" (rect 5 0 30 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -456 624 -392 648))
 )
 (pin
 	(input)
@@ -847,48 +830,6 @@ https://fpgasoftware.intel.com/eula.
 		(circle (rect 28 4 36 12))
 		(circle (rect 28 68 36 76))
 	)
-)
-(symbol
-	(rect -80 584 112 696)
-	(text "debouncer" (rect 5 0 55 12)(font "Arial" ))
-	(text "adgsdfgseg" (rect 8 96 62 113)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk_fpga" (rect 0 0 42 12)(font "Arial" ))
-		(text "clk_fpga" (rect 21 27 63 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "rst_debouncer" (rect 0 0 69 12)(font "Arial" ))
-		(text "rst_debouncer" (rect 21 43 90 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "input_key" (rect 0 0 48 12)(font "Arial" ))
-		(text "input_key" (rect 21 59 69 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 192 32)
-		(output)
-		(text "out_key" (rect 0 0 40 12)(font "Arial" ))
-		(text "out_key" (rect 138 27 178 39)(font "Arial" ))
-		(line (pt 192 32)(pt 176 32))
-	)
-	(parameter
-		"DELAY_BITS"
-		"16"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(rectangle (rect 16 16 176 96))
-	)
-	(annotation_block (parameter)(rect 112 544 296 584))
 )
 (symbol
 	(rect 272 384 320 448)
@@ -2131,15 +2072,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 384 664)
 )
 (connector
-	(text "clk" (rect 113 600 127 617)(font "Intel Clear" ))
-	(pt 112 616)
-	(pt 160 616)
-)
-(connector
-	(pt -80 616)
-	(pt -128 616)
-)
-(connector
 	(text "q0" (rect 329 312 340 329)(font "Intel Clear" ))
 	(pt 328 328)
 	(pt 352 328)
@@ -2793,34 +2725,9 @@ https://fpgasoftware.intel.com/eula.
 	(pt -96 416)
 )
 (connector
-	(text "resetMaster" (rect -127 616 -71 633)(font "Intel Clear" ))
-	(pt -216 632)
-	(pt -80 632)
-)
-(connector
 	(text "resetMaster" (rect -351 384 -295 401)(font "Intel Clear" ))
 	(pt -232 400)
 	(pt -368 400)
-)
-(connector
-	(pt -264 720)
-	(pt -272 720)
-)
-(connector
-	(pt -80 648)
-	(pt -120 648)
-)
-(connector
-	(pt -120 648)
-	(pt -120 672)
-)
-(connector
-	(pt -168 672)
-	(pt -264 672)
-)
-(connector
-	(pt -264 672)
-	(pt -264 720)
 )
 (connector
 	(pt 16 328)
@@ -2833,6 +2740,15 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 88 328)
 	(pt 264 328)
+)
+(connector
+	(pt -216 672)
+	(pt -168 672)
+)
+(connector
+	(text "clk" (rect -55 656 -41 673)(font "Intel Clear" ))
+	(pt -120 672)
+	(pt -8 672)
 )
 (junction (pt 192 272))
 (junction (pt 128 288))
